@@ -1,0 +1,48 @@
+{
+	"textures": {
+		"10": "snc:custom/attack_body",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [5.0544, -2.60067, 1.74752],
+			"to": [10.94559, 10.60067, 14.25248],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [8, 4, 8]
+			},
+			"faces": {
+				"north": {
+					"uv": [9.3125, 11, 9, 11.625],
+					"texture": "#10"
+				},
+				"east": {
+					"uv": [6.125, 10.75, 5.5, 11.375],
+					"texture": "#10"
+				},
+				"south": {
+					"uv": [9.8125, 11, 9.5, 11.625],
+					"texture": "#10"
+				},
+				"west": {
+					"uv": [11.375, 2.5, 10.75, 3.125],
+					"texture": "#10"
+				},
+				"up": {
+					"uv": [11, 10.375, 11.3125, 9.75],
+					"texture": "#10"
+				},
+				"down": {
+					"uv": [11, 10.5, 11.3125, 11.125],
+					"texture": "#10"
+				}
+			}
+		}
+	]
+}

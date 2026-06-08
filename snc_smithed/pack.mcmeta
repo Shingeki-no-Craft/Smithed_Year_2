@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "SnC x Smithed",
+    "min_format": [
+      101,
+      1
+    ],
+    "max_format": 101
+  }
+}

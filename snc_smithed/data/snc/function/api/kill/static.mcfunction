@@ -1,0 +1,1 @@
+function snc:static/kill/colossal_head

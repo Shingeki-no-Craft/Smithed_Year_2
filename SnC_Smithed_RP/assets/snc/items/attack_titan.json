@@ -1,0 +1,115 @@
+{
+  "model": {
+    "type": "composite",
+    "models": [
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/neck"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/right_thumb_2"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/right_thumb"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/right_fingers2"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/right_fingers"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/right_hand"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/right_forearm"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/right_bicep"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/right_shoulder"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/left_thumb_2"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/left_thumb"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/left_fingers2"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/left_fingers"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/left_hand"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/left_forearm"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/left_bicep"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/left_shoulder"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/chest"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/left_cheek"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/left_foot"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/left_knee"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/left_leg"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/right_cheek"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/right_foot"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/right_knee"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/right_leg"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/weist"
+        }
+      ]
+  }
+}
