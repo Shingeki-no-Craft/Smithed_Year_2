@@ -1,0 +1,59 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "damage":0,
+      "minecraft:item_model":"snc:trigger_blade",
+      "minecraft:enchantments":{
+        "snc:swing" : 1
+      },
+      "tooltip_display": {
+        "hidden_components": [
+          "minecraft:enchantments"
+        ]
+      },
+      "minecraft:lore":[
+        {"translate":"aot.odm.desc2","color":"gray","italic":false},
+        [{"translate":"aot.odm.desc3","color":"gray","italic":false}," ",{"translate":"aot.mainhand","color":"yellow","italic":false}],
+        " ",
+        {"translate":"aot.odm.inst","color":"aqua","italic":false},
+        [{"text":" ● ","color":"yellow","italic":false},{"translate":"aot.odm.inst1","color":"gray","italic":false}," ",{"text":"ODM","color":"yellow","italic":false}," ",{"translate":"aot.odm.inst2","color":"gray","italic":false}," ",{"translate":"aot.offhand","color":"yellow","italic":false}," ",{"translate":"aot.odm.inst3","color":"gray","italic":false}],
+        [{"text":"   "},{"translate":"aot.odm.inst4","color":"gray","italic":false}],
+        [{"text":"   "},{"translate":"aot.odm.inst5","color":"gray","italic":false}],
+        [{"text":" ● ","color":"yellow","italic":false},{"translate":"aot.odm.mod.blades","color":"green","italic":false}," ",{"translate":"aot.odm.mod.blades2","color":"gray","italic":false}],
+        [{"text":"   "},{"translate":"aot.odm.mod.blades3","color":"gray","italic":false}],
+        [{"text":"   "},{"translate":"aot.odm.mod.blades4","color":"gray","italic":false}," ",{"translate":"aot.steel","color":"red","italic":false}," ",{"translate":"aot.odm.mod.blades5","color":"gray","italic":false}],
+        " ",
+        {"translate":"aot.odm.mod","color":"aqua","italic":false},
+        [{"text":" ● ","color":"yellow","italic":false},{"translate":"aot.steel","color":"gray","italic":false}],
+        [{"text":" ● ","color":"yellow","italic":false},{"translate":"aot.thunder","color":"gray","italic":false}],
+        [{"text":" ● ","color":"yellow","italic":false},{"translate":"aot.cartridges","color":"gray","italic":false}]
+      ],
+      "attribute_modifiers": [
+        {
+          "type": "attack_damage",
+          "id": "snc.gas_trigger.attack_damage",
+          "amount": 5,
+          "operation": "add_value","slot":"mainhand"
+        },
+        {
+          "type": "attack_speed",
+          "id": "snc.gas_trigger.attack_speed",
+          "amount": -1.6,
+          "operation": "add_value","slot":"mainhand"
+        },
+        {
+          "type": "entity_interaction_range",
+          "id": "snc.gas_trigger.entity_interaction_range",
+          "amount": 1.5,
+          "operation": "add_value","slot":"mainhand"
+        }
+      ]
+    }
+  },{
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "blade" : true
+    }
+  }
+]

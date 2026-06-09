@@ -1,0 +1,2 @@
+$summon zombie_villager ^$(pivot) ^.2 ^-1 {leash:{UUID:$(UUID)},Team:"nocol",Tags:["snc.projectile","snc.wire","snc.wire.init","snc.wire.air","snc.wire.$(side)"],NoAI:1b,Silent:1b,Invulnerable:1b,equipment:{head:{id:"minecraft:feather",count:1,components:{"minecraft:item_model":"snc:hook","minecraft:custom_data":{"name":"$(name)"}}}},attributes:[{id:"minecraft:scale",base:.4}],active_effects:[{id:"minecraft:invisibility",amplifier:1,duration:-1,show_particles:0b}]}
+

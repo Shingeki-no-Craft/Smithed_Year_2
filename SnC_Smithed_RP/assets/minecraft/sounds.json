@@ -1,0 +1,11 @@
+{
+    "aot.shoot": {
+		"sounds": ["snc:shoot"]
+	},
+	"aot.odm.pull":{
+		"sounds": ["snc:pull"]
+	},
+	"aot.impulse": {
+		"sounds": ["snc:impulse"]
+	}
+}
