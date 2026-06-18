@@ -1,1 +1,1 @@
-function snc:static/kill/colossal_head
+function snc:static/colossal_head/kill
