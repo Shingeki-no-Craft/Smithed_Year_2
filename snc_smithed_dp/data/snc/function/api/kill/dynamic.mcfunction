@@ -1,1 +1,2 @@
-kill @e[tag=snc.entity.zwei]
+#1. Zwei
+kill 3ffc9084-50a9-4616-bf2e-0c267db28467
