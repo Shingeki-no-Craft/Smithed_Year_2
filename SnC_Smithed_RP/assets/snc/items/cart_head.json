@@ -1,0 +1,4 @@
+{"model": {"type": "minecraft:composite", "models": [
+    {"type":"model", "model": "snc:cart_mask/head"},
+    {"type":"model", "model": "snc:cart_mask/mask"}
+    ]}}

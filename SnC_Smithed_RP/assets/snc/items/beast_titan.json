@@ -4,6 +4,10 @@
         "models": [
                 {
                     "type": "minecraft:model",
+                    "model": "snc:beast/head"
+                },
+                {
+                    "type": "minecraft:model",
                     "model": "snc:beast/right_thumb"
                 },
                 {
