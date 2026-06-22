@@ -1,0 +1,48 @@
+{
+	"textures": {
+		"0": "minecraft:custom/titan/shifter/cart/cart_titan",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [3.83731, 9.17764, -16],
+			"to": [11.14676, 15.44288, -0.85899],
+			"rotation": {
+				"angle": -45,
+				"axis": "x",
+				"origin": [8, 21.03449, 9.93104]
+			},
+			"faces": {
+				"north": {
+					"uv": [11.625, 10, 10.75, 10.75],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [12.5, 1.75, 10.75, 2.5],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [11.625, 10.75, 10.75, 11.5],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [7.75, 5, 6, 5.75],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [9.75, 6.5, 10.625, 4.75],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [9.75, 6.5, 10.625, 8.25],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}

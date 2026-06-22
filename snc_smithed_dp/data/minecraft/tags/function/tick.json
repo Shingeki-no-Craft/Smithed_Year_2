@@ -1,4 +1,4 @@
 {
 	"replace": false,
-	"values": ["snc:tick"]
+	"values": ["snc:tick", "animated_java:global/on_tick"]
 }
