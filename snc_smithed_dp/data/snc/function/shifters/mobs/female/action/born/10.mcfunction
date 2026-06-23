@@ -1,0 +1,2 @@
+execute on vehicle on passengers if entity @s[tag=transform] run item replace entity @s armor.head with white_dye[minecraft:item_model="shifters/female/bite/decay/1"]
+execute on vehicle on passengers if entity @s[type=player] run scoreboard players set shift.regen female_vars 100000

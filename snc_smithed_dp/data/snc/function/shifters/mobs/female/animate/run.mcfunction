@@ -1,0 +1,2 @@
+execute unless score $berserk female_vars matches 0 if entity @s[tag=!aj.female.animation.run.playing] if function snc:shifters/mobs/female/animate/default/run run return -1
+execute if score $berserk female_vars matches 0 if entity @s[tag=!aj.female.animation.berserk_run.playing] run function snc:shifters/mobs/female/animate/berserk/run

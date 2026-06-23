@@ -1,0 +1,6 @@
+{
+	"parent": "animated_java:blueprint/female/left_thumb_2",
+	"textures": {
+		"0": "animated_java:blueprint/female/b001"
+	}
+}

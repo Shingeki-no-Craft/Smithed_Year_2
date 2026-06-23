@@ -1,0 +1,13 @@
+##### HOW TO CREATE A SHIFTER #####
+## BEAST
+$execute if entity @s[tag=snc.shifter.beast] run give @s spyglass[enchantment_glint_override=true,minecraft:item_model="shifters/beast/item/atk_6",custom_data={beast_atk_6:1b,atk_shifter:1b,$(id)_titan:1b},custom_name={"translate":"aot.ability.sense","color":"dark_green","italic":false},lore=[{"translate":"aot.ability.sense.desc","color":"yellow"},{"text":" "},{"translate":"aot.active","color":"gray","italic":false},{"translate":"aot.ability.sense.desc7","color":"blue","italic":false},{"translate":"aot.ability.sense.desc8","color":"blue","italic":false},{"translate":"aot.ability.sense.desc9","color":"blue","italic":false},{"translate":"aot.ability.sense.desc10","color":"blue","italic":false}]]
+## ARMOR
+$execute if predicate snc:shifters/armor/full run function snc:shifters/mobs/armor/action/hardening/main {"shifter":$(shifter)}
+# Unless is born or berserk mode
+$execute unless score state $(shifter)_vars matches 1 unless score $berserk $(shifter)_vars matches 0 run item replace entity @s container.8 with carrot_on_a_stick[enchantment_glint_override=true,minecraft:item_model="shifters/item/remove", custom_data={remove:1b,atk_shifter:1b,$(id)_titan:1b},custom_name={"translate":"aot.ability.release",color:white,italic:false}, lore=[{"translate":"aot.ability.release.desc","color":yellow},{"translate":"aot.ability.release.desc2","color":yellow},{"text":" "},{"translate":"aot.active","color":gray,"italic":false},{"translate":"aot.ability.release.desc3","color":blue,"italic":false}]] 1
+
+## Resistance!
+item modify entity @s armor.head snc:enchantments/shifter
+item replace entity @s armor.chest with minecraft:mushroom_stew[!minecraft:consumable,minecraft:equippable={slot:chest},enchantments={"minecraft:binding_curse":1},minecraft:enchantment_glint_override=false,minecraft:item_model="minecraft:air",custom_data={snc_blank:true}]
+item replace entity @s armor.legs with minecraft:mushroom_stew[!minecraft:consumable,minecraft:equippable={slot:legs},enchantments={"minecraft:binding_curse":1},minecraft:enchantment_glint_override=false,minecraft:item_model="minecraft:air",custom_data={snc_blank:true}]
+item replace entity @s armor.feet with minecraft:mushroom_stew[!minecraft:consumable,minecraft:equippable={slot:feet},enchantments={"minecraft:binding_curse":1},minecraft:enchantment_glint_override=false,minecraft:item_model="minecraft:air",custom_data={snc_blank:true}]

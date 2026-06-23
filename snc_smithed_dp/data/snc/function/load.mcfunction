@@ -38,3 +38,4 @@ data modify storage snc:hx_chrs hex_chars set value ["00","01","02","03","04","0
 
 scoreboard objectives add snc.animation_jump.zwei dummy
 scoreboard objectives add snc.animation_idle.zwei dummy
+scoreboard objectives add snc.wait dummy

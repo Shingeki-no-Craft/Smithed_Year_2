@@ -7,5 +7,57 @@
 	},
 	"aot.impulse": {
 		"sounds": ["snc:impulse"]
+	},
+	"snc.titan.footsteps": {
+		"sounds": [
+			"snc:titan/footsteps/1",
+			"snc:titan/footsteps/2",
+			"snc:titan/footsteps/3",
+			"snc:titan/footsteps/4"
+		]
+	},
+	"aot.flash": {
+		"sounds": [
+			"aot/shifters/colossal/flash"
+		]
+	},
+	"aot.rock_smash": {
+		"sounds": [
+			"aot/rock_smash"
+		]
+	},
+	"aot.heart": {
+		"sounds": [
+			"aot/heart_beat/1",
+			"aot/heart_beat/2"
+		]
+	},
+	"aot.punch": {
+		"sounds": [
+			"aot/shifters/punch/1",
+			"aot/shifters/punch/2"
+		]
+	},
+	"aot.shifters.armor.harden.hit": {"sounds": ["aot/shifters/armor/harden/hit"]},
+	"aot.shifters.armor.harden.break": {
+		"sounds": [
+			"aot/shifters/armor/harden/break/1",
+			"aot/shifters/armor/harden/break/2"
+		]
+	},
+	"aot.shifters.hurt": {"sounds": ["aot/shifters/hurt"]},
+	"aot.shifters.trigger": {"sounds": ["aot/shifters/trigger"]},
+	"aot.shifters.bite": {
+		"sounds": [
+			"aot/shifters/bite/1",
+			"aot/shifters/bite/2",
+			"aot/shifters/bite/3"
+		]
+	},
+	"snc.shifters.female.roar": {"sounds": ["snc:shifters/female/roar"]},
+	"snc.shifters.lightning": {"sounds": [
+		"snc:lightning/1",
+		"snc:lightning/2"
+		]
 	}
 }

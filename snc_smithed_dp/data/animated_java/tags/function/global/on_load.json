@@ -1,1 +1,4 @@
-{"values":["animated_java:cart/on_load"]}
+{
+	"replace": false,
+	"values": ["animated_java:cart/on_load", "animated_java:female/on_load"]
+}

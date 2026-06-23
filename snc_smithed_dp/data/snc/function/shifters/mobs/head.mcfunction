@@ -1,0 +1,2 @@
+$execute unless score state $(shifter)_vars matches 9 run item replace entity @s armor.head with white_dye[minecraft:item_model="shifters/$(shifter)/bite/$(type)/$(frame)", custom_data=$(custom_data)]
+item modify entity @s armor.head snc:enchantments/shifter

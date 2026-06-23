@@ -1,0 +1,2 @@
+execute unless score $zwei.jumpscare snc.wait matches 1.. as 3ffc9084-50a9-4616-bf2e-0c267db28467 run function snc:dynamic/zwei/jump
+execute unless score $zwei.jumpscare snc.wait matches 1.. run scoreboard players set $zwei.jumpscare snc.wait 3000

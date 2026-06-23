@@ -1,0 +1,1 @@
+clear @s mushroom_stew[custom_data~{snc_blank:true}]

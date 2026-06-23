@@ -1,0 +1,2 @@
+execute on vehicle on passengers if entity @s[type=player] run function snc:shifters/mobs/female/head {"frame":3, "rotate":0}
+execute on vehicle on passengers if entity @s[type=player] run scoreboard players set shift.regen female_vars 100000

@@ -1,0 +1,2 @@
+execute if score $combo_ber female_vars matches 1 on vehicle on passengers if entity @s[tag=aj.female.root] if function snc:shifters/mobs/female/animate/berserk/strike/left run return 1
+execute unless score $combo_ber female_vars matches 1 on vehicle on passengers if entity @s[tag=aj.female.root] if function snc:shifters/mobs/female/animate/berserk/strike/right run return 1

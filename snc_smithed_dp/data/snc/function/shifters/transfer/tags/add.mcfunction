@@ -1,0 +1,1 @@
+$tag @s add snc.shifter.$(shifter)

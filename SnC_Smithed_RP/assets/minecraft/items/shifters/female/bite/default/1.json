@@ -1,0 +1,183 @@
+{
+    "model": {
+        "type": "composite",
+        "models": [
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{shift_rot:0}",
+                "on_true": {
+                    "type": "minecraft:composite",
+                    "models":[
+                        {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{jaw_full:1b}",
+                            "on_true": {"type": "minecraft:model", "model": "minecraft:item/shifters/female/bite/jaw/1/0"},
+                            "on_false": {"type": "model", "model": "minecraft:item/shifters/female/bite/default/1/0"}
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{berserk:1b}",
+                            "on_true": {"type": "minecraft:model", "model": "minecraft:item/shifters/female/bite/berserk/1/0"},
+                            "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+                        }
+                    ]
+                },
+                "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+            },
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{shift_rot:45}",
+                "on_true": {
+                    "type": "minecraft:composite",
+                    "models":[
+                        {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{jaw_full:1b}",
+                            "on_true": {"type": "minecraft:model", "model": "minecraft:item/shifters/female/bite/jaw/1/45"},
+                            "on_false": {"type": "model", "model": "minecraft:item/shifters/female/bite/default/1/45"}
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{berserk:1b}",
+                            "on_true": {"type": "minecraft:model", "model": "minecraft:item/shifters/female/bite/berserk/1/45"},
+                            "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+                        }
+                    ]
+                },
+                "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+            },
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{shift_rot:90}",
+                "on_true": {
+                    "type": "minecraft:composite",
+                    "models":[
+                        {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{jaw_full:1b}",
+                            "on_true": {"type": "minecraft:model", "model": "minecraft:item/shifters/female/bite/jaw/1/90"},
+                            "on_false": {"type": "model", "model": "minecraft:item/shifters/female/bite/default/1/90"}
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{berserk:1b}",
+                            "on_true": {"type": "minecraft:model", "model": "minecraft:item/shifters/female/bite/berserk/1/90"},
+                            "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+                        }
+                    ]
+                },
+                "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+            },
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{shift_rot:135}",
+                "on_true": {
+                    "type": "minecraft:composite",
+                    "models":[
+                        {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{jaw_full:1b}",
+                            "on_true": {"type": "minecraft:model", "model": "minecraft:item/shifters/female/bite/jaw/1/135"},
+                            "on_false": {"type": "model", "model": "minecraft:item/shifters/female/bite/default/1/135"}
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{berserk:1b}",
+                            "on_true": {"type": "minecraft:model", "model": "minecraft:item/shifters/female/bite/berserk/1/135"},
+                            "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+                        }
+                    ]
+                },
+                "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+            },
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{shift_rot:180}",
+                "on_true": {
+                    "type": "minecraft:composite",
+                    "models":[
+                        {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{jaw_full:1b}",
+                            "on_true": {"type": "minecraft:model", "model": "minecraft:item/shifters/female/bite/jaw/1/180"},
+                            "on_false": {"type": "model", "model": "minecraft:item/shifters/female/bite/default/1/180"}
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{berserk:1b}",
+                            "on_true": {"type": "minecraft:model", "model": "minecraft:item/shifters/female/bite/berserk/1/180"},
+                            "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+                        }
+                    ]
+                },
+                "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+            },
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{shift_rot:225}",
+                "on_true": {
+                    "type": "minecraft:composite",
+                    "models":[
+                        {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{jaw_full:1b}",
+                            "on_true": {"type": "minecraft:model", "model": "minecraft:item/shifters/female/bite/jaw/1/225"},
+                            "on_false": {"type": "model", "model": "minecraft:item/shifters/female/bite/default/1/225"}
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{berserk:1b}",
+                            "on_true": {"type": "minecraft:model", "model": "minecraft:item/shifters/female/bite/berserk/1/225"},
+                            "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+                        }
+                    ]
+                },
+                "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+            },
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{shift_rot:270}",
+                "on_true": {
+                    "type": "minecraft:composite",
+                    "models":[
+                        {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{jaw_full:1b}",
+                            "on_true": {"type": "minecraft:model", "model": "minecraft:item/shifters/female/bite/jaw/1/270"},
+                            "on_false": {"type": "model", "model": "minecraft:item/shifters/female/bite/default/1/270"}
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{berserk:1b}",
+                            "on_true": {"type": "minecraft:model", "model": "minecraft:item/shifters/female/bite/berserk/1/270"},
+                            "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+                        }
+                    ]
+                },
+                "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+            },
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{shift_rot:315}",
+                "on_true": {
+                    "type": "minecraft:composite",
+                    "models":[
+                        {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{jaw_full:1b}",
+                            "on_true": {"type": "minecraft:model", "model": "minecraft:item/shifters/female/bite/jaw/1/315"},
+                            "on_false": {"type": "model", "model": "minecraft:item/shifters/female/bite/default/1/315"}
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{berserk:1b}",
+                            "on_true": {"type": "minecraft:model", "model": "minecraft:item/shifters/female/bite/berserk/1/315"},
+                            "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+                        }
+                    ]
+                },
+                "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+            }
+        ]
+    }
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "animated_java:blueprint/female/weist",
+	"textures": {
+		"0": "animated_java:blueprint/female/b005"
+	}
+}

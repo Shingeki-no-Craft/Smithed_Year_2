@@ -1,8 +1,8 @@
 {
 	"pack": {
 		"description": "Shingeki no Craft Server 26.1",
-		"min_format": 69,
-		"max_format": 9999999,
+		"min_format": 84,
+		"max_format": 84,
 		"pack_format": 63,
 		"supported_formats": {
 			"min_inclusive": 63,

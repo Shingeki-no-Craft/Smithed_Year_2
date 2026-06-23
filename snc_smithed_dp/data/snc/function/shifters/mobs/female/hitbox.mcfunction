@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.female.locator.consume] run ride @n[tag=snc.female.swing] mount @s
