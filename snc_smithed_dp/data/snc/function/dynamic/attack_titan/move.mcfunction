@@ -1,0 +1,1 @@
+execute as 6c239941-3e1e-4e55-994c-91fccb41a01e at @s run tp @s ~ ~ ~ facing entity @n[type=player,distance=..15]

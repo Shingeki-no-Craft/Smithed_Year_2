@@ -1,4 +1,4 @@
-execute as @e[type=item_display,tag=snc.entity.zwei] run kill @s
+execute as 3ffc9084-50a9-4616-bf2e-0c267db28467 run kill @s
 
 #UUID: 3ffc9084-50a9-4616-bf2e-0c267db28467
 summon minecraft:item_display -63.5625 81.5 94.625 {UUID: [1073516676,1353270806,-1087501274,2108851303], Tags:["summit.dynamic", "summit.booth_entity.snc", "snc.entity.zwei"], Rotation: [-90.0f, 0.31829086f], item: {components: {"minecraft:item_model": "snc:dynamic/zwei/idle/1"}, count: 1, id: "minecraft:apple"}, transformation: {left_rotation: [-1.1578576E-4f, 0.6883449f, -0.0037140665f, 0.7253741f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.99999994f, 0.99999994f, 1.0f], translation: [0.0f, 0.0f, 0.0f]}}

@@ -938,10 +938,6 @@
 			"rotation": [0, 140, 0],
 			"translation": [18, 5.5, -19.5]
 		},
-		"ground": {
-			"translation": [0, 6, 0],
-			"scale": [0.7, 0.7, 0.7]
-		},
 		"gui": {
 			"rotation": [8.5, -147, 0],
 			"translation": [0, -0.25, -8],
@@ -949,7 +945,7 @@
 		},
 		"head": {
 			"translation": [0, -1, 0],
-			"scale": [0.44, 0.44, 0.44]
+			"scale": [0.7, 0.7, 0.7]
 		},
 		"fixed": {
 			"translation": [0, 0, -2.75]
@@ -959,28 +955,33 @@
 		{
 			"name": "head",
 			"origin": [0.24, 0, 0],
+			"scope": 0,
 			"color": 0,
 			"children": [
 				{
 					"name": "skull",
 					"origin": [0.24, 0, 0],
+					"scope": 0,
 					"color": 0,
 					"children": [
 						{
 							"name": "side",
 							"origin": [7.74, -20.50629, 9.67809],
+							"scope": 0,
 							"color": 0,
 							"children": [0, 1, 2, 3, 4]
 						},
 						{
 							"name": "side",
 							"origin": [7.74, -20.50629, 9.67809],
+							"scope": 0,
 							"color": 0,
 							"children": [5, 6, 7, 8, 9]
 						},
 						{
 							"name": "mid",
 							"origin": [7.69, -20.50629, 9.67809],
+							"scope": 0,
 							"color": 0,
 							"children": [
 								10,
@@ -995,6 +996,7 @@
 								{
 									"name": "hair",
 									"origin": [8, 8.96497, 3.94633],
+									"scope": 0,
 									"color": 0,
 									"children": [
 										19,
@@ -1008,17 +1010,20 @@
 										{
 											"name": "side",
 											"origin": [7.69, -20.50629, 9.67809],
+											"scope": 0,
 											"color": 0,
 											"children": [
 												{
 													"name": "group",
 													"origin": [8.43134, 29.96194, 7],
+													"scope": 0,
 													"color": 0,
 													"children": [27, 28, 29, 30, 31, 32, 33, 34]
 												},
 												{
 													"name": "group",
 													"origin": [8.43134, 29.96194, 7],
+													"scope": 0,
 													"color": 0,
 													"children": [35, 36, 37]
 												}
@@ -1027,17 +1032,20 @@
 										{
 											"name": "side",
 											"origin": [7.69, -20.50629, 9.67809],
+											"scope": 0,
 											"color": 0,
 											"children": [
 												{
 													"name": "group",
 													"origin": [8.43134, 29.96194, 7],
+													"scope": 0,
 													"color": 0,
 													"children": [38, 39, 40, 41, 42, 43, 44, 45]
 												},
 												{
 													"name": "group",
 													"origin": [8.43134, 29.96194, 7],
+													"scope": 0,
 													"color": 0,
 													"children": [46, 47, 48]
 												}
@@ -1050,6 +1058,7 @@
 						{
 							"name": "teeth",
 							"origin": [10.29547, 17.52166, 5.71637],
+							"scope": 0,
 							"color": 0,
 							"children": [49, 50, 51, 52, 53]
 						}
@@ -1058,29 +1067,34 @@
 				{
 					"name": "jaw",
 					"origin": [0.13138, 0, 0],
+					"scope": 0,
 					"color": 0,
 					"children": [
 						{
 							"name": "mid",
 							"origin": [8.65175, 6.6036, 6.92204],
+							"scope": 0,
 							"color": 0,
 							"children": [54, 55, 56, 57, 58, 59, 60]
 						},
 						{
 							"name": "side",
 							"origin": [8.59313, 6.6036, 6.92204],
+							"scope": 0,
 							"color": 0,
 							"children": [61, 62]
 						},
 						{
 							"name": "side",
 							"origin": [8.59313, 6.6036, 6.92204],
+							"scope": 0,
 							"color": 0,
 							"children": [63, 64]
 						},
 						{
 							"name": "teeth",
 							"origin": [10.29547, 17.52166, 5.71637],
+							"scope": 0,
 							"color": 0,
 							"children": [65, 66, 67, 68, 69]
 						}
