@@ -25,4 +25,5 @@ execute if score @s snc.animation_jump.zwei matches 4 at @s run tp @s ^-0.5 ^-0.
 
 #Reset
 execute as @s[scores={snc.animation_jump.zwei=1..}] run scoreboard players remove @s snc.animation_jump.zwei 1
+execute as @s[scores={snc.animation_jump.zwei=0}] run function snc:dynamic/zwei/summon
 execute as @s[scores={snc.animation_jump.zwei=0}] run scoreboard players reset @s snc.animation_jump.zwei

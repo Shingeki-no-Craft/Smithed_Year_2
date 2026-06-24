@@ -2,7 +2,7 @@ execute as @e at @s run function snc:ent/main
 
 ## SNC : Tick
 scoreboard players add ticks clock 1
-execute store result score time clock run time query daytime
+execute store result score time clock run time query minecraft:day
 execute if score ticks clock matches 20 run function snc:seconds
 
 # --------------------------- [Dynamic - Zwei Jumpscare] --------------------------- #
@@ -11,10 +11,19 @@ execute as 3ffc9084-50a9-4616-bf2e-0c267db28467 if score @s snc.animation_jump.z
 execute as 3ffc9084-50a9-4616-bf2e-0c267db28467 unless score @s snc.animation_jump.zwei matches 1.. run function snc:dynamic/zwei/idle
 execute if score $zwei.jumpscare snc.wait matches 1.. run scoreboard players remove $zwei.jumpscare snc.wait 1
 
-# --------------------------- [Dynamic - Attack Titan] --------------------------- #
+#Trigger
+execute unless score $zwei.jumpscare snc.wait matches 1.. at 3ffc9084-50a9-4616-bf2e-0c267db28467 if entity @p[x=-67.5, y=80, z=105.5,distance=..1.1] run function snc:dynamic/zwei/trigger
 
-execute as 2b14f32e-2405-4062-a4a6-2cbd806149d0 at @s if entity @p[distance=..11] as @p at 6c239941-3e1e-4e55-994c-91fccb41a01e run teleport 6c239941-3e1e-4e55-994c-91fccb41a01e ~ ~ ~ facing entity @s eyes
-#6c239941-3e1e-4e55-994c-91fccb41a01e at @s run teleport @s ~ ~ ~ facing 
+# --------------------------- [Dynamic - Attack Head] --------------------------- #
 
+execute at 6c239941-3e1e-4e55-994c-91fccb41a01e if entity @p[x=-72.9375, y=80.625, z=108.4375,distance=..11] as @p[x=-72.9375, y=80.625, z=108.4375,distance=..11] run teleport 6c239941-3e1e-4e55-994c-91fccb41a01e ~ ~ ~ facing entity @s eyes
+
+# --------------------------- [Dynamic - ODM Suggester] --------------------------- #
+
+execute as ebd5bffc-1df8-4465-a11b-b6955d24ad41 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
+
+# --------------------------- [Dynamic - ODM Giver] --------------------------- #
+
+execute as 1bb7c29a-5bb1-4ac7-8d9b-250b43ffeab7 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
 
 # --------------------------- [Dynamic - Entity] --------------------------- #

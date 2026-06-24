@@ -1,0 +1,5 @@
+advancement revoke @s only snc:mannequin/odm_suggester
+playsound entity.villager.ambient master @s ~ ~ ~ 1 1
+
+execute unless score @s snc.quest.get_odm matches 1 run tellraw @s {"text":"<Captain Levi>","color":"dark_green","bold":false,"extra":[{"text":" You haven't received your ODM Gear yet! Before you can head out into the field, you must visit the ODM Merchant to claim your equipment. Look for their shop in the district to get geared up.","color":"white"}]}
+execute if score @s snc.quest.get_odm matches 1 run tellraw @s {"text":"<Captain Levi>","color":"dark_green","bold":false,"extra":[{"text":" You have already claimed your ODM Gear! Remember to utilize its high-wire anchors and gas boosters to achieve improved mobility across the terrain. This gear is a deadly weapon specifically engineered to target and eliminate Titans with lethal precision. Be fast, strike hard, and stay alive!","color":"white"}]}

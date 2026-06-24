@@ -1,3 +1,0 @@
-## Target
-## UUID: 2b14f32e-2405-4062-a4a6-2cbd806149d0
-summon minecraft:block_display -72.9375 80.625 108.4375 {UUID: [722793262,604323938,-1532613443,-2141107760], Tags:["summit.static", "summit.booth_entity.snc", "snc.entity.attack_target"], block_state: {Name: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
