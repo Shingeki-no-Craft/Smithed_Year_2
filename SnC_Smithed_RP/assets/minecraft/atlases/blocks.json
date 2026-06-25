@@ -5,10 +5,10 @@
 			"source": "blueprint",
 			"prefix": "blueprint/"
 		},
-		{
-			"type": "directory",
-			"source": "custom",
-			"prefix": "custom/"
-		}
+        {
+            "type": "directory",
+            "source": "custom",
+            "prefix": "custom/"
+        }
 	]
 }
