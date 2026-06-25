@@ -1,6 +1,23 @@
 {
-	"parent": "minecraft:item/generated",
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
 	"textures": {
-	  "layer0": "snc:custom/title"
-	}
+		"0": "snc:custom/title",
+		"particle": "snc:custom/title"
+	},
+	"elements": [
+		{
+			"from": [-4.5, 2, 7.5],
+			"to": [20.5, 12, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-11.5, 2, 7.5]},
+			"faces": {
+				"north": {"uv": [1.5625, 5.625, 14.4375, 10.375], "texture": "#0"},
+				"east": {"uv": [0, 11.25, 0.28125, 16], "texture": "#0"},
+				"south": {"uv": [0, 11.25, 12.875, 16], "texture": "#0"},
+				"west": {"uv": [12.59375, 11.25, 12.875, 16], "texture": "#0"},
+				"up": {"uv": [0, 11.25, 12.875, 11.53125], "texture": "#0"},
+				"down": {"uv": [0, 15.6875, 12.875, 16], "texture": "#0"}
+			}
+		}
+	]
 }

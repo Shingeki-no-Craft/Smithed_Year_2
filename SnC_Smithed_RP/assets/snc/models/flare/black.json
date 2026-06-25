@@ -189,6 +189,7 @@
 			"scale": [2, 2, 2]
 		},
 		"head": {
+			"rotation": [0, 0, -90],
 			"translation": [-24, 0, 0]
 		},
 		"fixed": {
