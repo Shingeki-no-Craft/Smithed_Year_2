@@ -1,0 +1,6 @@
+
+
+{"model": {"type": "minecraft:composite", "models": [
+    {"type": "minecraft:model", "model": "snc:gear/spear_1"},
+    {"type": "minecraft:model", "model": "snc:gear/spear_2"}
+]}}
