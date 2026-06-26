@@ -1,6 +1,6 @@
 {
 	"textures": {
-		"0": "minecraft:custom/titan/shifter/cart/cart_titan",
+		"0": "animated_java:blueprint/cart/cart_titan",
 		"particle": "minecraft:item/pufferfish"
 	},
 	"display": {
@@ -13,8 +13,9 @@
 			"from": [4.85324, 9.17765, -16],
 			"to": [12.16269, 15.4429, -0.85899],
 			"rotation": {
-				"angle": -45,
-				"axis": "x",
+				"x": -45,
+				"y": 0,
+				"z": 0,
 				"origin": [8, 21.0345, 9.93103]
 			},
 			"faces": {

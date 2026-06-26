@@ -2,15 +2,7 @@
     "namespace": "snc",
     "booth_name": "Shingeki no Craft",
     "bounding_boxes": {
-        "zwei_jumpscare": {
-            "position": {
-                "x": {"min": -135, "max": -102},
-                "y": {"min": 70, "max": 95},
-                "z": {"min": -39, "max": -20}
-            },
-            "on_player_enter": "snc:dynamic/zwei/trigger"
-        },
-        "attack_titan_view_radius": {
+        "main": {
             "position": {
                 "x": {"min": -135, "max": -102},
                 "y": {"min": 70, "max": 95},

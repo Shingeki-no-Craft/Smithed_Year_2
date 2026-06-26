@@ -26,4 +26,15 @@ execute as ebd5bffc-1df8-4465-a11b-b6955d24ad41 at @s if entity @p[distance=..5]
 
 execute as 1bb7c29a-5bb1-4ac7-8d9b-250b43ffeab7 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
 
+# --------------------------- [Dynamic - Cart AJ] --------------------------- #
+
+execute if score $stage snc.cart matches 1.. if score $cart snc.wait matches 1.. run scoreboard players remove $cart snc.wait 1
+execute if score $stage snc.cart matches 1.. if score $cart snc.wait matches 0 run function snc:dynamic/cart_titan/jump
+execute if score $stage snc.cart matches 3 if score $jump_tick snc.cart matches ..19 as 1751e58c-0f26-4ef5-bf2f-0556b7f66581 at @s run function snc:dynamic/cart_titan/teleport_travel
+execute if score $stage snc.cart matches 6 if score $jump_tick snc.cart matches ..19 as 1751e58c-0f26-4ef5-bf2f-0556b7f66581 at @s run function snc:dynamic/cart_titan/teleport_return
+
+#Init
+execute if score $cart_travel snc.wait matches 1.. run scoreboard players remove $cart_travel snc.wait 1
+execute if score $cart_travel snc.wait matches 0 run function snc:dynamic/cart_titan/trigger
+
 # --------------------------- [Dynamic - Entity] --------------------------- #
