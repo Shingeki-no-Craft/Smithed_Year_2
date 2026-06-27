@@ -4,8 +4,8 @@
         "trigger": "minecraft:player_interacted_with_entity",
         "conditions": {
           "entity": {
-            "type": "minecraft:interaction",
-            "nbt": "{Tags:[\"snc.interaction.odm_suggester\"]}"
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:nbt": "{Tags:[\"snc.interaction.odm_suggester\"]}"
           }
         }
       }

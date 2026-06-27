@@ -1,4 +1,5 @@
 #kill 1bb7c29a-5bb1-4ac7-8d9b-250b43ffeab7
+kill 358a077e-77fe-4d88-9a8b-b843c240b257
 kill 4234e740-8048-4fdf-adde-90546c74336c
 
 #Mannequin
@@ -11,6 +12,10 @@ item replace entity 1bb7c29a-5bb1-4ac7-8d9b-250b43ffeab7 armor.feet with iron_bo
 
 execute as 1bb7c29a-5bb1-4ac7-8d9b-250b43ffeab7 run function snc:api/item_replace/military/scouts/odm/gas_trigger {"slot": "weapon.mainhand", "count": 1}
 execute as 1bb7c29a-5bb1-4ac7-8d9b-250b43ffeab7 run function snc:api/item_replace/military/scouts/odm/gear {"slot": "weapon.offhand", "count": 1}
+
+#Text Display
+#UUID: 358a077e-77fe-4d88-9a8b-b843c240b257
+summon minecraft:text_display -60.5 82.0625 102.5 {UUID: [898238334,2013154696,-1702119357,-1035947433], Tags:["summit.static", "summit.booth_entity.snc", "snc.entity.odm_giver.text"], alignment: "center", background: 1073741824, billboard: "center", default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: {color: "dark_green", text: "Gen. Energy"}, text_opacity: -1b}
 
 #Interaction
 #UUID: 4234e740-8048-4fdf-adde-90546c74336c

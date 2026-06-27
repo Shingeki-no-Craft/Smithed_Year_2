@@ -1,7 +1,7 @@
 {
 	"textures": {
-		"1": "minecraft:custom/titan/shifter/cart/cart",
-		"2": "minecraft:custom/titan/shifter/cart/cart_teeth",
+		"1": "animated_java:blueprint/cart/cart",
+		"2": "animated_java:blueprint/cart/cart_teeth",
 		"particle": "minecraft:item/pufferfish"
 	},
 	"display": {
@@ -14,8 +14,9 @@
 			"from": [1.35764, 0.70643, -14.20064],
 			"to": [14.83773, 4.87418, 9.76395],
 			"rotation": {
-				"angle": 0,
-				"axis": "y",
+				"x": 0,
+				"y": 0,
+				"z": 0,
 				"origin": [8.02442, 0.84085, -5.37071]
 			},
 			"faces": {
@@ -51,8 +52,9 @@
 			"from": [2.26934, 4.86891, -13.19411],
 			"to": [3.31127, 6.62718, 7.64467],
 			"rotation": {
-				"angle": 0,
-				"axis": "y",
+				"x": 0,
+				"y": 0,
+				"z": 0,
 				"origin": [8.02442, 0.84085, -5.37071]
 			},
 			"faces": {
@@ -88,8 +90,9 @@
 			"from": [12.68873, 4.86891, -13.19411],
 			"to": [13.73066, 6.62718, 7.64467],
 			"rotation": {
-				"angle": 0,
-				"axis": "y",
+				"x": 0,
+				"y": 0,
+				"z": 0,
 				"origin": [8.02442, 0.84085, -5.37071]
 			},
 			"faces": {
@@ -125,8 +128,9 @@
 			"from": [2.26934, 4.86891, -14.23605],
 			"to": [13.73066, 6.62718, -13.19411],
 			"rotation": {
-				"angle": 0,
-				"axis": "y",
+				"x": 0,
+				"y": 0,
+				"z": 0,
 				"origin": [8.02442, 0.84085, -5.37071]
 			},
 			"faces": {
