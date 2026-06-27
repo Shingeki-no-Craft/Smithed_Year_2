@@ -39,7 +39,7 @@ execute if score $stage snc.cart matches 7 as 1751e58c-0f26-4ef5-bf2f-0556b7f665
 execute if score $stage snc.cart matches 7 as 6a75984c-ec7a-48ae-a6a1-f28d27033215 on passengers run ride @s dismount
 execute if score $stage snc.cart matches 7 run scoreboard players set $cart snc.wait 12
 
-execute if score $stage snc.cart matches 8 as 1751e58c-0f26-4ef5-bf2f-0556b7f66581 at @s run teleport @s ~ ~ ~ facing -33 64 108
+execute if score $stage snc.cart matches 8 as 1751e58c-0f26-4ef5-bf2f-0556b7f66581 at @s run teleport @s ~ ~ ~ facing -33 64.5 108
 
 # Last run
 execute if score $stage snc.cart matches 8 run scoreboard players reset $cart snc.wait

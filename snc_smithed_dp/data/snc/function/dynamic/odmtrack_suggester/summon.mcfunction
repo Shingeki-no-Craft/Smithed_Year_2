@@ -14,7 +14,7 @@ execute as dcf0ec5a-9ded-4a81-a6f5-039cb5740129 run function snc:api/item_replac
 
 #Text Display
 #UUID: ea7a91a5-9282-4816-8521-114710096640
-summon minecraft:text_display -18.5 67.0625 107.5 {UUID: [-361066075,-1836955626,-2061430457,269051456], Tags:["summit.static", "summit.booth_entity.snc", "snc.entity.odmtrack_suggestor.text"], alignment: "center", background: 1073741824, billboard: "center", default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: {"text":"[NPC] ","extra":[{"text":"Sld. Rifleman","color":"dark_green"}],"color":"yellow"}, text_opacity: -1b}
+summon minecraft:text_display -18.5 67.0625 107.5 {UUID: [-361066075,-1836955626,-2061430457,269051456], Tags:["summit.static", "summit.booth_entity.snc", "snc.entity.odmtrack_suggester.text"], alignment: "center", background: 1073741824, billboard: "center", default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: {"text":"[NPC] ","extra":[{"text":"Sld. Rifleman","color":"dark_green"}],"color":"yellow"}, text_opacity: -1b}
 
 #Interaction
 #UUID: 0cf50cfd-6baf-4c47-81f9-0e3f1718d23e

@@ -18,7 +18,7 @@ execute if score $jump_tick snc.cart matches 12 run teleport @s ~-1.25 68.4 ~0.5
 execute if score $jump_tick snc.cart matches 13 run teleport @s ~-1.25 68.0 ~0.5
 execute if score $jump_tick snc.cart matches 14 run teleport @s ~-1.25 67.4 ~0.5
 execute if score $jump_tick snc.cart matches 15 run teleport @s ~-1.25 66.7 ~0.5
-execute if score $jump_tick snc.cart matches 16 run teleport @s -52.5 65.0 108.5
+execute if score $jump_tick snc.cart matches 16 run teleport @s -52.5 64.9 108.5
 
 # End Loop
 execute if score $jump_tick snc.cart matches 16.. run function animated_java:cart/animations/jump_mid/stop
