@@ -4,111 +4,111 @@
     "models": [
         {
           "type": "minecraft:model",
-          "model": "snc:attack/neck"
+          "model": "snc:attack/sit/neck"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/right_thumb_2"
+          "model": "snc:attack/sit/right_thumb_2"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/right_thumb"
+          "model": "snc:attack/sit/right_thumb"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/right_fingers2"
+          "model": "snc:attack/sit/right_fingers2"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/right_fingers"
+          "model": "snc:attack/sit/right_fingers"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/right_hand"
+          "model": "snc:attack/sit/right_hand"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/right_forearm"
+          "model": "snc:attack/sit/right_forearm"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/right_bicep"
+          "model": "snc:attack/sit/right_bicep"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/right_shoulder"
+          "model": "snc:attack/sit/right_shoulder"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/left_thumb_2"
+          "model": "snc:attack/sit/left_thumb_2"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/left_thumb"
+          "model": "snc:attack/sit/left_thumb"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/left_fingers2"
+          "model": "snc:attack/sit/left_fingers2"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/left_fingers"
+          "model": "snc:attack/sit/left_fingers"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/left_hand"
+          "model": "snc:attack/sit/left_hand"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/left_forearm"
+          "model": "snc:attack/sit/left_forearm"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/left_bicep"
+          "model": "snc:attack/sit/left_bicep"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/left_shoulder"
+          "model": "snc:attack/sit/left_shoulder"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/chest"
+          "model": "snc:attack/sit/chest"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/left_cheek"
+          "model": "snc:attack/sit/left_cheek"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/left_foot"
+          "model": "snc:attack/sit/left_foot"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/left_knee"
+          "model": "snc:attack/sit/left_knee"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/left_leg"
+          "model": "snc:attack/sit/left_leg"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/right_cheek"
+          "model": "snc:attack/sit/right_cheek"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/right_foot"
+          "model": "snc:attack/sit/right_foot"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/right_knee"
+          "model": "snc:attack/sit/right_knee"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/right_leg"
+          "model": "snc:attack/sit/right_leg"
         },
         {
           "type": "minecraft:model",
-          "model": "snc:attack/weist"
+          "model": "snc:attack/sit/weist"
         }
       ]
   }

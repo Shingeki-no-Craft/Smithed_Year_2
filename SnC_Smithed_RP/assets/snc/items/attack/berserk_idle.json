@@ -1,0 +1,239 @@
+{
+  "model": {
+    "type": "composite",
+    "models": [
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/head_up"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/head_up_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/head_dw"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/head_dw_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/neck"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/neck_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_thumb_2"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_thumb_2_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_thumb"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_thumb_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_fingers2"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_fingers2_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_fingers"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_fingers_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_hand"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_hand_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_forearm"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_forearm_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_bicep"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_bicep_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_shoulder"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_shoulder_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_thumb_2"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_thumb_2_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_thumb"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_thumb_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_fingers2"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_fingers2_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_fingers"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_fingers_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_hand"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_hand_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_forearm"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_forearm_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_bicep"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_bicep_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_shoulder"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_shoulder_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/chest"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/chest_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_cheek"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_cheek_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_foot"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_foot_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_knee"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_knee_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_leg"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/left_leg_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_cheek"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_cheek_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_foot"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_foot_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_knee"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_knee_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_leg"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/right_leg_ber"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/weist"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "snc:attack/berserk_idle/weist_ber"
+        }
+      ]
+  }
+}
