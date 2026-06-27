@@ -72,7 +72,11 @@ scoreboard objectives add gamemode dummy
 scoreboard objectives add snc.animation_jump.zwei dummy
 scoreboard objectives add snc.animation_idle.zwei dummy
 scoreboard objectives add snc.wait dummy
+scoreboard objectives add snc.wait.odmtrack dummy
 scoreboard objectives add snc.quest.get_odm dummy
+scoreboard objectives add snc.quest.odmtrack dummy
+scoreboard objectives add snc.quest.odmtrack.stage dummy
+scoreboard objectives add snc.quest.odmtrack.progress dummy
 scoreboard objectives add snc.cart dummy
 
 ##### HOW TO CREATE A SHIFTER #####

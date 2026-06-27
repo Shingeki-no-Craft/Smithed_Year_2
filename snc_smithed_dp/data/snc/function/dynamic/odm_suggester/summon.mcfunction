@@ -14,7 +14,7 @@ execute as ebd5bffc-1df8-4465-a11b-b6955d24ad41 run function snc:api/item_replac
 
 #Text Display
 #UUID: d310065c-2a81-4351-828f-c7fb5c48bcb6
-summon minecraft:text_display -60.5 82.0625 111.5 {UUID: [-753924516,713114449,-2104506373,1548270774], Tags:["summit.static", "summit.booth_entity.snc", "snc.entity.odm_suggestor.text"], alignment: "center", background: 1073741824, billboard: "center", default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: {color: "dark_green", text: "Capt. Levi"}, text_opacity: -1b}
+summon minecraft:text_display -60.5 82.0625 111.5 {UUID: [-753924516,713114449,-2104506373,1548270774], Tags:["summit.static", "summit.booth_entity.snc", "snc.entity.odm_suggestor.text"], alignment: "center", background: 1073741824, billboard: "center", default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: {"text":"[NPC] ","extra":[{"text":"Capt. Levi","color":"dark_green"}],"color":"yellow"}, text_opacity: -1b}
 
 #Interaction
 #UUID: 599fc608-8788-4078-9566-f6e8a352a640
