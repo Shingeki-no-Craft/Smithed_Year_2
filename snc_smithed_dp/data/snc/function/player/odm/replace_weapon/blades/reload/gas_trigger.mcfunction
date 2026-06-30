@@ -1,5 +1,3 @@
-say replace
-
 execute store result score @s snc.bullets run \
     data get entity @s equipment.offhand.components."minecraft:custom_data".snc_odm_blades
 
