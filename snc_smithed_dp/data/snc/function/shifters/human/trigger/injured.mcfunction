@@ -8,4 +8,4 @@ $execute if score $trigger_transform config matches 1 if entity @s[tag=!transfor
 # Prevent explode when trigger_transform
 $execute if score $trigger_transform config matches 1 if entity @s[tag=!transform,tag=!snc.handcuffs] if score $energy $(shifter)_vars matches 720.. run scoreboard players set $explosion $(shifter)_vars 0
 $execute if score $trigger_transform config matches 1 if entity @s[tag=!transform,tag=!snc.handcuffs] if score $energy $(shifter)_vars matches 720.. run tag @s remove snc.injured
-$execute if score $trigger_transform config matches 1 if entity @s[tag=!transform,tag=!snc.handcuffs] if score $energy $(shifter)_vars matches 720.. run scoreboard players set @s atk 266
+$execute if score $trigger_transform config matches 1 if entity @s[tag=!transform,tag=!snc.handcuffs] if score $energy $(shifter)_vars matches 720.. run scoreboard players set @s snc.transform 266

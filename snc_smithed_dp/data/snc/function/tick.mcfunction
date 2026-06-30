@@ -1,9 +1,9 @@
 execute as @e at @s run function snc:ent/main
 
 ## SNC : Tick
-scoreboard players add ticks clock 1
+scoreboard players add snc.ticks clock 1
 execute store result score time clock run time query minecraft:day
-execute if score ticks clock matches 20 run function snc:seconds
+execute if score snc.ticks clock matches 20 run function snc:seconds
 
 ## SNC : ODM Track
 execute as @a[scores={snc.quest.odmtrack.stage=1..}] run function snc:dynamic/odmtrack_starter/get_value

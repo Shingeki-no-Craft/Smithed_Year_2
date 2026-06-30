@@ -9,4 +9,4 @@ give @s quartz[minecraft:custom_data={atk_shifter:1b,7_titan:1b},item_model="ite
 execute if score state female_vars matches 14..15 run return -1
 
 function snc:shifters/mobs/female/action/ghost/step
-#execute on vehicle on passengers if entity @s[tag=aj.female.root,tag=!aj.female.animation.strike_1.playing] if function snc:shifters/mobs/female/animate/strike/1 run return -1
+#execute on vehicle on passengers if entity @s[tag=animated_java.female.root,tag=!animated_java.female.animation.strike_1.playing] if function snc:shifters/mobs/female/animate/strike/1 run return -1

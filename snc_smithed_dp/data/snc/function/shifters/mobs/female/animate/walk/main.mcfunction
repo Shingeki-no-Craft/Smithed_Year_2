@@ -1,2 +1,2 @@
-execute unless score $fight female_vars matches 1..2 if entity @s[tag=!aj.female.animation.walk.playing] run function snc:shifters/mobs/female/animate/walk/relax
-execute if score $fight female_vars matches 1..2 if entity @s[tag=!aj.female.animation.walk_fight.playing] run function snc:shifters/mobs/female/animate/walk/fight
+execute unless score $fight female_vars matches 1..2 if entity @s[tag=!animated_java.female.animation.walk.playing] run function snc:shifters/mobs/female/animate/walk/relax
+execute if score $fight female_vars matches 1..2 if entity @s[tag=!animated_java.female.animation.walk_fight.playing] run function snc:shifters/mobs/female/animate/walk/fight

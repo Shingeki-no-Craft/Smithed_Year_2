@@ -1,4 +1,4 @@
-scoreboard players set ticks clock 0
+scoreboard players set snc.ticks clock 0
 
 ## 5s : Check shifters each 5 seconds
 scoreboard players add 5s clock 1

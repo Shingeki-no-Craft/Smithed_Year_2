@@ -10,6 +10,7 @@
 ## Always reset absorption
 effect clear @s absorption
 # If regeneration is off, don't regenerate
+
 $execute if score $regeneration $(shifter)_vars matches 0 run scoreboard players remove titan.health.bar $(shifter)_vars 4
 $execute if score titan.health.bar $(shifter)_vars matches 16..20 run effect give @s absorption 20 4 true
 $execute if score titan.health.bar $(shifter)_vars matches 12..15 run effect give @s absorption 20 3 true

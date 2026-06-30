@@ -2,4 +2,4 @@
 data merge entity @s {Small:1b,Marker:1b,Invisible:1b}
 tag @s add snc.shifter.female
 tag @s add shifter
-tag @s add collision
+tag @s add snc.collision

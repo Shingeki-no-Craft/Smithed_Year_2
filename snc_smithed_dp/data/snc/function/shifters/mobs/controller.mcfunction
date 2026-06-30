@@ -1,4 +1,4 @@
-$execute if score ticks clock matches 17 run effect give @s resistance 3 $(resistance) true
+$execute if score snc.ticks clock matches 17 run effect give @s resistance 3 $(resistance) true
 
 $execute if score $gamemode $(shifter)_vars matches 1 run function snc:shifters/combat/main {"shifter":$(shifter),"id":"$(id)"}
 $execute if score $gamemode $(shifter)_vars matches -1 run function snc:shifters/utility/main {"shifter":$(shifter), "block_range":$(block_range)}
@@ -32,7 +32,7 @@ $execute if score $energy $(shifter)_vars matches ..0 run return -1
     $execute if score $health $(shifter)_vars < $prev_health $(shifter)_vars unless score state $(shifter)_vars matches 9 run function snc:shifters/mobs/parry {"shifter":$(shifter)}
     $execute if predicate snc:is_hurt unless score state $(shifter)_vars matches 9 run function snc:shifters/mobs/parry {"shifter":$(shifter)}
     # Update skin
-    $execute on vehicle on passengers if entity @s[tag=aj.$(shifter).root,tag=!aj.$(shifter).animation.born.playing] run function snc:shifters/mobs/$(shifter)/skin
+    $execute on vehicle on passengers if entity @s[tag=animated_java.$(shifter).root,tag=!animated_java.$(shifter).animation.born.playing] run function snc:shifters/mobs/$(shifter)/skin
     # Kill when hp is 0
     $execute if score $health $(shifter)_vars matches ..0 if score state $(shifter)_vars matches 2.. run function snc:shifters/human/timer/cd_hurt {"shifter":$(shifter), "id":"$(id)"}
     # Store last hp value

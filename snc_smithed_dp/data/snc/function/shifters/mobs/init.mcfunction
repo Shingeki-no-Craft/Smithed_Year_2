@@ -1,5 +1,8 @@
-# Save the current position to #posy0
-$execute store result score #posy0 $(shifter)_vars run data get entity @s Pos[1] 1
+execute store result score $variant female_vars run random value 1..3
+execute if score $variant female_vars matches 2 run scoreboard players set $hardening female_vars 0
+execute if score $variant female_vars matches 2 run scoreboard players set $op.hardening female_vars 12
+execute if score $variant female_vars matches 3 run scoreboard players set $berserk female_vars 1
+
 # Set horse id to track more efficiently
 $kill 0000007f-0000-007f-0000-007f0000000$(id)
 $summon $(type) ~ ~ ~ {UUID:[I;127,127,127,$(id)]}
@@ -14,7 +17,7 @@ $bossbar set minecraft:$(shifter)_health color $(bossbar_color)
 $bossbar set minecraft:$(shifter)_health max $(hp)
 $bossbar set minecraft:$(shifter)_health style $(bossbar_style)
 
-# Reset regen ticks
+# Reset regen snc.ticks
 $data modify storage minecraft:$(shifter) regen_ticks set from storage minecraft:$(shifter) og_regen_ticks
 
 $scoreboard players set state $(shifter)_vars 1
@@ -27,10 +30,6 @@ $scoreboard players set $vanish $(shifter)_vars 0
 $scoreboard players set $hold $(shifter)_vars 0
 $scoreboard players set $lock_anim $(shifter)_vars 0
 $scoreboard players set $air_frame $(shifter)_vars 0
-
-$execute if predicate snc:shifters/armor/full run scoreboard players set $hardening $(shifter)_vars 0
-$execute if predicate snc:shifters/armor/full run scoreboard players set $op.hardening $(shifter)_vars 12
-$execute if entity @s[tag=snc.shifter.attack] run scoreboard players set $berserk $(shifter)_vars 1
 
 scoreboard players reset @s snc.ender
 scoreboard players reset @s snc.chest
@@ -45,10 +44,4 @@ $attribute @s scale base set $(scale_player)
 $attribute @s entity_interaction_range base set $(entity_range)
 
 execute store result score @s gamemode run data get entity @s playerGameType
-gamemode survival
-
-## CART: PASSIVE
-# If is not cart and doesn't have passive
-$execute unless score @s shifter_vars matches 1 if entity @s[tag=!snc.shifter.cart] run scoreboard players remove $energy $(shifter)_vars 360
-# If is not cart, has passive but is not female
-$execute unless score @s shifter_vars matches 1 if entity @s[tag=snc.shifter.cart, tag=!snc.shifter.female] run scoreboard players remove $energy $(shifter)_vars 180
+gamemode adventure

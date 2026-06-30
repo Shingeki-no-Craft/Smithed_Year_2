@@ -1,7 +1,5 @@
-execute as @s[tag=!dead] run function snc:shifters/mobs/type
-execute as @s[tag=snc.nuke, type=fireball] run kill
-execute as @s[tag=snc.nuke] run function snc:shifters/mobs/colossal/action/explosion/main with entity @s item.components."minecraft:custom_data"
-#Kill helmet
-execute as @s[tag=dead] run function snc:shifters/mobs/dead
+execute as @s[tag=!snc.dead] run function snc:shifters/mobs/main with storage minecraft:female
+
+execute as @s[tag=snc.dead] run function snc:shifters/mobs/female/action/death/corpse
 
 return 1

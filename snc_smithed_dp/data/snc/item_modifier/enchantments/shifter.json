@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:enchantments": {
+                "minecraft:projectile_protection": 127,
+                "minecraft:protection": 17,
+                "minecraft:blast_protection": 127,
+                "minecraft:binding_curse": 1
+            },
+            "minecraft:enchantment_glint_override": false
+        }
+    }
+]
