@@ -1,0 +1,26 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"2": "snc:custom/jaw/hardening"
+	},
+	"elements": [
+		{
+			"from": [2.51, 5.15, -1.38518],
+			"to": [13.59, 11.35, 9.13519],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 4]},
+			"faces": {
+				"north": {"uv": [10.25, 1.375, 9, 2], "texture": "#2"},
+				"east": {"uv": [10.5, 0, 11.625, 0.625], "texture": "#2"},
+				"south": {"uv": [9, 2.25, 10.25, 2.875], "texture": "#2"},
+				"west": {"uv": [11.625, 0, 10.5, 0.625], "texture": "#2"},
+				"up": {"uv": [9, 1.125, 10.25, 0], "texture": "#2"},
+				"down": {"uv": [10.5, 1.75, 11.75, 2.875], "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	}
+}
