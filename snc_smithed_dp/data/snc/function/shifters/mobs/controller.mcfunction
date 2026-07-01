@@ -28,7 +28,7 @@ $execute if score $health $(shifter)_vars = $prev_health $(shifter)_vars run ret
 # Cancel update if energy ended
 $execute if score $energy $(shifter)_vars matches ..0 run return -1
     # Update bossbar
-    $execute store result bossbar $(shifter)_health value run scoreboard players get $health $(shifter)_vars
+    $execute store result bossbar snc:$(shifter)_health value run scoreboard players get $health $(shifter)_vars
     ## Check health
     $execute if score $health $(shifter)_vars < $prev_health $(shifter)_vars unless score state $(shifter)_vars matches 9 run function snc:shifters/mobs/parry {"shifter":$(shifter)}
     $execute if predicate snc:is_hurt unless score state $(shifter)_vars matches 9 run function snc:shifters/mobs/parry {"shifter":$(shifter)}

@@ -1,6 +1,6 @@
 $execute as @s[tag=snc.titan] run function snc:shifters/human/timer/cd {"shifter":$(shifter), "id":"$(id)"}
 
-$bossbar remove $(shifter)_health
+$bossbar remove snc:$(shifter)_health
 tag @s remove consume
 
 team leave @s

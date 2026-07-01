@@ -12,10 +12,10 @@ $execute as 0000007f-0000-007f-0000-007f0000000$(id) run function snc:shifters/m
     "step_height":$(step_height), \
     "scale_vehicle":$(scale_vehicle) \    
     }
-$bossbar add $(shifter)_health {"text":"\$(bossbar_display)"}
-$bossbar set minecraft:$(shifter)_health color $(bossbar_color)
-$bossbar set minecraft:$(shifter)_health max $(hp)
-$bossbar set minecraft:$(shifter)_health style $(bossbar_style)
+$bossbar add snc:$(shifter)_health {"font":"snc:gui", "text":"\$(bossbar_display)"}
+$bossbar set snc:$(shifter)_health color $(bossbar_color)
+$bossbar set snc:$(shifter)_health max $(hp)
+$bossbar set snc:$(shifter)_health style $(bossbar_style)
 
 # Reset regen snc.ticks
 $data modify storage snc:$(shifter) regen_ticks set from storage snc:$(shifter) og_regen_ticks
