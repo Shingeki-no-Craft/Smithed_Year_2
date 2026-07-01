@@ -1,0 +1,2 @@
+#UUID: 28caea19-e9d9-4fd0-abd7-eb5e3192d582
+summon minecraft:item_display -19.5 67.625 91.5 {UUID: [684386841,-371634224,-1411912866,831706498], Tags: ["smithed.static", "summit.booth_entity.snc", "snc.entity.hardened_attack"], item: {components: {"minecraft:item_model": "snc:attack/cage"}, count: 1, id: "minecraft:apple"}, item_display: "ground", transformation: {left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [4.0000014f, 3.9999995f, 4.0000014f], translation: [0.0f, 0.0f, 0.0f]}, view_range: 16.0f}

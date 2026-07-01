@@ -1,0 +1,2 @@
+#UUID: 1adb3be0-8eb9-470e-a76a-394394848efc
+summon minecraft:item_display -42.5 64.0 116.5 {UUID: [450575328,-1900460274,-1486210749,-1803251972], Tags: ["smithed.static", "summit.booth_entity.snc", "snc.entity.zick_titan"], item: {components: {"minecraft:item_model": "snc:pure_titan/zick"}, count: 1, id: "minecraft:apple"}, transformation: {left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [2.65f, 2.6499996f, 2.6499999f], translation: [0.0f, 0.0f, 0.0f]}}

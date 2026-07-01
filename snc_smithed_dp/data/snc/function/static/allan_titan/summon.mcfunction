@@ -1,0 +1,2 @@
+#UUID: ceb2dd5b-dff4-4377-b7db-a4d611c0eae9
+summon minecraft:item_display -45.5 79.875 102.25 {UUID: [-827138725,-537640073,-1210342186,297855721], Tags: ["smithed.static", "summit.booth_entity.snc", "snc.entity.allan_titan"], item: {components: {"minecraft:item_model": "snc:pure_titan/allan"}, count: 1, id: "minecraft:apple"}, transformation: {left_rotation: [0.9816272f, 0.0f, 0.0f, -0.190809f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [3.1999998f, 3.2000003f, 3.2000003f], translation: [0.0f, 0.0f, 0.0f]}}

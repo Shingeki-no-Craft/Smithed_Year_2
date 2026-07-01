@@ -4,7 +4,7 @@ kill 0bd07835-cfff-430a-a4e9-d798ca03ca86
 
 #Mannequin
 #UUID: 7b884c23-ec86-4532-8f0b-5a29dff19766
-summon mannequin -17.5 71 115.5 {UUID: [2072529955,-326744782,-1895081431,-537815194], Tags:["summit.dynamic", "summit.booth_entity.snc", "snc.entity.odmtrack_starter"],immovable:1b, hide_description:1b, profile:{name: "HopeEllie", model:wide}}
+summon mannequin -17.5 71 115.5 {UUID: [2072529955,-326744782,-1895081431,-537815194], Tags:["summit.dynamic", "summit.booth_entity.snc", "snc.entity.odmtrack_starter"],immovable:1b, hide_description:1b, profile:{name: "HopeEllie", model:wide}, Invulnerable:1b}
 
 item replace entity 7b884c23-ec86-4532-8f0b-5a29dff19766 armor.chest with iron_chestplate[minecraft:equippable={slot: "chest", asset_id: "snc:scout"}]
 item replace entity 7b884c23-ec86-4532-8f0b-5a29dff19766 armor.legs with iron_leggings[minecraft:equippable={slot: "legs", asset_id: "snc:scout"}]

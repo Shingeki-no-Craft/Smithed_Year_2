@@ -1,0 +1,1 @@
+kill @e[tag=snc.entity.exhibit]
