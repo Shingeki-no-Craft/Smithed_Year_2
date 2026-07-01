@@ -1,0 +1,9 @@
+{
+	"replace": false,
+	"values": [
+		"player",
+		"villager",
+		"wandering_trader",
+		"item"
+	]
+}

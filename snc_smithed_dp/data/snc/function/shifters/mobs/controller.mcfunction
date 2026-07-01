@@ -9,7 +9,7 @@ $execute if score $gamemode $(shifter)_vars matches -1 run function snc:shifters
 $execute store result score player_rotation $(shifter)_vars run data get entity @s Rotation[0]
 
 ## Prevent Moving Inventory (Almost)
-$execute if items entity @s player.cursor *[minecraft:custom_data~{atk_shifter:1b}] run function snc:shifters/mobs/$(shifter)/abilities/give
+$execute if items entity @s player.cursor *[minecraft:custom_data~{atk_shifter:1b, summit: {droppable: {callback: true}}}] run function snc:shifters/mobs/$(shifter)/abilities/give
 
 # Kill when energy runs out
 $execute if score $energy $(shifter)_vars matches ..0 if score state $(shifter)_vars matches 2.. run function snc:shifters/human/timer/check_berserk {"shifter":$(shifter), "id":"$(id)"}
@@ -22,6 +22,7 @@ $execute unless score state $(shifter)_vars matches 9 unless predicate snc:shift
 ## Health system
 # When doesn't have absortion then add tag 'injured'
 $execute store result score $health $(shifter)_vars run data get entity @s AbsorptionAmount
+
 # If HP is the same as before, don't update
 $execute if score $health $(shifter)_vars = $prev_health $(shifter)_vars run return -1
 # Cancel update if energy ended

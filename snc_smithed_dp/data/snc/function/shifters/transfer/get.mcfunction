@@ -3,7 +3,7 @@
 # @s[tag=snc.shifter.$(shifter)]. Shifter's Passives. (multiple)
 
 # Restart moves
-execute if entity @s[tag=!transform, tag=!hidden.shifter] run function snc:shifters/transfer/effects
+execute if entity @s[tag=!snc.titan, tag=!hidden.shifter] run function snc:shifters/transfer/effects
 # Reset scoreboard
 scoreboard players reset * female_vars
 scoreboard players set @s female_vars 1
@@ -25,5 +25,5 @@ scoreboard players set $master female_vars 0
 
 ## Kill previous owner
 say TODO kill previous owner
-#$execute store result score count $(shifter)_vars run execute if entity @e[type=#snc:eldian,scores={$(shifter)_vars=1}]
-#$execute if score count $(shifter)_vars matches 2.. run execute as @n[type=#snc:eldian,scores={$(shifter)_vars=1},tag=!transform] run function snc:shifters/transfer/cheat with storage minecraft:$(shifter)
+execute store result score count female_vars run execute if entity @e[type=#snc:eldian,scores={female_vars=1}]
+execute if score count female_vars matches 2.. run execute as @n[type=#snc:eldian,scores={female_vars=1},tag=!snc.titan] run function snc:shifters/transfer/cheat with storage snc:female

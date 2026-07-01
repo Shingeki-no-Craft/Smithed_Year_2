@@ -9,5 +9,5 @@ $execute if score $shifter_mastery config matches 1 if score $master $(shifter)_
 
 # If berserk is active reduce time
 $execute unless score $berserk $(shifter)_vars matches 0 run return 1
-$scoreboard players operation $energy $(shifter)_vars *= #10 constant
-$scoreboard players operation $energy $(shifter)_vars /= #11 constant
+$scoreboard players operation $energy $(shifter)_vars *= #10 snc.constant
+$scoreboard players operation $energy $(shifter)_vars /= #11 snc.constant

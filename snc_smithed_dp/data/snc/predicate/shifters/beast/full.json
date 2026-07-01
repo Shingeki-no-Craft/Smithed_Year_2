@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_scores","entity": "this",
+      "scores": {"beast_vars": 1}
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Tags:[\"snc.shifter.beast\",\"snc.shifter.female\"]}"
+      }
+    }
+  ]
+}

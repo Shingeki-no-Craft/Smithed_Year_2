@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        "#mineable/axe",
+        "#leaves",
+        "minecraft:sunflower",
+        "minecraft:lilac",
+        "minecraft:peony",
+        "minecraft:rose_bush",
+        "minecraft:pitcher_plant",        
+        "#impermeable"
+    ]
+}

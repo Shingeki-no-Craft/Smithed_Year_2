@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        "#dirt",
+        "moss_block",
+        "#leaves",
+        "#sand",
+        "#snow",
+        "sandstone",
+        "smooth_sandstone",
+        "stone"
+    ]
+}

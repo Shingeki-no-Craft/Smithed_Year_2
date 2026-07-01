@@ -7,7 +7,7 @@ execute if score state female_vars matches 3..5 unless predicate snc:player/keyb
             scoreboard players set #sneak female_vars 1
 
 execute if score #sneak female_vars matches 1 on vehicle on passengers if entity @s[tag=animated_java.female.root] run function animated_java:female/animations/pause_all
-execute if score #sneak female_vars matches 1 on vehicle on passengers if entity @s[tag=animated_java.female.root] run function animated_java:female/animations/sneak/play
+execute if score #sneak female_vars matches 1 on vehicle on passengers if entity @s[tag=animated_java.female.root] run function animated_java:female/animations/sneak/play_exclusive
 execute if score #sneak female_vars matches 1 run scoreboard players set $moving female_vars -1
 execute if score #sneak female_vars matches 1 run scoreboard players set state female_vars 2
 

@@ -7,11 +7,11 @@ $execute if score $shifter_mastery config matches 0 if score $berserk $(shifter)
 # Regular unshift
 function snc:logic/return_gamemode
 
-tag @s remove transform
+tag @s remove snc.titan
 tag @s remove consume
 tag @s add snc.injured
 
-clear @s *[custom_data~{atk_shifter:1b}]
+clear @s *[custom_data~{atk_shifter:1b, summit: {droppable: {callback: true}}}]
 clear @s white_dye
 
 effect clear @s

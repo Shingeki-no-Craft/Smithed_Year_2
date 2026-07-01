@@ -1,6 +1,6 @@
 #scoreboard players set state female_vars 0
 # Tp player to neck
-execute as @p[scores={female_vars=1},tag=!transform,distance=..30] rotated ~ 0 run tp ^ ^4 ^-1
+execute as @p[scores={female_vars=1},tag=!snc.titan,distance=..30] rotated ~ 0 run tp ^ ^4 ^-1
 
 # Start riding armor_stand instead of horse
 execute on vehicle run kill

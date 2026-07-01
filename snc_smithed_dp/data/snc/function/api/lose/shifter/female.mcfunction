@@ -1,0 +1,1 @@
+function snc:shifters/human/remove

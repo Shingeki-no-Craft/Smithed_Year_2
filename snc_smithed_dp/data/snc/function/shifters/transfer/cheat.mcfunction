@@ -6,5 +6,5 @@
 #
 # @output
 #   Entity is killed and the tag prevent is added
-$scoreboard players set prevent $(shifter)_vars 1
+scoreboard players set prevent female_vars 1
 $function snc:shifters/transfer/lose {"shifter":"$(shifter)","color":"$(color)", "id":"$(id)"}

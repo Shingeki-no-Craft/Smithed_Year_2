@@ -1,1 +1,1 @@
-execute on vehicle on passengers if entity @s[tag=transform] run function snc:shifters/mobs/female/head {"frame":2, "rotate":0}
+execute on vehicle on passengers if entity @s[tag=snc.titan] run function snc:shifters/mobs/female/head {"frame":2, "rotate":0}

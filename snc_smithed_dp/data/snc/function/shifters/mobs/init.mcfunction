@@ -18,7 +18,7 @@ $bossbar set minecraft:$(shifter)_health max $(hp)
 $bossbar set minecraft:$(shifter)_health style $(bossbar_style)
 
 # Reset regen snc.ticks
-$data modify storage minecraft:$(shifter) regen_ticks set from storage minecraft:$(shifter) og_regen_ticks
+$data modify storage snc:$(shifter) regen_ticks set from storage snc:$(shifter) og_regen_ticks
 
 $scoreboard players set state $(shifter)_vars 1
 $scoreboard players set consume $(shifter)_vars 0

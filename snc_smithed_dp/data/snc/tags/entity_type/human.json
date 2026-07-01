@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"player",
+		"villager",
+		"wandering_trader",		
+		"pillager",
+		"vindicator",
+		"ravager"
+	]
+}

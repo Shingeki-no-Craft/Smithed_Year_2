@@ -1,0 +1,17 @@
+{
+	"replace": false,
+	"values": [
+		"armor_stand",
+		"interaction",
+		"item_display",
+		"item",
+		"firework_rocket",
+		"snowball",
+		"minecart",
+		"text_display",
+		"spectral_arrow",
+		"marker",
+		"tnt",
+		"skeleton_horse"
+	]
+}

@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [        
+        "stripped_dark_oak_wood",
+        "brick_wall",
+        "spruce_trapdoor",
+        "purple_candle",
+        "dark_oak_slab",
+        "soul_campfire"
+    ]
+}

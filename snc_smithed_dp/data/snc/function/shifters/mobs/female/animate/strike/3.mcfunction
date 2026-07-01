@@ -1,4 +1,4 @@
-function animated_java:female/animations/strike_3/play
+function animated_java:female/animations/strike_3/play_exclusive
 scoreboard players set state female_vars 13
 execute on vehicle run attribute @s minecraft:scale base set 3.45
 execute on vehicle run effect give @s slowness 1 6 true

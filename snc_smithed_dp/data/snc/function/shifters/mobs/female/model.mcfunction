@@ -15,12 +15,11 @@
 execute store result score rotation female_vars run data get entity @s Rotation[0]
 scoreboard players operation rotation female_vars -= player_rotation female_vars
 execute unless score rotation female_vars matches -20..20 on vehicle at @s on passengers unless entity @s[type=player] run rotate @s ~ 0
-execute on vehicle on passengers unless entity @s[type=player] run rotate @s ~ 0
 ### Animations
 ## General
 ## 1. function snc:shifters/mobs/female/animate/born is handled externally
 ## 2. function snc:shifters/mobs/female/animate/sneak is handled externally
-execute if score state female_vars matches 2 on vehicle rotated ~ 0 positioned ^ ^-.9 ^4 on passengers if entity @s[tag=transform] run function snc:shifters/mobs/highlight
+execute if score state female_vars matches 2 on vehicle rotated ~ 0 positioned ^ ^-.9 ^4 on passengers if entity @s[tag=snc.titan] run function snc:shifters/mobs/highlight
 execute if score state female_vars matches 3 run function snc:shifters/mobs/female/animate/idle/main
 execute if score state female_vars matches 4 run function snc:shifters/mobs/female/animate/walk/main
 execute if score state female_vars matches 5 if entity @s[tag=!animated_java.female.animation.run.playing] run function snc:shifters/mobs/female/animate/run

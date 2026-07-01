@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "translate": "aot.titan.female",
+            "color": "dark_purple"
+        },
+        "description": {
+            "translate": "snc.adv.female",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:white_dye",
+            "components": {
+                "minecraft:item_model": "trophies/female_head"
+            }
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "snc:shifters/aura"
+}

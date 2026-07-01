@@ -8,4 +8,4 @@ function snc:shifters/human/timer/main with storage snc:female
 execute if entity @s[tag=!snc.female] run function snc:shifters/human/remove
 
 ## Shifters player controler
-execute if entity @s[tag=transform] run function snc:shifters/mobs/controller with storage snc:female
+execute if entity @s[tag=snc.titan] run function snc:shifters/mobs/controller with storage snc:female

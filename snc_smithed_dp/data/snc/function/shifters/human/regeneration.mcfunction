@@ -28,7 +28,7 @@ $execute unless score titan.health.bar $(shifter)_vars matches 20 run playsound 
 $execute if score $titan_marks $(shifter)_vars matches 0 run function snc:shifters/human/inventory/remove_marks
 $execute if score $titan_marks $(shifter)_vars matches 0 run return 1
 $scoreboard players operation $titan_marks_perc $(shifter)_vars = $titan_marks $(shifter)_vars
-$scoreboard players operation $titan_marks_perc $(shifter)_vars *= #100 constant
+$scoreboard players operation $titan_marks_perc $(shifter)_vars *= #100 snc.constant
 $scoreboard players operation $titan_marks_perc $(shifter)_vars /= $titan_marks_time config
 # 100%
 $execute unless score $titan_marks_time config matches 0 if score $titan_marks_perc $(shifter)_vars matches 76..100 run item replace entity @s armor.head with mushroom_stew[minecraft:item_model="shifters/marks",custom_data={snc_blank:true, $(shifter)_marks:1b},equippable={'slot': 'head'},enchantments={"minecraft:binding_curse":1},minecraft:enchantment_glint_override=false,minecraft:tooltip_display={"hide_tooltip":true}]

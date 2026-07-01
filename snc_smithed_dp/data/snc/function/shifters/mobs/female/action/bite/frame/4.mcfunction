@@ -1,2 +1,2 @@
-function snc:shifters/mobs/female/action/bite/damage with storage minecraft:female
-execute on vehicle on passengers if entity @s[tag=transform] run function snc:shifters/mobs/female/head {"frame":2, "rotate":0}
+function snc:shifters/mobs/female/action/bite/damage with storage snc:female
+execute on vehicle on passengers if entity @s[tag=snc.titan] run function snc:shifters/mobs/female/head {"frame":2, "rotate":0}

@@ -13,7 +13,7 @@ execute if items entity @s armor.legs minecraft:mushroom_stew[custom_data~{snc_b
 execute if items entity @s armor.feet minecraft:mushroom_stew[custom_data~{snc_blank:true}] run data remove storage snc:female equipment.feet
 
 clear @s
-tag @s add transform
+tag @s add snc.titan
 tellraw @a {text:"[INSERT STAMP HERE]", color:"yellow"}
 
 effect give @s absorption 20 5 true
