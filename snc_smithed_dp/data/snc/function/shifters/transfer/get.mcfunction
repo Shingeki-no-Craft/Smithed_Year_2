@@ -24,6 +24,5 @@ scoreboard players set $set_hardening female_vars 0
 scoreboard players set $master female_vars 0
 
 ## Kill previous owner
-say TODO kill previous owner
 execute store result score count female_vars run execute if entity @e[type=#snc:eldian,scores={female_vars=1}]
 execute if score count female_vars matches 2.. run execute as @n[type=#snc:eldian,scores={female_vars=1},tag=!snc.titan] run function snc:shifters/transfer/cheat with storage snc:female
