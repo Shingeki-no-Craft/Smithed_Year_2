@@ -1,0 +1,1 @@
+function snc:static/colossal_head/summon

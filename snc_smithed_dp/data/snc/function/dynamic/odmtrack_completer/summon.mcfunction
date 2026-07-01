@@ -4,7 +4,7 @@ kill ae65e579-3b56-436d-98af-d37d8281fd7a
 
 #Mannequin
 #UUID: bca20b81-f429-4fb2-a69f-46b5b9954176
-summon mannequin -5.5 69 91.5 {UUID: [-1130230911,-198619214,-1499511115,-1181400714], Tags:["summit.dynamic", "summit.booth_entity.snc", "snc.entity.odmtrack_completer"],immovable:1b, hide_description:1b, profile:{name: "SkullHPT", model:wide}}
+summon mannequin -5.5 69 91.5 {UUID: [-1130230911,-198619214,-1499511115,-1181400714], Tags:["summit.dynamic", "summit.booth_entity.snc", "snc.entity.odmtrack_completer"],immovable:1b, hide_description:1b, profile:{name: "SkullHPT", model:wide}, Invulnerable:1b}
 
 item replace entity bca20b81-f429-4fb2-a69f-46b5b9954176 armor.chest with iron_chestplate[minecraft:equippable={slot: "chest", asset_id: "snc:scout"}]
 item replace entity bca20b81-f429-4fb2-a69f-46b5b9954176 armor.legs with iron_leggings[minecraft:equippable={slot: "legs", asset_id: "snc:scout"}]

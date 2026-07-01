@@ -1,0 +1,2 @@
+#UUID: df411532-b82f-4ecf-b5d7-8523388619d5
+summon minecraft:item_display -52.625 68.75 88.0 {UUID: [-549382862,-1204859185,-1244166877,948312533], Tags: ["smithed.static", "summit.booth_entity.snc", "snc.entity.creepy_titan"], item: {components: {"minecraft:item_model": "snc:pure_titan/creepy"}, count: 1, id: "minecraft:apple"}, transformation: {left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [3.5000002f, 3.5000005f, 3.5000002f], translation: [0.0f, 0.0f, 0.0f]}}
