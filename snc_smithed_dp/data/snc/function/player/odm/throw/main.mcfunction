@@ -1,5 +1,5 @@
 execute if block ~ ~-.05 ~ #air run effect give @s levitation 1 0 true
-playsound minecraft:aot.shoot player @a ~ ~ ~ 3 1.0
+playsound minecraft:snc.odm.shoot player @a ~ ~ ~ 3 1.0
 
 ## Effects
 execute rotated ~ 0 positioned ^.5 ^ ^.2 run particle minecraft:cloud ~ ~1 ~ ^ ^ ^2000000 0.0000003 0 force

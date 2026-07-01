@@ -1,4 +1,4 @@
-playsound minecraft:aot.impulse player @a ~ ~ ~ 2 1.0
+playsound minecraft:snc.odm.impulse player @a ~ ~ ~ 2 1.0
 
 execute if score @s snc.odm_push matches 0..8 run function snc:player/odm/impulse/push {"power":2, "x":"^", "y":"^", "z":"^-1.5"}
 execute if score @s snc.odm_push matches 9..15 run function snc:player/odm/impulse/push {"power":3, "x":"^", "y":"^", "z":"^-1.7"}
