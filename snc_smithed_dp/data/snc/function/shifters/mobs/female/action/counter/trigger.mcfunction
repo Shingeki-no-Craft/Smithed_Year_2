@@ -1,6 +1,6 @@
 advancement revoke @s only snc:shifters/female/counter
 # Restart moves
-give @s quartz[minecraft:custom_data={atk_shifter:1b,7_titan:1b},minecraft:item_model="item/blank"]
+give @s quartz[minecraft:custom_data={atk_shifter:1b,7_titan:1b, summit: {droppable: {callback: true}}},minecraft:item_model="item/blank"]
 effect give @s resistance 1 3 true
 playsound minecraft:block.bell.resonate master @a ~ ~ ~ 4 2
 

@@ -42,9 +42,6 @@ data modify storage snc:hx_chrs hex_chars set value ["00","01","02","03","04","0
 
 ## Titans
 scoreboard objectives add snc.time dummy
-scoreboard objectives add snc.key dummy
-execute unless score #id snc.key matches 0.. run scoreboard players set #id snc.key 4194
-scoreboard objectives add snc.lock dummy
 
 scoreboard objectives add snc.despawn dummy
 execute unless score $max_titans snc.despawn matches 0.. run scoreboard players set $max_titans snc.despawn 19

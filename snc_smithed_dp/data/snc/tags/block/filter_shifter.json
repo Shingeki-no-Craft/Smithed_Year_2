@@ -1,0 +1,29 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:air",
+        "minecraft:water",
+        "minecraft:snow",
+        "minecraft:barrier",
+        "#minecraft:small_flowers",
+        "short_grass",
+        "fern",
+        "dead_bush",
+        "vine",
+        "sunflower",
+        "lilac",
+        "rose_bush",
+        "peony",
+        "tall_grass",
+        "large_fern",      
+        "#minecraft:slabs",
+        "#minecraft:leaves",
+        "#minecraft:logs",
+        "#minecraft:fire",
+        "#minecraft:crops",
+        "farmland",
+        "moss_carpet",
+        "dead_bush",
+        "light"
+    ]
+}

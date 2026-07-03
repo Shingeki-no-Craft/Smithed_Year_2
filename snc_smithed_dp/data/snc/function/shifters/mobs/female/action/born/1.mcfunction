@@ -6,4 +6,4 @@ execute on vehicle run attribute @s minecraft:scale base set .1
 playsound minecraft:snc.shifters.female.roar player @a ~ ~ ~ 24
 execute on vehicle run effect give @s levitation 2 2 true
 execute on vehicle run effect give @s slowness 2 127 true
-execute on vehicle on passengers if entity @s[tag=transform] run effect give @s slowness infinite 4 true
+execute on vehicle on passengers if entity @s[tag=snc.titan] run effect give @s slowness infinite 4 true

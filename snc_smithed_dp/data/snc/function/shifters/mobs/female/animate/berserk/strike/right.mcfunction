@@ -1,4 +1,4 @@
-function animated_java:female/animations/berserk_leap_r/play
+function animated_java:female/animations/berserk_leap_r/play_exclusive
 scoreboard players set state female_vars 12
 scoreboard players set $combo_ber female_vars 1
 

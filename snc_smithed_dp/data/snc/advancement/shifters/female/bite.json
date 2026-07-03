@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{female_atk_1:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "snc:shifters/mobs/female/action/bite/trigger"
+  }
+}

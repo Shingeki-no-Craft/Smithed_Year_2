@@ -1,4 +1,4 @@
-function animated_java:female/animations/bite/play
+function animated_java:female/animations/bite/play_exclusive
 scoreboard players set state female_vars 7
 execute on vehicle run attribute @s minecraft:scale base set 4
 return 1

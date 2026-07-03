@@ -1,0 +1,84 @@
+{
+    "providers": [
+        {"type": "bitmap","file": "snc:custom/font/bossbar/female.png","ascent": 16,"height": 32,
+            "chars": ["\uFFF6"]},
+
+        {"type": "bitmap","file": "snc:custom/font/hotbar/icon.png","ascent": -14,"height": 10,
+            "chars": ["\uE201"]},
+        {"type": "bitmap","file": "snc:custom/font/hotbar/icon_half.png","ascent": -14,"height": 10,
+            "chars": ["\uE202"]},
+        {"type": "bitmap","file": "snc:custom/font/hotbar/icon_off.png","ascent": -14,"height": 10,
+            "chars": ["\uE203"]},
+        {"type": "bitmap","file": "snc:custom/font/hotbar/energy.png","ascent": -11,"height": 32,
+            "chars": ["\uE204"]},
+        {"type": "bitmap","file": "snc:custom/font/hotbar/energy_transformed.png","ascent": -11,"height": 32,
+            "chars": ["\uE205"]},
+        {"type": "bitmap","file": "snc:custom/font/hotbar/no_energy.png","ascent": -11,"height": 32,
+            "chars": ["\uF204"]},
+        {"type": "bitmap","file": "snc:custom/font/hotbar/no_energy_transformed.png","ascent": -11,"height": 32,
+            "chars": ["\uF205"]},
+        {
+            "type": "bitmap",
+            "file": "snc:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": 1,
+            "chars": [
+                "\uF822"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "snc:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": 31,
+            "chars": [
+                "\uF82A"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "snc:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": 63,
+            "chars": [
+                "\uF82B"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "snc:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": -4,
+            "chars": [
+                "\uF802"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "snc:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": -34,
+            "chars": [
+                "\uF80A"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "snc:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": -66,
+            "chars": [
+                "\uF80B"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "snc:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": -5,
+            "chars": [
+                "\uF803"
+            ]
+        }
+    ]
+}

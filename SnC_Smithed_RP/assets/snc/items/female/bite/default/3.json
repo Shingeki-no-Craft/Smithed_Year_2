@@ -1,0 +1,32 @@
+{
+	"model": {
+		"type": "composite",
+		"models": [
+			{
+                "type": "minecraft:condition",
+                "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{jaw_full:1b}",
+                "on_true": {"type": "minecraft:model", "model": "snc:female/bite/jaw/up_3"},
+                "on_false": {"type": "minecraft:model", "model": "snc:female/bite/default/up_3"}
+            },
+			{
+                "type": "minecraft:condition",
+                "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{jaw_full:1b}",
+                "on_true": {"type": "minecraft:model", "model": "snc:female/bite/jaw/dw_3"},
+                "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+            },
+			{
+				"type": "model",
+				"model": "snc:female/bite/default/dw_3"
+			},
+			{
+				"type": "minecraft:condition",
+				"property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{berserk:1b}",
+				"on_true": {"type": "minecraft:composite", "models": [
+					{"type": "minecraft:model", "model": "snc:female/bite/berserk/up_3"},
+					{"type": "minecraft:model", "model": "snc:female/bite/berserk/dw_3"}
+				]},
+				"on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+			}
+		]
+	}
+}

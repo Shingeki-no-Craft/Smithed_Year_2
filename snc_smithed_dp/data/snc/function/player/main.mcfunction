@@ -18,4 +18,6 @@ execute if score @s[tag=!snc.grabbed] snc.odm_state matches 1.. if predicate snc
 #Throw
 execute if score @s[tag=!snc.grabbed,tag=!snc.injured] snc.odm_state matches 0 if predicate snc:odm/has_gas_trigger if predicate snc:odm/has_odm run function snc:player/odm/throw/config
 
+execute if entity @s[predicate=snc:shifters/has_remove] run function snc:shifters/human/transform/human_aux
+
 return 1

@@ -1,4 +1,4 @@
-function animated_java:female/animations/counter_ready/play
+function animated_java:female/animations/counter_ready/play_exclusive
 execute on vehicle run effect give @s slowness 1 6 true
 execute on vehicle run attribute @s minecraft:scale base set 3.45
 scoreboard players set #parry female_vars 1

@@ -1,10 +1,10 @@
 advancement revoke @s only snc:shifters/female/ghost
 
-scoreboard players operation $reset_ghost female_vars *= #-1 constant
+scoreboard players operation $reset_ghost female_vars *= #-1 snc.constant
 scoreboard players add $group_strike female_vars 1
 execute if score $group_strike female_vars matches 4 run scoreboard players set $group_strike female_vars 1
 # Restart moves
-give @s quartz[minecraft:custom_data={atk_shifter:1b,7_titan:1b},item_model="item/blank"]
+give @s quartz[minecraft:custom_data={atk_shifter:1b,7_titan:1b, summit: {droppable: {callback: true}}},item_model="item/blank"]
 # Cancel if counter
 execute if score state female_vars matches 14..15 run return -1
 

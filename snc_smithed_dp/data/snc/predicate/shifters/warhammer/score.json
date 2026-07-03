@@ -1,0 +1,8 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "warhammer_vars": 1
+    }
+  }
+  
