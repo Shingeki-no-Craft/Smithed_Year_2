@@ -1,0 +1,64 @@
+{
+    "namespace": "snc",
+    "booth_name": "Shingeki no Craft",
+    "bounding_boxes": {
+        "above": {
+            "position": {
+                "x": {"min": -77, "max": -42},
+                "y": {"min": 79, "max": 114},
+                "z": {"min": 92, "max": 122}
+            }
+        },
+        "cave": {
+            "position": {
+                "x": {"min": -70, "max": -1},
+                "y": {"min": 62, "max": 94},
+                "z": {"min": 84, "max": 123}
+            }
+        },
+        "kits": {
+            "position": {
+                "x": {"min": -77, "max": -71},
+                "y": {"min": 72, "max": 77},
+                "z": {"min": 97, "max": 123}
+            }
+        }
+    },
+    "ticking_functions": {
+        "snc:tick": "1t"
+    },
+    "sticker_book": {
+        "background_color": "#4B9F05",
+        "region": "textured_tropics",
+        "stickers": [
+            {
+                "sticker_id": "soldier",
+                "sticker_texture": "snc:sticker/soldier",
+                "sticker_name": "Soldier",
+                "unobtained_text": "Obtain the ODM Gear.",
+                "obtained_text": "You have obtained the ODM Gear!"
+            },
+            {
+                "sticker_id": "airplane",
+                "sticker_texture": "snc:sticker/airplane",
+                "sticker_name": "Airplane",
+                "unobtained_text": "Jump over the river with the Cart Titan!",
+                "obtained_text": "You have jumped over the river with the Cart Titan!"
+            },
+            {
+                "sticker_id": "veteran",
+                "sticker_texture": "snc:sticker/veteran",
+                "sticker_name": "Veteran",
+                "unobtained_text": "Finish the ODM Gear track course!",
+                "obtained_text": "You have finished the ODM Gear track course!"
+            },
+            {
+                "sticker_id": "titan_slayer",
+                "sticker_texture": "snc:sticker/titan_slayer",
+                "sticker_name": "Titan Slayer",
+                "unobtained_text": "Defeat the Female Titan!",
+                "obtained_text": "You have defeated the Female Titan!"
+            }
+        ]
+    }
+}
