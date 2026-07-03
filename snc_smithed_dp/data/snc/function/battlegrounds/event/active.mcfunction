@@ -1,0 +1,3 @@
+execute unless data storage summit.battlegrounds:database session{booth_id:'snc'} run return 0
+scoreboard players set $active snc.battlegrounds 1
+tellraw @a[tag=summit.battlegrounds.player] ["",{"text":"Shingeki ","color":"gold"},{"text":"no","color":"dark_red"},{"text":" Craft ","color":"gold"},{"text":"»","color":"gray"},{"text":" The ","color":"white"},{"text":"battlegrounds","color":"red"},{"text":" has started! ","color":"white"},{"text":"The Female Titan","color":"dark_purple"},{"text":" is now available! ","color":"white"},{"text":"[CLICK HERE]","color":"yellow","clickEvent":{"action":"run_command","value":"teleport @s -73.5 72 110.5 90 0"}},{"text":" to teleport!","color":"white"}]

@@ -1,0 +1,2 @@
+execute if score $active snc.battlegrounds matches 1 run function snc:battlegrounds/deactivate
+execute if score $active snc.battlegrounds matches 1 run scoreboard players reset $active snc.battlegrounds

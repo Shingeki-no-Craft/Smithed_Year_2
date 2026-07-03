@@ -19,4 +19,4 @@ summon minecraft:text_display -60.5 82.0625 102.5 {UUID: [898238334,2013154696,-
 
 #Interaction
 #UUID: 4234e740-8048-4fdf-adde-90546c74336c
-summon interaction -60.5 80 102.5 {UUID: [1110763328,-2142744609,-1377922988,1819554668], Tags:["summit.dynamic", "summit.booth_entity.snc", "snc.interaction.odm_giver"], height: 1.875f, response: true}
+summon interaction -60.5 80 102.5 {UUID: [1110763328,-2142744609,-1377922988,1819554668], Tags:["summit.static", "summit.booth_entity.snc", "snc.interaction.odm_giver"], height: 1.875f, response: true}

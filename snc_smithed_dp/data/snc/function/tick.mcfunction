@@ -32,7 +32,7 @@ execute unless score $zwei.jumpscare snc.wait matches 1.. at 3ffc9084-50a9-4616-
 
 execute at 6c239941-3e1e-4e55-994c-91fccb41a01e if entity @p[x=-72.9375, y=80.625, z=108.4375,distance=..11] as @p[x=-72.9375, y=80.625, z=108.4375,distance=..11] run teleport 6c239941-3e1e-4e55-994c-91fccb41a01e ~ ~ ~ facing entity @s eyes
 
-# --------------------------- [Dynamic - ODM NPCs] --------------------------- #
+# --------------------------- [Dynamic - NPCs] --------------------------- #
 
 execute as ebd5bffc-1df8-4465-a11b-b6955d24ad41 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
 execute as 1bb7c29a-5bb1-4ac7-8d9b-250b43ffeab7 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
@@ -41,6 +41,10 @@ execute as 7b884c23-ec86-4532-8f0b-5a29dff19766 at @s if entity @p[distance=..5]
 execute as bca20b81-f429-4fb2-a69f-46b5b9954176 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
 execute as @a[scores={snc.wait.odmtrack=1..}] run scoreboard players remove @s snc.wait.odmtrack 1
 execute as @a[scores={snc.wait.odmtrack=0}] run function snc:dynamic/odmtrack_starter/start_quest
+
+execute as a075e98e-8151-44af-ae49-0046616e666f at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
+execute as 7dbe6c10-a52a-480d-936c-005a61626174 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
+execute as 67676767-6767-6767-6767-676767676767 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
 
 # --------------------------- [Dynamic - Cart AJ] --------------------------- #
 

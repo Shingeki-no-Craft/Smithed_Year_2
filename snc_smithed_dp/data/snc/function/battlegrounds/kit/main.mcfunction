@@ -1,0 +1,2 @@
+function snc:battlegrounds/kit/default
+execute if data storage summit.battlegrounds:database session{booth_id:'snc'} unless score $female snc.battlegrounds matches 1 run function snc:battlegrounds/kit/female_titan

@@ -1,0 +1,1 @@
+execute unless data storage summit.battlegrounds:database session{booth_id:'snc'} run return 0
