@@ -5,13 +5,13 @@
         "conditions": {
           "entity": {
             "minecraft:entity_type": "minecraft:interaction",
-            "minecraft:nbt": "{Tags:[\"snc.interaction.artist\"]}"
+            "minecraft:nbt": "{Tags:[\"snc.interaction.cart_titan_caller\"]}"
           }
         }
       }
     },
     "rewards": {
-      "function": "snc:dynamic/artist/talk"
+      "function": "snc:dynamic/cart_titan_caller/talk"
     }
   }
   

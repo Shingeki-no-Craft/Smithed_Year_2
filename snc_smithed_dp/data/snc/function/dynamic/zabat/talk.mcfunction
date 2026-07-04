@@ -1,4 +1,4 @@
 advancement revoke @s only snc:mannequin/zabat
 execute at @s run playsound entity.villager.ambient master @s ~ ~ ~ 1 2
 
-tellraw @s ["",{"text":"[NPC]","color":"yellow"},{"text":" <Zabat>","color":"light_purple"},{"text":" You should really join our "},{"text":"Discord Server","color":"blue","clickEvent":{"action":"open_url","value":"https://discord.gg/B7bYYsmvcw"}},{"text":"!"}]
+tellraw @s ["",{"text":"[NPC]","color":"yellow"},{"text":" <Zabat>","color":"light_purple"},{"text":" Hey there! I'm "},{"text":"Zabat","color":"light_purple"},{"text":", the one bringing this world to life through "},{"text":"texturing","color":"#A7FE19"},{"text":" and "},{"text":"modeling","color":"#19F0B6"},{"text":". If you want to check out our latest designs or share your own feedback, come join our "},{"text":"Discord Server","color":"blue"},{"text":". we'd "},{"text":"love","color":"red"},{"text":" to have "},{"text":"you","color":"gold"},{"text":"!"}]

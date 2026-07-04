@@ -48,6 +48,8 @@ execute as 67676767-6767-6767-6767-676767676767 at @s if entity @p[distance=..5]
 execute as @a[scores={snc.quest.battlegrounds=1..}] run scoreboard players remove @s snc.wait.battlegrounds 1
 execute as @a[scores={snc.wait.battlegrounds=0}] run function snc:dynamic/allawie/explain
 
+execute as 092423d9-99d5-4645-a78c-3980e33c4e07 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
+execute as e65a7129-0763-4be4-b26d-22f781dc0145 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
 # --------------------------- [Dynamic - Cart AJ] --------------------------- #
 
 execute if score $stage snc.cart matches 1.. if score $cart snc.wait matches 1.. run scoreboard players remove $cart snc.wait 1
@@ -57,6 +59,8 @@ execute if score $stage snc.cart matches 6 if score $jump_tick snc.cart matches 
 
 #Init
 execute if score $cart_travel snc.wait matches 1.. run scoreboard players remove $cart_travel snc.wait 1
+execute if score $cart_travel snc.wait matches 100 as 6a75984c-ec7a-48ae-a6a1-f28d27033215 on passengers run title @s actionbar {"text":"Jumping in 5", "color":"light_purple"}
+execute if score $cart_travel snc.wait matches 80 as 6a75984c-ec7a-48ae-a6a1-f28d27033215 on passengers run title @s actionbar {"text":"Jumping in 4", "color":"light_purple"}
 execute if score $cart_travel snc.wait matches 60 as 6a75984c-ec7a-48ae-a6a1-f28d27033215 on passengers run title @s actionbar {"text":"Jumping in 3", "color":"light_purple"}
 execute if score $cart_travel snc.wait matches 40 as 6a75984c-ec7a-48ae-a6a1-f28d27033215 on passengers run title @s actionbar {"text":"Jumping in 2", "color":"light_purple"}
 execute if score $cart_travel snc.wait matches 20 as 6a75984c-ec7a-48ae-a6a1-f28d27033215 on passengers run title @s actionbar {"text":"Jumping in 1", "color":"light_purple"}

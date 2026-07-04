@@ -8,7 +8,7 @@ summon mannequin -67.5 72 107.5 {UUID: [1734829927,1734829927,1734829927,1734829
 
 #Text Display
 #UUID: 66666666-6666-6666-6666-666666666666
-summon minecraft:text_display -67.5 74.0625 107.5 {UUID: [1717986918,1717986918,1717986918,1717986918], Tags:["summit.static", "summit.booth_entity.snc", "snc.entity.allawie.text"], alignment: "center", background: 1073741824, billboard: "center", default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: {"text":"[NPC] ","extra":[{"text":"Allawie","color":"dark_purple"}],"color":"light_purple"}, text_opacity: -1b}
+summon minecraft:text_display -67.5 74.0625 107.5 {UUID: [1717986918,1717986918,1717986918,1717986918], Tags:["summit.static", "summit.booth_entity.snc", "snc.entity.allawie.text"], alignment: "center", background: 1073741824, billboard: "center", default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: {"text":"[NPC] ","extra":[{"text":"Allawie","color":"dark_purple"}],"color":"yellow"}, text_opacity: -1b}
 
 #Interaction
 #UUID: 77777777-7777-7777-7777-777777777777
