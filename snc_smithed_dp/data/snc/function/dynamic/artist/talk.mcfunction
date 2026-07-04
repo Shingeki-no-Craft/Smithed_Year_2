@@ -1,0 +1,4 @@
+advancement revoke @s only snc:mannequin/artist
+playsound entity.villager.ambient master @s ~ ~ ~ 1 2
+
+tellraw @s ["",{"text":"[NPC] ","color":"yellow"},{"text":"<Mikka>","color":"light_purple"},{"text":" Welcome to "},{"text":"The Underground","color":"gray"},{"text":"! I'm "},{"text":"Mikka","color":"light_purple"},{"text":". I do "},{"text":"art","color":"blue"},{"text":"! The people here are great, just great, nobody has "},{"text":"threatened","color":"red"},{"text":" my life in a whole twenty minutes! And I "},{"text":"always","italic":true},{"text":" pay my rent on time. If you define \"on time\" as \"three months late\" and \"pay\" as \"running away very fast whenever I see the landlord.\""}]

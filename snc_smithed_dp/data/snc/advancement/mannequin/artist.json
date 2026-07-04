@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_interacted_with_entity",
+        "conditions": {
+          "entity": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:nbt": "{Tags:[\"snc.interaction.mikka\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "snc:dynamic/mikka/talk"
+    }
+  }
+  

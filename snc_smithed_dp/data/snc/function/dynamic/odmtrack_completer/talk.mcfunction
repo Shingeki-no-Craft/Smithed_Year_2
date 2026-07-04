@@ -5,6 +5,10 @@ playsound entity.villager.ambient master @s ~ ~ ~ 1 1
 
 execute unless score @s snc.quest.get_odm matches 1 run tellraw @s ["",{"text":"[NPC]","color":"yellow"},{"text":" <TL. SkullHPT>","color":"dark_green"},{"text":" You're not supposed to be here...","color":"white"}]
 
+# Have ODM Gear + Not in track
+
+execute if score @s snc.quest.get_odm matches 1 unless score @s snc.quest.odmtrack matches 1 unless score @s snc.quest.odmtrack.progress matches 1.. run tellraw @s ["",{"text":"[NPC] ","color":"yellow"},{"text":"<TL. SkullHPT>","color":"dark_green"},{"text":" What are you doing here? I don't recognize you...","color":"white"}]
+
 # Have ODM Gear + In Track BUT! Didn't finish the progress...
 
 execute if score @s snc.quest.get_odm matches 1 unless score @s snc.quest.odmtrack matches 1 if score @s snc.quest.odmtrack.progress matches 1..4 run tellraw @s ["",{"text":"[NPC]","color":"yellow"},{"text":" <TL. SkullHPT>","color":"dark_green"},{"text":" You're not ready yet!","color":"white"}]

@@ -45,6 +45,8 @@ execute as @a[scores={snc.wait.odmtrack=0}] run function snc:dynamic/odmtrack_st
 execute as a075e98e-8151-44af-ae49-0046616e666f at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
 execute as 7dbe6c10-a52a-480d-936c-005a61626174 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
 execute as 67676767-6767-6767-6767-676767676767 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
+execute as @a[scores={snc.quest.battlegrounds=1..}] run scoreboard players remove @s snc.wait.battlegrounds 1
+execute as @a[scores={snc.wait.battlegrounds=0}] run function snc:dynamic/allawie/explain
 
 # --------------------------- [Dynamic - Cart AJ] --------------------------- #
 
