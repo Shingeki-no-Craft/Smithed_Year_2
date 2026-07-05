@@ -5,7 +5,7 @@ tag @a remove snc.female.swing
 execute on vehicle run effect give @s slowness 3 127 true
 execute on vehicle run attribute @s minecraft:scale base set 4
 particle minecraft:cloud ~ ~ ~ 1 3 1 1 512 force
-playsound minecraft:aot.steam player @a ~ ~ ~ 4 1
+playsound minecraft:snc.shifters.steam player @a ~ ~ ~ 4 1
 scoreboard players set state female_vars 1
 scoreboard players set $energy female_vars 3600
 scoreboard players set $berserk female_vars 0

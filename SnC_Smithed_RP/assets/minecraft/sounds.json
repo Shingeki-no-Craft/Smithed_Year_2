@@ -11,12 +11,12 @@
 	},
 	"snc.heart": {
 		"sounds": [
-			"aot/heart_beat/1",
-			"aot/heart_beat/2"
+			"snc:heart_beat/1",
+			"snc:heart_beat/2"
 		]
 	},
-	"snc.shifters.trigger": {"sounds": ["aot/shifters/trigger"]},
-	"snc.shifters.hurt": {"sounds": ["aot/shifters/hurt"]},
+	"snc.shifters.trigger": {"sounds": ["snc:shifters/trigger"]},
+	"snc.shifters.hurt": {"sounds": ["snc:shifters/hurt"]},
 	"snc.titan.footsteps": {
 		"sounds": [
 			"snc:titan/footsteps/1",
@@ -30,31 +30,31 @@
 		"snc:lightning/2"
 		]
 	},
-	"aot.rock_smash": {
+	"snc.shifters.smash": {
+		"sounds": ["snc:shifters/smash"]
+	},
+	"snc.shifters.punch": {
 		"sounds": [
-			"aot/rock_smash"
+			"snc:shifters/punch/1",
+			"snc:shifters/punch/2"
 		]
 	},
-	"aot.punch": {
+	"snc.shifters.bite": {
 		"sounds": [
-			"aot/shifters/punch/1",
-			"aot/shifters/punch/2"
+			"snc:shifters/bite/1",
+			"snc:shifters/bite/2",
+			"snc:shifters/bite/3"
 		]
 	},
-
-	
-	"aot.shifters.armor.harden.hit": {"sounds": ["aot/shifters/armor/harden/hit"]},
-	"aot.shifters.armor.harden.break": {
+	"aot.human.gore": {
 		"sounds": [
-			"aot/shifters/armor/harden/break/1",
-			"aot/shifters/armor/harden/break/2"
+			"snc:human/gore"
 		]
 	},
-	"aot.shifters.bite": {
+	"snc.shifters.steam":{
 		"sounds": [
-			"aot/shifters/bite/1",
-			"aot/shifters/bite/2",
-			"aot/shifters/bite/3"
+			"snc:shifters/steam/2",
+			"snc:shifters/steam/1"
 		]
 	}
 }

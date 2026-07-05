@@ -11,7 +11,7 @@ execute if score $prev_variant female_vars = $variant female_vars run return -1
 
 # If current health is more than previous
 execute unless score $health female_vars < $prev_health female_vars run particle minecraft:dust_color_transition{from_color:[1f, 0.941f, 0.098f],to_color:[1f, 1f, 1f], scale:2f} ~ ~2 ~ 2 3 2 1 128 force
-execute unless score $health female_vars < $prev_health female_vars run playsound minecraft:aot.steam player @a ~ ~4 ~ 4 2
+execute unless score $health female_vars < $prev_health female_vars run playsound minecraft:snc.shifters.steam player @a ~ ~4 ~ 4 2
 
 # Apply Variant
 execute if score $variant female_vars matches 0 if function animated_java:female/variants/default/apply run return -1

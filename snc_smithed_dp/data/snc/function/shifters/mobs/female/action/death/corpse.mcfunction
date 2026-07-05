@@ -34,5 +34,5 @@ execute if score @s female_vars matches 200 on passengers if entity @s[tag=anima
 
 scoreboard players remove @s female_vars 1
 execute if score @s female_vars matches 0 anchored eyes run particle minecraft:cloud ^ ^-4 ^-2 2 2 2 .2 500 force
-execute if score @s female_vars matches 0 anchored eyes run playsound minecraft:aot.steam player @a ^ ^ ^ 2 1
+execute if score @s female_vars matches 0 anchored eyes run playsound minecraft:snc.shifters.steam player @a ^ ^ ^ 2 1
 execute if score @s female_vars matches 0 run function snc:shifters/mobs/kill {"shifter":"female"}

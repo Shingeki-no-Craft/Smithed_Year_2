@@ -23,7 +23,7 @@ $execute if score $regeneration $(shifter)_vars matches 0 run return -1
 effect give @s regeneration 3 0 true
 # Only show particles if regeneration is enabled
 $execute unless score titan.health.bar $(shifter)_vars matches 20 run particle minecraft:campfire_signal_smoke ~ ~1 ~ .1 1 .1 .005 5 force
-$execute unless score titan.health.bar $(shifter)_vars matches 20 run playsound minecraft:aot.steam player @a ~ ~ ~ 1 1.3
+$execute unless score titan.health.bar $(shifter)_vars matches 20 run playsound minecraft:snc.shifters.steam player @a ~ ~ ~ 1 1.3
 # Titan Marks
 $execute if score $titan_marks $(shifter)_vars matches 0 run function snc:shifters/human/inventory/remove_marks
 $execute if score $titan_marks $(shifter)_vars matches 0 run return 1
