@@ -1,7 +1,4 @@
-$execute if score snc.ticks clock matches 17 run effect give @s resistance 3 $(resistance) true
-
-$execute if score $gamemode $(shifter)_vars matches 1 run function snc:shifters/combat/main {"shifter":$(shifter),"id":"$(id)"}
-$execute if score $gamemode $(shifter)_vars matches -1 run function snc:shifters/utility/main {"shifter":$(shifter), "block_range":$(block_range)}
+$execute if score snc.ticks snc.clock matches 17 run effect give @s resistance 3 $(resistance) true
 
 ## Is moving? Unless is sneaking!
 # execute unless entity @s[type=player] run function snc:shifters/mobs/brain if predicate snc:is_moving

@@ -1,5 +1,8 @@
 {
     "providers": [
+        {"type": "bitmap","file": "snc:custom/font/actionbar/black.png","ascent": 64,"height": 512,
+            "chars": ["\uE100 "]},
+
         {"type": "bitmap","file": "snc:custom/font/bossbar/female.png","ascent": 16,"height": 32,
             "chars": ["\uFFF6"]},
 

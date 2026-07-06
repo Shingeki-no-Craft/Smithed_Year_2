@@ -1,9 +1,8 @@
 execute as @e at @s run function snc:dynamic/main
 
 ## SNC : Tick
-scoreboard players add snc.ticks clock 1
-execute store result score time clock run time query minecraft:day
-execute if score snc.ticks clock matches 20 run function snc:seconds
+scoreboard players add snc.ticks snc.clock 1
+execute if score snc.ticks snc.clock matches 20 run function snc:seconds
 
 ## SNC : ODM Track
 execute as @a[scores={snc.quest.odmtrack.stage=1..}] run function snc:dynamic/odmtrack_starter/get_value
@@ -17,10 +16,6 @@ execute if score $zwei.jumpscare snc.wait matches 1.. run scoreboard players rem
 
 #Trigger
 execute unless score $zwei.jumpscare snc.wait matches 1.. at 3ffc9084-50a9-4616-bf2e-0c267db28467 if entity @p[x=-67.5, y=80, z=105.5,distance=..1.1] run function snc:dynamic/zwei/trigger
-
-# --------------------------- [Dynamic - Attack Head] --------------------------- #
-
-execute at 6c239941-3e1e-4e55-994c-91fccb41a01e if entity @p[x=-72.9375, y=80.625, z=108.4375,distance=..11] as @p[x=-72.9375, y=80.625, z=108.4375,distance=..11] run teleport 6c239941-3e1e-4e55-994c-91fccb41a01e ~ ~ ~ facing entity @s eyes
 
 # --------------------------- [Dynamic - NPCs] --------------------------- #
 

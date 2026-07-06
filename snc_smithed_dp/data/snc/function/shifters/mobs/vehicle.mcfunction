@@ -4,7 +4,7 @@ execute unless block ~ ~1 ~ water run attribute @s minecraft:gravity base set 0.
 
 $execute if score state $(shifter)_vars matches 2 run effect give @s slowness 1 6 true
 # Health System
-$execute if score snc.ticks clock matches 6 run bossbar set snc:$(shifter)_health players @a[distance=..128]
+$execute if score snc.ticks snc.clock matches 6 run bossbar set snc:$(shifter)_health players @a[distance=..128]
 execute on passengers if entity @s[tag=snc.titan] at @s on vehicle run rotate @s ~ ~
 
 ## Move!

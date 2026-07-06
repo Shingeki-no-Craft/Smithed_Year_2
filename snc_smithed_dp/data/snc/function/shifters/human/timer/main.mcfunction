@@ -2,12 +2,12 @@ execute if score @s female_vars matches 1 run tag @s add snc.female
 ## Is not transformed
 #$execute as @s[tag=!snc.titan] run scoreboard players set state $(shifter)_vars 0
 # Increase energy when not transformed
-execute as @s[tag=!snc.titan] if score snc.ticks clock matches 19 unless score $energy female_vars matches 3600.. run scoreboard players add $energy female_vars 8
+execute as @s[tag=!snc.titan] if score snc.ticks snc.clock matches 19 unless score $energy female_vars matches 3600.. run scoreboard players add $energy female_vars 8
 # Decrease energy when transformed
-$execute as @s[tag=snc.titan] if score snc.ticks clock matches 19 run function snc:shifters/human/timer/time_down {"shifter":$(shifter),"energy_decrease":$(energy_decrease)}
+$execute as @s[tag=snc.titan] if score snc.ticks snc.clock matches 19 run function snc:shifters/human/timer/time_down {"shifter":$(shifter),"energy_decrease":$(energy_decrease)}
 # Show
-$execute if score snc.ticks clock matches 19 if entity @s[tag=snc.titan] run function snc:shifters/human/timer/display {"shifter":"$(shifter)", "interface":"205"}
-$execute if score snc.ticks clock matches 19 if entity @s[tag=!snc.titan] run function snc:shifters/human/timer/display {"shifter":"$(shifter)", "interface":"204"}
+$execute if score snc.ticks snc.clock matches 19 if entity @s[tag=snc.titan] run function snc:shifters/human/timer/display {"shifter":"$(shifter)", "interface":"205"}
+$execute if score snc.ticks snc.clock matches 19 if entity @s[tag=!snc.titan] run function snc:shifters/human/timer/display {"shifter":"$(shifter)", "interface":"204"}
 
 ## HP, remove type=player in the future for AI Shifters?
 # Set titan's current health to the corresponding scoreboard.
@@ -27,4 +27,4 @@ $execute if score shift.regen female_vars matches $(regen_ticks).. run scoreboar
 $execute if entity @s[tag=snc.titan] if score shift.regen female_vars matches 0 run function snc:shifters/mobs/regeneration {"shifter":"female","hp":$(hp)}
 
 ## Injured
-execute if score snc.ticks clock matches 19 if entity @s[tag=snc.injured] run function snc:player/titan/effects/injured
+execute if score snc.ticks snc.clock matches 19 if entity @s[tag=snc.injured] run function snc:player/titan/effects/injured

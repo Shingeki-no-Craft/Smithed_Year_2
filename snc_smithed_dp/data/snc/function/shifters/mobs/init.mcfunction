@@ -1,7 +1,6 @@
-execute store result score $variant female_vars run random value 1..3
+execute store result score $variant female_vars run random value 1..2
 execute if score $variant female_vars matches 2 run scoreboard players set $hardening female_vars 0
 execute if score $variant female_vars matches 2 run scoreboard players set $op.hardening female_vars 12
-execute if score $variant female_vars matches 3 run scoreboard players set $berserk female_vars 1
 
 # Set horse id to track more efficiently
 $kill 0000007f-0000-007f-0000-007f0000000$(id)
@@ -25,7 +24,6 @@ $scoreboard players set consume $(shifter)_vars 0
 $scoreboard players set mov $(shifter)_vars 100
 $scoreboard players reset $moving $(shifter)_vars
 
-$scoreboard players set $gamemode $(shifter)_vars 1
 $scoreboard players set $vanish $(shifter)_vars 0
 $scoreboard players set $hold $(shifter)_vars 0
 $scoreboard players set $lock_anim $(shifter)_vars 0
