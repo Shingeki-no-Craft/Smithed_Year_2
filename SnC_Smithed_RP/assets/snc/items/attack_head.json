@@ -1,1 +1,1 @@
-{"model": {"type": "minecraft:model", "model": "snc:attack_head"}}
+{"model":{"type":"minecraft:composite","models":[{"type":"minecraft:model","model":"snc:attack/default/head_up"},{"type":"minecraft:model","model":"snc:attack/default/head_dw"}]}}

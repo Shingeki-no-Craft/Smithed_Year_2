@@ -9,15 +9,8 @@ execute if score @s snc.transform matches 1.. run function snc:player/titan/tran
 execute unless score @s snc.odm_state matches 0.. run function snc:logic/trigger/init
 ## Logic
 execute if score @s snc.earthquake matches 0.. run function snc:logic/earthquake/score
-
 ## Elevator
-#down
-execute positioned -13.5 87 106.5 if entity @s[dx=1, dy=1, dz=1] run function snc:api/elevator {"coordinates":"-5.5 65 115.5 facing -6 65 103", "text": "Crystal Cave", "color": "#0ED7E2"}
-execute positioned -13.5 87 112.5 if entity @s[dx=1, dy=1, dz=1] run function snc:api/elevator {"coordinates":"-11.5 65 115.5 facing -12 65 103", "text": "Crystal Cave", "color": "#0ED7E2"}
-
-#up
-execute positioned -5.5 65 116.5 if entity @s[dx=1, dy=1, dz=1] run function snc:api/elevator {"coordinates":"-14.5 87 106.5 facing -18 87 106", "text": "The Mines", "color": "#A67610"}
-execute positioned -11.5 65 116.5 if entity @s[dx=1, dy=1, dz=1] run function snc:api/elevator {"coordinates":"-14.5 87 112.5 facing -18 87 112", "text": "The Mines", "color": "#A67610"}
+function snc:dynamic/elevator/main
 
 ## Using right click
 execute unless score @s snc.used.carrot matches 1.. run return 1

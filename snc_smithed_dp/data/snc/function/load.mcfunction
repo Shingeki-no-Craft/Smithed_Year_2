@@ -59,6 +59,7 @@ scoreboard objectives add snc.quest.odmtrack dummy
 scoreboard objectives add snc.quest.odmtrack.stage dummy
 scoreboard objectives add snc.quest.odmtrack.progress dummy
 scoreboard objectives add snc.cart dummy
+scoreboard objectives add snc.elevator dummy
 
 ## Battlegrounds
 function summit.battlegrounds:api/register_booth {booth_id: "snc", booth_name: "Shingeki no Craft", return_pos: "[-73.5d, 72.00d, 110.d]", return_rot: "[90f, 0f]", struct_function: "snc:battlegrounds/structure", compatibility: "", kit_function: "snc:battlegrounds/kit/main"}
