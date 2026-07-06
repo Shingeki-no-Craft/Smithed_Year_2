@@ -13,6 +13,11 @@ Options:
     --source PATH           Resource pack folder (default: SnC_Smithed_RP).
     --audio-method METHOD   How to compress the audio (see below). Alias:
                             --audio-compressor. Default: 'decode'.
+    --png-method METHOD     How to compress the textures (see below).
+                            Default: 'oxipng'.
+    --zopfli                Recompress the final zip with zopfli: lossless and
+                            Minecraft-readable, ~2-3% smaller. Slow (single
+                            final pass). Needs 'pip install zopflipy'.
     --keep-temp             Do not delete the temporary work folder (debug).
 
 Audio methods (--audio-method):
@@ -23,20 +28,30 @@ Audio methods (--audio-method):
              8000/16k). Stereo is always preserved.
     none     Leaves the audio untouched.
 
+Texture methods (--png-method):
+    oxipng    Lossless oxipng: textures look identical in-game, just smaller
+              (default). Needs 'pyoxipng'.
+    quantize  Lossless oxipng first, then, only if still over target, lossy
+              palette reduction (256 -> 128 -> 64 colours). Needs 'pillow'.
+    none      Leaves the textures untouched.
+
 Reduction strategy (from least to most aggressive / noticeable):
     1. Base zip with max deflate. If it already fits, stop.
     2. Minify the model JSON (strips spaces/tabs/newlines). Lossless.
-    3. Round the model float precision (4 -> 3 -> 2 decimals). Lossy, but
+    3. oxipng the textures (--png-method). Lossless.
+    4. Round the model float precision (4 -> 3 -> 2 decimals). Lossy, but
        practically imperceptible in-game.
-    4. Compress the .ogg sounds according to --audio-method (requires ffmpeg).
+    5. Compress the .ogg sounds according to --audio-method (requires ffmpeg).
+    6. As a last resort, quantize textures (only if --png-method quantize).
 
-Textures (.png) are never touched. Audio always keeps its channels
+Everything runs on a temporary copy: the source folder is NEVER modified, the
+compression only ends up inside the output zip. Audio always keeps its channels
 (it is never downmixed to mono).
 
 Examples:
     python build.py 2000 --audio-method chirp
-    python build.py 4000 --audio-compressor decode   # equivalent alias
-    python build.py 4000 --audio-method none
+    python build.py 1200 --audio-method chirp --png-method quantize --zopfli
+    python build.py 4000 --audio-method none --png-method none
 """
 
 import argparse
@@ -64,6 +79,14 @@ def has_ffmpeg():
     return shutil.which("ffmpeg") is not None
 
 
+def has_oxipng():
+    try:
+        import oxipng  # noqa: F401
+        return True
+    except ImportError:
+        return False
+
+
 def iter_files(root, extension):
     """Yields absolute paths of files with the given extension (dot included)."""
     for base, _dirs, files in os.walk(root):
@@ -82,15 +105,31 @@ def is_model_json(path):
 # Packaging
 # ---------------------------------------------------------------------------
 
-def make_zip(src_dir, zip_path):
+def make_zip(src_dir, zip_path, use_zopfli=False):
     """Compresses src_dir into zip_path with max deflate. Returns size in bytes.
 
     Files land at the zip root (pack.mcmeta on top), the standard resource pack
     layout.
+
+    use_zopfli   Compress with zopfli instead of zlib. Zopfli produces a
+                 smaller (but standard, Minecraft-readable) deflate stream at
+                 the cost of being MUCH slower, so it is meant for a single
+                 final pass, not the reduction loop. Requires the 'zopflipy'
+                 package.
     """
     if os.path.exists(zip_path):
         os.remove(zip_path)
-    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as zf:
+    if use_zopfli:
+        try:
+            import zopfli
+        except ImportError:
+            sys.exit("[ERROR] --zopfli needs the 'zopflipy' package: "
+                     "pip install zopflipy")
+        opener = lambda: zopfli.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED)
+    else:
+        opener = lambda: zipfile.ZipFile(
+            zip_path, "w", zipfile.ZIP_DEFLATED, compresslevel=9)
+    with opener() as zf:
         for base, _dirs, files in os.walk(src_dir):
             for name in files:
                 full = os.path.join(base, name)
@@ -212,6 +251,59 @@ def reduce_sounds(work_dir, bitrate_k, sample_rate=None):
 
 
 # ---------------------------------------------------------------------------
+# Texture reduction (.png)
+# ---------------------------------------------------------------------------
+# These run on the temporary staged copy, so the source textures on disk are
+# never modified: the compression only ever ends up inside the output zip.
+
+def optimize_pngs_lossless(work_dir, level=6):
+    """oxipng every .png in place (lossless). Textures stay byte-identical
+    in-game; they just weigh less. Returns the number of files that shrank
+    (0 if pyoxipng is not installed)."""
+    try:
+        import oxipng
+    except ImportError:
+        return 0
+    strip = oxipng.StripChunks.safe()
+    changed = 0
+    for path in iter_files(work_dir, ".png"):
+        before = os.path.getsize(path)
+        try:
+            oxipng.optimize(path, level=level, strip=strip)
+        except Exception:  # noqa: BLE001 - a bad png shouldn't abort the build
+            continue
+        if os.path.getsize(path) < before:
+            changed += 1
+    return changed
+
+
+def quantize_pngs(work_dir, colors):
+    """Quantise every .png to <= `colors` palette entries (lossy), then oxipng
+    it. Keeps alpha. Returns the number of files that shrank (0 if Pillow or
+    pyoxipng is missing)."""
+    try:
+        import oxipng
+        from PIL import Image
+    except ImportError:
+        return 0
+    strip = oxipng.StripChunks.safe()
+    changed = 0
+    for path in iter_files(work_dir, ".png"):
+        before = os.path.getsize(path)
+        try:
+            img = Image.open(path).convert("RGBA")
+            # FASTOCTREE is the Pillow method that quantises RGBA (keeps alpha).
+            img.quantize(colors=colors, method=Image.Quantize.FASTOCTREE).save(
+                path, format="PNG", optimize=True)
+            oxipng.optimize(path, level=6, strip=strip)
+        except Exception:  # noqa: BLE001
+            continue
+        if os.path.getsize(path) < before:
+            changed += 1
+    return changed
+
+
+# ---------------------------------------------------------------------------
 # Orchestration
 # ---------------------------------------------------------------------------
 
@@ -237,7 +329,29 @@ def _audio_steps(staged, method):
     ]
 
 
-def build(source, output, target_bytes, audio_method="decode", keep_temp=False):
+# PNG steps for the chosen method, split into a lossless part (safe, runs
+# early) and a lossy part (palette quantization, runs late / most aggressive).
+def _png_lossless_steps(staged, method):
+    if method == "none":
+        return []
+    # Both 'oxipng' and 'quantize' start with the lossless oxipng pass.
+    return [("Optimize textures with oxipng (lossless)",
+             lambda: optimize_pngs_lossless(staged))]
+
+
+def _png_lossy_steps(staged, method):
+    if method != "quantize":
+        return []
+    # Progressively fewer colours: only reached if still over target.
+    return [
+        (f"Quantize textures to {c} colors (lossy)",
+         (lambda n=c: quantize_pngs(staged, n)))
+        for c in (256, 128, 64)
+    ]
+
+
+def build(source, output, target_bytes, audio_method="decode", keep_temp=False,
+          use_zopfli=False, png_method="oxipng"):
     if not os.path.isdir(source):
         sys.exit(f"[ERROR] Resource pack folder not found: {source}")
 
@@ -246,18 +360,30 @@ def build(source, output, target_bytes, audio_method="decode", keep_temp=False):
     shutil.copytree(source, staged)
 
     # Each step: (description, function applying the reduction to 'staged').
-    # They run in order only while the zip still doesn't fit the target: models
-    # first (lossless / barely lossy) and then audio according to the method.
+    # They run in order only while the zip still doesn't fit the target, from
+    # least to most destructive: lossless first (minify JSON, oxipng textures),
+    # then mildly-lossy model rounding, then lossy audio, and finally the lossy
+    # texture quantization as a last resort.
     steps = [
         ("Minify model JSON (lossless)",
          lambda: minify_json_models(staged)),
+    ] + _png_lossless_steps(staged, png_method) + [
         ("Reduce model precision to 4 decimals",
          lambda: reduce_model_precision(staged, 4)),
         ("Reduce model precision to 3 decimals",
          lambda: reduce_model_precision(staged, 3)),
         ("Reduce model precision to 2 decimals",
          lambda: reduce_model_precision(staged, 2)),
-    ] + _audio_steps(staged, audio_method)
+    ] + _audio_steps(staged, audio_method) \
+      + _png_lossy_steps(staged, png_method)
+
+    # A single, final zopfli pass (slow) once the search with fast zlib is done.
+    def finalize(size):
+        if not use_zopfli:
+            return size
+        zsize = make_zip(staged, output, use_zopfli=True)
+        print(f"[zopfli] recompressed losslessly: {human(size)} -> {human(zsize)}")
+        return zsize
 
     try:
         size = make_zip(staged, output)
@@ -266,12 +392,16 @@ def build(source, output, target_bytes, audio_method="decode", keep_temp=False):
 
         if size <= target_bytes:
             print("[ok]    Already fits the target without reducing quality.")
-            return size
+            return finalize(size)
 
         if audio_method != "none" and not has_ffmpeg():
             print("[warn]  ffmpeg is not on the PATH: sound quality (.ogg) "
                   "cannot be reduced. Install ffmpeg if you need to shrink "
                   "the size further.")
+        if png_method != "none" and not has_oxipng():
+            print("[warn]  pyoxipng is not installed: textures (.png) cannot "
+                  "be compressed. Run 'pip install pyoxipng' (and 'pillow' for "
+                  "--png-method quantize) to shrink the size further.")
 
         for desc, action in steps:
             n = action()
@@ -283,12 +413,12 @@ def build(source, output, target_bytes, audio_method="decode", keep_temp=False):
             if size <= target_bytes:
                 print(f"[ok]    Target reached: {human(size)} "
                       f"<= {human(target_bytes)}")
-                return size
+                return finalize(size)
 
         print(f"[end]   Target not reached. Best result: "
               f"{human(size)} (target: {human(target_bytes)}).")
         print("        Ran out of available reduction steps.")
-        return size
+        return finalize(size)
     finally:
         if keep_temp:
             print(f"[temp]  Work folder kept at: {work_dir}")
@@ -314,8 +444,21 @@ def main():
                              "(maximum savings, 80s timbre via low sample rate) "
                              "or 'none' (leaves audio untouched). Stereo is "
                              "always preserved.")
+    parser.add_argument("--png-method",
+                        dest="png_method", default="oxipng",
+                        type=str.lower, choices=["oxipng", "quantize", "none"],
+                        help="How to compress the textures (in the zip only; "
+                             "the source folder is never touched): 'oxipng' "
+                             "(lossless, default), 'quantize' (lossless then "
+                             "lossy palette reduction 256/128/64 colours if "
+                             "still over target) or 'none'. Needs 'pyoxipng' "
+                             "(and 'pillow' for quantize).")
     parser.add_argument("--keep-temp", action="store_true",
                         help="Keep the temporary work folder.")
+    parser.add_argument("--zopfli", action="store_true",
+                        help="Recompress the final zip with zopfli (lossless, "
+                             "Minecraft-compatible, ~2-3%% smaller). Slow; runs "
+                             "once at the end. Needs 'pip install zopflipy'.")
     args = parser.parse_args()
 
     if args.file_size < 500:
@@ -323,7 +466,8 @@ def main():
 
     target_bytes = args.file_size * 1024
     final = build(args.source, args.output, target_bytes,
-                  args.audio_method, args.keep_temp)
+                  args.audio_method, args.keep_temp, args.zopfli,
+                  args.png_method)
     print(f"\nDone -> {args.output} ({human(final)})")
 
 

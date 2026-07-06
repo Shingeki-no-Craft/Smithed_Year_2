@@ -1,6 +1,6 @@
 {
 	"textures": {
-		"0": "snc:custom/female/body",
+		"0": "animated_java:blueprint/female/b000",
 		"particle": "minecraft:item/pufferfish"
 	},
 	"display": {

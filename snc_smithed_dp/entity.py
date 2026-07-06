@@ -6,10 +6,10 @@ The booth was split across several .schem files. Each entity is placed at
 (schematic Offset + entity Pos) so that all the files reassemble around one
 common anchor -- the WorldEdit origin you'd //paste them from.
 
-Output: data/snc/function/summit/spawn_entities.mcfunction  (snc:summit/spawn_entities)
+Output: data/snc/function/summit/summon.mcfunction  (snc:summit/summon)
 
 Run it, then in-game stand where the booth's origin should be and run:
-    /function snc:summit/spawn_entities
+    /function snc:summit/summon
 """
 
 import os
@@ -19,7 +19,7 @@ from nbtlib import serialize_tag
 
 SCHEM_PATHS = ["snc_booth.schem"]
 OUT_PATH = os.path.join(
-    "data", "snc", "function", "summit", "spawn_entities.mcfunction"
+    "data", "snc", "function", "summit", "summon.mcfunction"
 )
 
 # Keys inside an entity's NBT that must NOT be re-summoned.

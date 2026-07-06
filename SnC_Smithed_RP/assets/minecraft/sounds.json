@@ -9,12 +9,6 @@
     "snc.odm.shoot": {
 		"sounds": ["snc:shoot"]
 	},
-	"snc.heart": {
-		"sounds": [
-			"snc:heart_beat/1",
-			"snc:heart_beat/2"
-		]
-	},
 	"snc.shifters.trigger": {"sounds": ["snc:shifters/trigger"]},
 	"snc.shifters.hurt": {"sounds": ["snc:shifters/hurt"]},
 	"snc.titan.footsteps": {
@@ -44,11 +38,6 @@
 			"snc:shifters/bite/1",
 			"snc:shifters/bite/2",
 			"snc:shifters/bite/3"
-		]
-	},
-	"aot.human.gore": {
-		"sounds": [
-			"snc:human/gore"
 		]
 	},
 	"snc.shifters.steam":{

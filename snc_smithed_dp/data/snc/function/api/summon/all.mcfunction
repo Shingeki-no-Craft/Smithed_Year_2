@@ -1,1 +1,0 @@
-execute positioned -67 84.00 103 run function snc:summit/spawn_entities

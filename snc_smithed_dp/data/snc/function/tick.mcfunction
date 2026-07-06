@@ -11,9 +11,9 @@ execute as @a[scores={snc.quest.odmtrack.stage=1..}] at @s positioned ~ 68 ~ if 
 
 ## BOOTH : ELEVATOR
 #down
+execute positioned -13.5 87 106.5 run particle heart
 execute positioned -13.5 87 106.5 if entity @p[distance=..0.5] as @p[distance=..0.5] run function snc:api/elevator {"coordinates":"-5.5 65 115.5 facing -6 65 103", "text": "Crystal Cave", "color": "#0ED7E2"}
 execute positioned -13.5 87 112.5 if entity @p[distance=..0.5] as @p[distance=..0.5] run function snc:api/elevator {"coordinates":"-11.5 65 115.5 facing -12 65 103", "text": "Crystal Cave", "color": "#0ED7E2"}
-
 
 #up
 execute positioned -5.5 65 116.5 if entity @p[distance=..0.5] as @p[distance=..0.5] run function snc:api/elevator {"coordinates":"-14.5 87 106.5 facing -18 87 106", "text": "The Mines", "color": "#A67610"}
