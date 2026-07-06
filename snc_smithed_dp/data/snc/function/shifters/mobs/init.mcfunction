@@ -43,5 +43,5 @@ effect give @s resistance 5 4 true
 $attribute @s scale base set $(scale_player)
 $attribute @s entity_interaction_range base set $(entity_range)
 
-execute store result score @s gamemode run data get entity @s playerGameType
+execute store result score @s snc.gamemode run data get entity @s playerGameType
 gamemode adventure

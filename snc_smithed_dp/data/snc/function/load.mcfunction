@@ -54,16 +54,6 @@ scoreboard players set snc.ticks clock 0
 scoreboard players set 2s clock 0
 scoreboard players set time clock 0
 
-scoreboard objectives add snc.trigger.public trigger
-scoreboard objectives add snc.trigger.private trigger
-
-## Hold scoreboards
-scoreboard objectives add snc.hold.rc dummy
-scoreboard objectives add snc.hold dummy
-# scoreboard objectives add player_walking minecraft.custom:walk_one_cm
-# scoreboard objectives add player_jumping minecraft.custom:minecraft.jump
-scoreboard objectives add gamemode dummy
-
 ## Booth
 scoreboard objectives add snc.animation_jump.zwei dummy
 scoreboard objectives add snc.animation_idle.zwei dummy
