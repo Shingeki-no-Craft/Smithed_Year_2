@@ -3,3 +3,4 @@ tag @s remove animated_java.cart.animation.idle.playing
 tag @s remove animated_java.cart.animation.jump_start.playing
 tag @s remove animated_java.cart.animation.jump_mid.playing
 tag @s remove animated_java.cart.animation.jump_end.playing
+tag @s remove animated_java.cart.animation.walk.playing

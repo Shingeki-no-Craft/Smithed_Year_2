@@ -1,4 +1,4 @@
-playsound minecraft:snc.shifters.jaw.smash player @a ^ ^ ^ 3 1
+playsound entity.wither.break_block player @a ^ ^ ^ 3 1
 $execute if score $air_frame $(shifter)_vars matches 0..19 on vehicle anchored feet as @e[distance=..16,tag=!$(shifter)] run function snc:shifters/combat/slam {"distance":6, "damage":8}
 $execute if score $air_frame $(shifter)_vars matches 0..19 on vehicle anchored feet run particle minecraft:block{block_state:"minecraft:dirt"} ^ ^ ^ 2 .5 2 1 100 force
 $execute if score $air_frame $(shifter)_vars matches 0..19 on vehicle anchored feet run particle white_smoke ^ ^ ^ 1 .5 1 .1 50 force

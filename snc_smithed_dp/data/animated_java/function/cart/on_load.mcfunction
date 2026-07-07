@@ -4,3 +4,4 @@ scoreboard objectives add aj.idle.frame dummy
 scoreboard objectives add aj.jump_start.frame dummy
 scoreboard objectives add aj.jump_mid.frame dummy
 scoreboard objectives add aj.jump_end.frame dummy
+scoreboard objectives add aj.walk.frame dummy

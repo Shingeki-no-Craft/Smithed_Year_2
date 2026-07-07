@@ -3,4 +3,5 @@ execute if entity @s[tag=animated_java.cart.animation.idle.playing] run function
 execute if entity @s[tag=animated_java.cart.animation.jump_start.playing] run function animated_java:cart/animations/jump_start/zzz/on_tick
 execute if entity @s[tag=animated_java.cart.animation.jump_mid.playing] run function animated_java:cart/animations/jump_mid/zzz/on_tick
 execute if entity @s[tag=animated_java.cart.animation.jump_end.playing] run function animated_java:cart/animations/jump_end/zzz/on_tick
+execute if entity @s[tag=animated_java.cart.animation.walk.playing] run function animated_java:cart/animations/walk/zzz/on_tick
 execute on passengers run rotate @s ~ ~

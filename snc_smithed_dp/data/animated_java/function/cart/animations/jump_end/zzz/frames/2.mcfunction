@@ -15,3 +15,4 @@ $data merge entity $(right_foot) {transformation: [-0.9659f,0.2527f,-0.056f,-1.7
 $data merge entity $(right_knee) {transformation: [-1.2188f,0.3188f,-0.0707f,-1.7428f,0.3216f,1.2192f,-0.0459f,-0.1026f,0.0567f,-0.0623f,-1.2589f,-2.3331f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(right_leg) {transformation: [-1.9587f,0.5228f,0.0457f,-1.0815f,0.5169f,1.8909f,0.5189f,2.2067f,0.0911f,0.5129f,-1.9598f,-2.0324f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(group) {transformation: [-1.9904f,0f,0f,0f,0f,1.9602f,0.3456f,1.6948f,0f,0.3456f,-1.9602f,0.4285f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+execute unless entity @s[tag=aj.transforms_only] at @s run function animated_java:cart/animations/jump_end/zzz/frames/2_root_function
