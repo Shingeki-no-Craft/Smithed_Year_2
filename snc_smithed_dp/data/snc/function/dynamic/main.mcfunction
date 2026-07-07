@@ -6,3 +6,6 @@ execute if entity @s[tag=snc.shifter,type=!villager] if function snc:shifters/mo
 
 # --------------------------- [Attack Head] --------------------------- #
 execute if entity @s[tag=snc.entity.attack_head] positioned -79 79 103 run function snc:dynamic/attack_titan/head
+
+# 
+execute if entity @s[tag=animated_java.cart.root] run function snc:dynamic/cart_titan/main

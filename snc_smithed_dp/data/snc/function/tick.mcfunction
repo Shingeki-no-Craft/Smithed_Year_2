@@ -1,5 +1,7 @@
 execute as @e at @s run function snc:dynamic/main
 
+particle minecraft:snowflake -19 70 104 24 5 24 0 1 force
+
 ## SNC : Tick
 scoreboard players add snc.ticks snc.clock 1
 execute if score snc.ticks snc.clock matches 20 run function snc:seconds
@@ -35,20 +37,3 @@ execute as @a[scores={snc.wait.battlegrounds=0}] run function snc:dynamic/allawi
 
 execute as 092423d9-99d5-4645-a78c-3980e33c4e07 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
 execute as e65a7129-0763-4be4-b26d-22f781dc0145 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
-# --------------------------- [Dynamic - Cart AJ] --------------------------- #
-
-execute if score $stage snc.cart matches 1.. if score $cart snc.wait matches 1.. run scoreboard players remove $cart snc.wait 1
-execute if score $stage snc.cart matches 1.. if score $cart snc.wait matches 0 run function snc:dynamic/cart_titan/jump
-execute if score $stage snc.cart matches 3 if score $jump_tick snc.cart matches ..19 as 1751e58c-0f26-4ef5-bf2f-0556b7f66581 at @s run function snc:dynamic/cart_titan/teleport_travel
-execute if score $stage snc.cart matches 6 if score $jump_tick snc.cart matches ..19 as 1751e58c-0f26-4ef5-bf2f-0556b7f66581 at @s run function snc:dynamic/cart_titan/teleport_return
-
-#Init
-execute if score $cart_travel snc.wait matches 1.. run scoreboard players remove $cart_travel snc.wait 1
-execute if score $cart_travel snc.wait matches 100 as 6a75984c-ec7a-48ae-a6a1-f28d27033215 on passengers run title @s actionbar {"text":"Jumping in 5", "color":"light_purple"}
-execute if score $cart_travel snc.wait matches 80 as 6a75984c-ec7a-48ae-a6a1-f28d27033215 on passengers run title @s actionbar {"text":"Jumping in 4", "color":"light_purple"}
-execute if score $cart_travel snc.wait matches 60 as 6a75984c-ec7a-48ae-a6a1-f28d27033215 on passengers run title @s actionbar {"text":"Jumping in 3", "color":"light_purple"}
-execute if score $cart_travel snc.wait matches 40 as 6a75984c-ec7a-48ae-a6a1-f28d27033215 on passengers run title @s actionbar {"text":"Jumping in 2", "color":"light_purple"}
-execute if score $cart_travel snc.wait matches 20 as 6a75984c-ec7a-48ae-a6a1-f28d27033215 on passengers run title @s actionbar {"text":"Jumping in 1", "color":"light_purple"}
-execute if score $cart_travel snc.wait matches 0 run function snc:dynamic/cart_titan/trigger
-
-# --------------------------- [Dynamic - Entity] --------------------------- #
