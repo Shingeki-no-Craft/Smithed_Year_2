@@ -69,7 +69,7 @@ scoreboard objectives add snc.quest.battlegrounds dummy
 
 ##### HOW TO CREATE A SHIFTER #####
 scoreboard objectives add shifter_vars dummy
-scoreboard objectives add snc.titan.explosion dummy
+scoreboard objectives add snc.titan.animatronic dummy
 ## Shifters
 function snc:shifters/mobs/arguments
 scoreboard objectives add snc.transform dummy

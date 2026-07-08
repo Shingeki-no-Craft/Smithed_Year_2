@@ -17,5 +17,8 @@ execute if score @s snc.quest.odmtrack.stage matches 4 run tellraw @s ["",{"text
 execute if score @s snc.quest.odmtrack.stage matches 4 run scoreboard players set @s snc.wait.odmtrack 40
 
 execute if score @s snc.quest.odmtrack.stage matches 5.. run tellraw @s ["",{"text":"[NPC]","color":"yellow"},{"text":" <Gen. Hope>","color":"dark_green"},{"text":" Go ","color":"white"},{"text":"Soldier","color":"gold"},{"text":"!","color":"white"}]
-execute if score @s snc.quest.odmtrack.stage matches 5.. run scoreboard players set @s snc.quest.odmtrack.progress 1
+
+execute if score @s snc.quest.odmtrack.stage matches 5.. unless score @s snc.quest.odmtrack.progress matches 1.. run scoreboard players set @s snc.quest.odmtrack.progress 1
 #execute if score @s snc.quest.odmtrack.stage matches 5.. run scoreboard players set @s snc.quest.odmtrack.stage 6
+
+return 1

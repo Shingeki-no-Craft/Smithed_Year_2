@@ -27,7 +27,9 @@
         {"text": "Can be modified with","color":"aqua","italic":false},
         [{"text":" ● ","color":"yellow","italic":false},{"text": "Ultra Hard Steel","color":"gray","italic":false}],
         [{"text":" ● ","color":"yellow","italic":false},{"text": "Thunder Spear","color":"gray","italic":false}],
-        [{"text":" ● ","color":"yellow","italic":false},{"text": "Cartridge","color":"gray","italic":false}]
+        [{"text":" ● ","color":"yellow","italic":false},{"text": "Cartridge","color":"gray","italic":false}],
+        " ",
+        {"text":"\uE001", "font":"snc:gui","italic":false, "color":"white"}
       ],
       "attribute_modifiers": [
         {
