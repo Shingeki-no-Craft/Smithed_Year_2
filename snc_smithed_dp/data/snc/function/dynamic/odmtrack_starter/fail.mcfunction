@@ -1,3 +1,7 @@
+# Win!
+
+# Fail
+execute positioned ~ 68 ~ unless entity @s[dy=-10000] run return -1
 scoreboard players reset @s snc.quest.odmtrack.progress
 scoreboard players reset @s snc.quest.odmtrack.stage
 scoreboard players reset @s snc.quest.odmtrack
