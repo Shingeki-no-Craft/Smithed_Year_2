@@ -68,6 +68,15 @@
             "type": "bitmap",
             "file": "snc:custom/font/space/split.png",
             "ascent": -32768,
+            "height": 0,
+            "chars": [
+                "\uF82C"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "snc:custom/font/space/split.png",
+            "ascent": -32768,
             "height": -4,
             "chars": [
                 "\uF802"

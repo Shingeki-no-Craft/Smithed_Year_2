@@ -21,7 +21,8 @@ execute if score $stage snc.cart matches 3 run function snc:dynamic/cart_titan/t
 # Fourth run
 execute if score $stage snc.cart matches 4 on passengers if entity @s[type=happy_ghast] on passengers run ride @s dismount
 execute if score $stage snc.cart matches 4 if score $hange snc.cart matches 1 run playsound entity.villager.ambient master @a[tag=snc.talked_to.hange] ~ ~ ~ 3 2
-execute if score $stage snc.cart matches 4 if score $hange snc.cart matches 1 run tellraw @a[tag=snc.talked_to.hange] ["",{"text":"[NPC]","color":"yellow"},{"text":" <Sqd L. Hange>","color":"dark_green"},{"text":" Say hello to my little "},{"text":"friend","color":"light_purple"},{"text":"! Isn't those teeth just "},{"text":"gorgeous","italic":true,"color":"red"},{"text":"? Let's see how much pain it takes to make it scream!"}]
+execute if score $stage snc.cart matches 4 if score $hange snc.cart matches 1 as @a[tag=snc.talked_to.hange] run function snc:dynamic/dialog_box {name:{text:"L. Hange",color:green}, line_1:[{text:"Say hello to my little"},{"text":" friend","color":"dark_purple"},"!"], line_2: ["Isn't those teeth just ", {"text":"GORGEOUS","color":"dark_red"},"?"], line_3:{text:""}, sound:"entity.villager.ambient master @s ~ ~ ~ 1 2"}
+
 #execute if score $stage snc.cart matches 4 if score $hange snc.cart matches 1 run scoreboard players add $cart snc.wait 70
 execute if score $stage snc.cart matches 4 if score $hange snc.cart matches 1 run tag @a[tag=snc.talked_to.hange] remove snc.talked_to.hange
 execute if score $stage snc.cart matches 4 run function animated_java:cart/animations/idle/play_exclusive

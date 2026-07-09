@@ -1,3 +1,4 @@
+function snc:dynamic/dialog_box {name:{text:"L. Hange",color:green}, line_1:[{text:"Say hello to my little"},{"text":" friend","color":"light_purple"},"! Isn't those teeth just ", {"text":"gorgeous","color":"dark_red"},"?"], line_2: {text:""}, line_3:{text:""}, sound:"entity.villager.ambient master @s ~ ~ ~ 1 2"}
 
 
-tellraw @s ["",{"text":"[NPC]","color":"yellow"},{"text":" <TL. SkullHPT>","color":"dark_green"},{"text":" ","color":"gold"},{"text":" the track! You have now received a "},{"text":"badge","color":"dark_purple"},{"text":" indicating your success. Since you're now stronger... you might wanna fight off some titans at the "},{"text":"battlegrounds","color":"red"},{"text":"!"}]
+tellraw @s ["",{"text":"[NPC]","color":"yellow"},{"text":" <Sqd L. Hange>","color":"dark_green"},{"text":" Say hello to my little "},{"text":"friend","color":"light_purple"},{"text":" "},]

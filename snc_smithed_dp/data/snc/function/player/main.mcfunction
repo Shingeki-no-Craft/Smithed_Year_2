@@ -17,9 +17,7 @@ function snc:dynamic/elevator/main
 execute if score @s snc.wait.odmtrack matches 1.. run function snc:dynamic/odmtrack_starter/start_quest
 
 # execute if score @s snc.quest.odmtrack.stage matches 1.. run function snc:dynamic/odmtrack_starter/get_value
-execute if score @s snc.quest.odmtrack.stage matches 5.. run function snc:dynamic/odmtrack_starter/particles/tick
-execute if score @s snc.quest.odmtrack.stage matches 5.. run function snc:dynamic/odmtrack_starter/fail
-
+execute if score @s snc.quest.odmtrack.progress matches 1.. run function snc:dynamic/odmtrack_starter/particles/tick
 ## Using right click
 execute unless score @s snc.used.carrot matches 1.. run return 1
 scoreboard players set @s snc.used.carrot 0
