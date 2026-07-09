@@ -7,7 +7,7 @@
             "chars": ["\uE100"]},
         {"type": "bitmap","file": "snc:custom/font/actionbar/cart.png","ascent": 16,"height": 16,
             "chars": ["\uE101"]},
-        {"type": "bitmap","file": "snc:custom/font/actionbar/dialog_box.png","ascent": 4,"height": 256,
+        {"type": "bitmap","file": "snc:custom/font/actionbar/dialog_box.png","ascent": 1,"height": 320,
             "chars": ["\uE102"]},
 
         {"type": "bitmap","file": "snc:custom/font/bossbar/female.png","ascent": 16,"height": 32,
@@ -27,6 +27,16 @@
             "chars": ["\uF204"]},
         {"type": "bitmap","file": "snc:custom/font/hotbar/no_energy_transformed.png","ascent": -11,"height": 32,
             "chars": ["\uF205"]},
+            
+        {"type": "bitmap","file": "snc:custom/font/sticker/battlegrounds.png","ascent": 8,"height": 8,
+            "chars": ["\uE304"]},
+        {"type": "bitmap","file": "snc:custom/font/sticker/cart.png","ascent": 8,"height": 8,
+            "chars": ["\uE303"]},
+        {"type": "bitmap","file": "snc:custom/font/sticker/iceburst_stone.png","ascent": 8,"height": 8,
+            "chars": ["\uE302"]},
+        {"type": "bitmap","file": "snc:custom/font/sticker/scout.png","ascent": 8,"height": 8,
+            "chars": ["\uE301"]},
+
         {
             "type": "bitmap",
             "file": "snc:custom/font/space/split.png",

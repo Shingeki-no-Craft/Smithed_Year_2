@@ -1,0 +1,2 @@
+$tellraw @s [{"text": "\n\n\n\n\n\n\n\n\n\n\n\n\n", "shadow_color":16777215, "color": "black"},{"text":"\uE102","font":"snc:gui","color": "white"},"\n   ", $(name),"\n\n   ", $(line_1),"\n   ", $(line_2),"\n   ",$(line_3),"\n"]
+$playsound $(sound)

@@ -7,9 +7,9 @@ execute if score @s snc.quest.get_odm matches 1 unless score @s snc.quest.odmtra
 
 
 # Has ODM Gear and finished the quest
-execute if score @s snc.quest.get_odm matches 1 if score @s snc.quest.odmtrack matches 1 run tellraw @s ["",{"text":"[NPC]","color":"yellow"},{"text":" <Gen. Hope>","color":"dark_green"},{"text":" You are welcome to train here at any given moment.","color":"white"}]
+execute if score @s snc.quest.get_odm matches 1 if score @s snc.quest.odmtrack matches 1 run function snc:dynamic/dialog_box {name:{text:"Gen. Hope",color:green}, line_1:{"text":"You are welcome to train here at any given moment."}, line_2:{text:""}, line_3:{text:""}}
+
 execute if score @s snc.quest.get_odm matches 1 if score @s snc.quest.odmtrack matches 1 run return -1
 
-
 # Fallback, doesn't have odm
-tellraw @s ["",{"text":"[NPC]","color":"yellow"},{"text":" <Gen. Hope>","color":"dark_green"},{"text":" I can't help you right now.","color":"white"}]
+function snc:dynamic/dialog_box {name:{text:"Gen. Hope",color:green}, line_1:{"text":"I can't help you right now."}, line_2:{text:""}, line_3:{text:""}}

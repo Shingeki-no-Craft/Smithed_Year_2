@@ -14,7 +14,7 @@ execute if items entity @s armor.feet minecraft:mushroom_stew[custom_data~{snc_b
 
 clear @s
 tag @s add snc.titan
-tellraw @a {text:"[INSERT STAMP HERE]", color:"yellow"}
+tellraw @a ["", {text:"[INSERT STAMP HERE] ", color:"yellow"}, {text:"\uE304",font:"snc:gui"}]
 
 effect give @s absorption 20 5 true
 scoreboard players set $health female_vars 20
