@@ -1,14 +1,11 @@
 execute as @e at @s run function snc:dynamic/main
 
+# Cave
 particle minecraft:snowflake -19 70 104 24 5 24 0 1 force
 
 ## SNC : Tick
 scoreboard players add snc.ticks snc.clock 1
 execute if score snc.ticks snc.clock matches 20 run function snc:seconds
-
-## SNC : ODM Track
-execute as @a[scores={snc.quest.odmtrack.stage=1..}] run function snc:dynamic/odmtrack_starter/get_value
-execute as @a[scores={snc.quest.odmtrack.stage=1..}] at @s positioned ~ 68 ~ if entity @s[dy=-10000] run function snc:dynamic/odmtrack_starter/fail
 
 # --------------------------- [Dynamic - Zwei Jumpscare] --------------------------- #
 
@@ -26,8 +23,6 @@ execute as 1bb7c29a-5bb1-4ac7-8d9b-250b43ffeab7 at @s if entity @p[distance=..5]
 execute as dcf0ec5a-9ded-4a81-a6f5-039cb5740129 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
 execute as 7b884c23-ec86-4532-8f0b-5a29dff19766 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
 execute as bca20b81-f429-4fb2-a69f-46b5b9954176 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
-execute as @a[scores={snc.wait.odmtrack=1..}] run scoreboard players remove @s snc.wait.odmtrack 1
-execute as @a[scores={snc.wait.odmtrack=0}] run function snc:dynamic/odmtrack_starter/start_quest
 
 execute as a075e98e-8151-44af-ae49-0046616e666f at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
 execute as 7dbe6c10-a52a-480d-936c-005a61626174 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p

@@ -1,0 +1,16 @@
+execute rotated ~90 ~ run function snc:dynamic/odmtrack_starter/particles/yellow_s
+execute rotated ~90 ~22.5 run function snc:dynamic/odmtrack_starter/particles/yellow_s
+execute rotated ~90 ~45 run function snc:dynamic/odmtrack_starter/particles/yellow_s
+execute rotated ~90 ~67.5 run function snc:dynamic/odmtrack_starter/particles/yellow_s
+execute rotated ~90 ~90 run function snc:dynamic/odmtrack_starter/particles/yellow_s
+execute rotated ~90 ~112.5 run function snc:dynamic/odmtrack_starter/particles/yellow_s
+execute rotated ~90 ~135 run function snc:dynamic/odmtrack_starter/particles/yellow_s
+execute rotated ~90 ~157.5 run function snc:dynamic/odmtrack_starter/particles/yellow_s
+execute rotated ~90 ~180 run function snc:dynamic/odmtrack_starter/particles/yellow_s
+execute rotated ~90 ~202.5 run function snc:dynamic/odmtrack_starter/particles/yellow_s
+execute rotated ~90 ~225 run function snc:dynamic/odmtrack_starter/particles/yellow_s
+execute rotated ~90 ~247.5 run function snc:dynamic/odmtrack_starter/particles/yellow_s
+execute rotated ~90 ~270 run function snc:dynamic/odmtrack_starter/particles/yellow_s
+execute rotated ~90 ~292.5 run function snc:dynamic/odmtrack_starter/particles/yellow_s
+execute rotated ~90 ~315 run function snc:dynamic/odmtrack_starter/particles/yellow_s
+execute rotated ~90 ~337.5 run function snc:dynamic/odmtrack_starter/particles/yellow_s

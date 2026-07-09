@@ -1,9 +1,14 @@
 {
     "providers": [
+        {"type": "bitmap","file": "snc:custom/font/mark.png","ascent": 7,"height": 128,
+            "chars": ["\uE001"]},
+
         {"type": "bitmap","file": "snc:custom/font/actionbar/black.png","ascent": 64,"height": 512,
             "chars": ["\uE100"]},
         {"type": "bitmap","file": "snc:custom/font/actionbar/cart.png","ascent": 16,"height": 16,
             "chars": ["\uE101"]},
+        {"type": "bitmap","file": "snc:custom/font/actionbar/dialog_box.png","ascent": 4,"height": 256,
+            "chars": ["\uE102"]},
 
         {"type": "bitmap","file": "snc:custom/font/bossbar/female.png","ascent": 16,"height": 32,
             "chars": ["\uFFF6"]},

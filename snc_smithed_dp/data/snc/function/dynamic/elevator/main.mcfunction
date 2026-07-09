@@ -18,11 +18,11 @@ execute if score @s snc.elevator matches 140 run playsound entity.minecart.ridin
 
 ## Teleport
 # down
-execute if score @s snc.elevator matches 120 if entity @s[tag=snc.elevator.1] run tp @s -5.5 65.5 115.5 180 0
-execute if score @s snc.elevator matches 120 if entity @s[tag=snc.elevator.2] run tp @s -11.5 65.5 115.5 180 0
+execute if score @s snc.elevator matches 120 if entity @s[tag=snc.elevator.1] run tp @s -5.5 65.5 116.5 180 0
+execute if score @s snc.elevator matches 120 if entity @s[tag=snc.elevator.2] run tp @s -11.5 65.5 116.5 180 0
 # up
-execute if score @s snc.elevator matches 120 if entity @s[tag=snc.elevator.3] run tp @s -13.5 86.5 105.5 90 0
-execute if score @s snc.elevator matches 120 if entity @s[tag=snc.elevator.4] run tp @s -13.5 86.5 111.5 90 0
+execute if score @s snc.elevator matches 120 if entity @s[tag=snc.elevator.3] run tp @s -13.5 86.5 106.5 90 0
+execute if score @s snc.elevator matches 120 if entity @s[tag=snc.elevator.4] run tp @s -13.5 86.5 112.5 90 0
 
 ## Arrival
 execute if score @s snc.elevator matches 90 if entity @s[tag=snc.elevator.1] run function snc:dynamic/elevator/title {"title": [{"color":"#55FFFF","text":"C", bold:true},{"color":"#74FFFF","text":"r"},{"color":"#93FFFF","text":"y"},{"color":"#B2FFFF","text":"s"},{"color":"#D1FFFF","text":"t"},{"color":"#F0FFFF","text":"a"},{"color":"#F0FFFF","text":"l "},{"color":"#D1FFFF","text":"C"},{"color":"#B2FFFF","text":"a"},{"color":"#93FFFF","text":"v"},{"color":"#55FFFF","text":"e"}], id: "1"}
