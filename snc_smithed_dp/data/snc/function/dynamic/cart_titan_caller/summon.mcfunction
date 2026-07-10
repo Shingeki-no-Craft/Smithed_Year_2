@@ -1,9 +1,10 @@
 #kill e65a7129-0763-4be4-b26d-22f781dc0145
+kill c293b800-3a7f-4418-a5ff-1f61567ac1bc
 kill 87ed7bb5-3247-420a-b39e-137d9942abb2
 
 #Mannequin
 #UUID: e65a7129-0763-4be4-b26d-22f781dc0145
-summon mannequin -27.5 64 95.5 {UUID: [-430280407,123948004,-1301470473,-2116288187], Tags:["summit.dynamic", "summit.booth_entity.snc", "snc.entity.cart_titan_caller"],immovable:1b, hide_description:1b, profile:{name:"HansZoe", model:slim}, Invulnerable:1b,CustomNameVisible:1b,hide_description:false,CustomName:{"text":"Sqd L. Hange","color":"dark_green"},description:{text:"[NPC]", color:yellow}}
+summon mannequin -27.5 64 95.5 {UUID: [-430280407,123948004,-1301470473,-2116288187], Tags:["summit.dynamic", "summit.booth_entity.snc", "snc.entity.cart_titan_caller"],immovable:1b, hide_description:1b, profile:{name:"HansZoe", model:slim}, Invulnerable:1b}
 
 
 item replace entity e65a7129-0763-4be4-b26d-22f781dc0145 armor.chest with iron_chestplate[minecraft:equippable={slot: "chest", asset_id: "snc:scout"}]
@@ -12,6 +13,10 @@ item replace entity e65a7129-0763-4be4-b26d-22f781dc0145 armor.feet with iron_bo
 
 execute as e65a7129-0763-4be4-b26d-22f781dc0145 run function snc:api/item_replace/military/scouts/odm/gas_trigger {"slot": "weapon.mainhand", "count": 1}
 execute as e65a7129-0763-4be4-b26d-22f781dc0145 run function snc:api/item_replace/military/scouts/odm/gear {"slot": "weapon.offhand", "count": 1}
+
+#Text Display
+#UUID: c293b800-3a7f-4418-a5ff-1f61567ac1bc
+summon minecraft:text_display -27.5 66.0625 95.5 {UUID: [-1030506496,981419032,-1510006943,1450885564], Tags:["summit.static", "summit.booth_entity.snc", "snc.entity.cart_titan_caller.text"], alignment: "center", background: 1073741824, billboard: "center", default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: [{"text":"Sqd L. Hange","color":"dark_green"},{"text":"\n[NPC] ","color":"yellow"}], text_opacity: -1b}
 
 #Interaction
 #UUID: 87ed7bb5-3247-420a-b39e-137d9942abb2

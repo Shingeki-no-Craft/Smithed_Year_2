@@ -3,5 +3,5 @@ execute store result score @s snc.bullets run \
 
 tag @s remove snc.reload.blade
 
-execute if score @s snc.bullets matches 1.. run item modify entity @s weapon.offhand snc:gear_reload/1
+execute if score @s snc.bullets matches 1.. run item modify entity @s weapon.offhand snc:gear/reload
 execute if score @s snc.bullets matches 1.. run playsound minecraft:item.armor.equip_chain player @s ~ ~ ~ 1 .7

@@ -3,8 +3,8 @@ execute store result score @s snc.bullets run \
 
 tag @s remove snc.reload.blade
 
-execute if score @s snc.bullets matches 1.. run item modify entity @s weapon.mainhand snc:gas_trigger_reload
-execute if score @s snc.bullets matches 1.. run item modify entity @s weapon.offhand snc:gear_reload/0
+execute if score @s snc.bullets matches 1.. run item modify entity @s weapon.mainhand snc:gas_trigger/reload
+execute if score @s snc.bullets matches 1.. run item modify entity @s weapon.offhand snc:gear/reload
 execute if score @s snc.bullets matches 1.. run playsound minecraft:item.armor.equip_chain player @s ~ ~ ~ 1 .7
 #execute if score @s snc.bullets matches 1.. if predicate snc:odm/has_odm_blade run function snc:player/odm/replace_weapon/blades/reload/gear/full_gear
 #execute if score @s snc.bullets matches 1.. unless predicate snc:odm/has_odm_blade run function snc:player/odm/replace_weapon/blades/reload/gear/null_gear

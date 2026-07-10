@@ -3,18 +3,22 @@
     "function": "minecraft:set_components",
     "components": {
       "damage":0,
-      "minecraft:item_model":"snc:gear_blade",
+      "minecraft:enchantments":{
+        "snc:swing" : 1
+      },
+      "tooltip_display": {
+        "hidden_components": [
+          "minecraft:enchantments"
+        ]
+      },
       "minecraft:lore":[
         {"text": "Device that provides great mobility in the air.","color":"gray","italic":false},
-        [{"text":"Must be attached to the","color":"gray","italic":false}," ",{"text":"Off Hand","color":"yellow","italic":false}],
-        " ",  
+        [{"text":"Must be attached to the","color":"gray","italic":false}," ",{"text": "Main Hand","color":"yellow","italic":false}],
+        " ",
         {"text":"Usage Instructions","color":"aqua","italic":false},
-        [{"text":" ● ","color":"yellow","italic":false},{"text":"Grab the","color":"gray","italic":false}," ",{"text":"Gas Trigger","color":"yellow","italic":false}," ",{"text":"with your","color":"gray","italic":false}," ",{"text": "Main Hand","color":"yellow","italic":false}," ",{"text": "to launch","color":"gray","italic":false}],
+        [{"text":" ● ","color":"yellow","italic":false},{"text":"Grab the","color":"gray","italic":false}," ",{"text":"ODM","color":"yellow","italic":false}," ",{"text":"with your","color":"gray","italic":false}," ",{"text":"Off Hand","color":"yellow","italic":false}," ",{"text": "to launch","color":"gray","italic":false}],
         [{"text":"   "},{"text": "the hooks into a target. Once they have landed,","color":"gray","italic":false}],
         [{"text":"   "},{"text": "use it again to push yourself.","color":"gray","italic":false}],
-        [{"text":" ● ","color":"yellow","italic":false},{"text": "Gas is limited, pay attention to the sound to","color":"gray","italic":false}],
-        [{"text":"   "},{"text": "estimate how much is left. Use an","color":"gray","italic":false}," ",{"text": "Iceburst Stone","color":"aqua","italic":false}],
-        [{"text":"   "},{"text": "in your","color":"gray","italic":false}," ",{"text": "Main Hand","color":"yellow","italic":false}," ",{"translate": "to fill it.","color":"gray","italic":false}],  
         [{"text":" ● ","color":"yellow","italic":false},{"text":"[Blades Equipped]","color":"green","italic":false}," ",{"text":"Sharp blades that can cut","color":"gray","italic":false}],
         [{"text":"   "},{"text":"through the tough skin of Titans. They must be","color":"gray","italic":false}],
         [{"text":"   "},{"text":"loaded using","color":"gray","italic":false}," ",{"text": "Ultra Hard Steel","color":"red","italic":false}," ",{"text":"when broken.","color":"gray","italic":false}],
@@ -28,21 +32,29 @@
       ],
       "attribute_modifiers": [
         {
-          "type": "attack_damage", "id": "snc.gear.attack_damage",
-          "amount": 5, "operation": "add_value","slot":"offhand"
+          "type": "attack_damage",
+          "id": "snc.gas_trigger.attack_damage",
+          "amount": 5,
+          "operation": "add_value","slot":"mainhand"
         },
         {
-          "type": "attack_speed", "id": "snc.gear.attack_speed",
-          "amount": -1.6, "operation": "add_value","slot":"offhand"
+          "type": "attack_speed",
+          "id": "snc.gas_trigger.attack_speed",
+          "amount": -1.6,
+          "operation": "add_value","slot":"mainhand"
+        },
+        {
+          "type": "entity_interaction_range",
+          "id": "snc.gas_trigger.entity_interaction_range",
+          "amount": 1.5,
+          "operation": "add_value","slot":"mainhand"
         }
       ]
     }
   },{
     "function": "minecraft:set_custom_data",
     "tag": {
-      "blade" : true,
-      "snc_odm_blades": 1,
-      "snc_gear_mode":"blades"
+      "blade" : true
     }
   }
 ]
