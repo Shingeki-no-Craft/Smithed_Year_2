@@ -1,0 +1,4 @@
+function snc:dynamic/dialog_box {name:{text:"Capt. Takezo",color:green}, line_1:["Use the anchors to attach to a solid surface, it will"], line_2: ["grant you high mobility across any terrain. This",{"text":" weapon ","color":"dark_red"}], line_3:["is specialized in take down titans efficiently."], sound:"entity.villager.ambient master @s ~ ~ ~ 3 1"}
+
+tellraw @s ["",{"text":"[NPC]","color":"yellow"},{"text":" <Capt. Takezo>","color":"dark_green"},{"text":" You have already claimed your ","color":"white"},{"text":"ODM Gear","color":"red"},{"text":"! Remember to utilize its high-wire anchors and gas boosters to achieve improved mobility across the terrain. This gear is a ","color":"white"},{"text":"deadly weapon","color":"dark_red"},{"text":" specifically engineered to target and eliminate titans with lethal precision. Be fast, strike hard, and stay alive!","color":"white"}]
+
