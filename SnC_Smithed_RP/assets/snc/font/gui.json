@@ -28,7 +28,7 @@
         {"type": "bitmap","file": "snc:custom/font/hotbar/no_energy_transformed.png","ascent": -11,"height": 32,
             "chars": ["\uF205"]},
             
-        {"type": "bitmap","file": "snc:custom/font/sticker/battlegrounds.png","ascent": 8,"height": 8,
+        {"type": "bitmap","file": "snc:custom/font/sticker/female.png","ascent": 8,"height": 8,
             "chars": ["\uE304"]},
         {"type": "bitmap","file": "snc:custom/font/sticker/cart.png","ascent": 8,"height": 8,
             "chars": ["\uE303"]},

@@ -1,4 +1,4 @@
-tellraw @a ["", {text:"[INSERT STAMP HERE] ", color:"yellow"}, {text:"\uE302",font:"snc:gui"}]
+advancement grant @s only summit.sticker_book:snc/veteran
 
 scoreboard players reset @s snc.quest.odmtrack.stage
 scoreboard players reset @s snc.quest.odmtrack.progress

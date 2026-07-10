@@ -4,7 +4,7 @@ execute unless score @s snc.quest.get_odm matches 1 run tellraw @s ["",{"text":"
 execute unless score @s snc.quest.get_odm matches 1 run playsound entity.player.levelup master @s ~ ~ ~ 1 1
 execute unless score @s snc.quest.get_odm matches 1 run function snc:api/give/military/scouts/odm/gas_trigger
 execute unless score @s snc.quest.get_odm matches 1 run function snc:api/give/military/scouts/odm/gear
-execute unless score @s snc.quest.get_odm matches 1 run tellraw @a ["", {text:"[INSERT STAMP HERE] ", color:"yellow"}, {text:"\uE301",font:"snc:gui"}]
+execute unless score @s snc.quest.get_odm matches 1 run advancement grant @s only summit.sticker_book:snc/scout
 
 execute unless score @s snc.quest.get_odm matches 1 run return run scoreboard players set @s snc.quest.get_odm 1
 

@@ -32,32 +32,32 @@
         "region": "textured_tropics",
         "stickers": [
             {
-                "sticker_id": "soldier",
-                "sticker_texture": "snc:sticker/soldier",
-                "sticker_name": "Soldier",
+                "sticker_id": "scout",
+                "sticker_texture": "snc:custom/font/sticker/scout",
+                "sticker_name": "scout",
                 "unobtained_text": "Obtain the ODM Gear.",
                 "obtained_text": "You have obtained the ODM Gear!"
             },
             {
-                "sticker_id": "airplane",
-                "sticker_texture": "snc:sticker/airplane",
-                "sticker_name": "Airplane",
+                "sticker_id": "cart",
+                "sticker_texture": "snc:custom/font/sticker/cart",
+                "sticker_name": "When Titans fly!",
                 "unobtained_text": "Jump over the river with the Cart Titan!",
                 "obtained_text": "You have jumped over the river with the Cart Titan!"
             },
             {
-                "sticker_id": "veteran",
-                "sticker_texture": "snc:sticker/veteran",
+                "sticker_id": "iceburst_stone",
+                "sticker_texture": "snc:custom/font/sticker/iceburst_stone",
                 "sticker_name": "Veteran",
                 "unobtained_text": "Finish the ODM Gear track course!",
                 "obtained_text": "You have finished the ODM Gear track course!"
             },
             {
-                "sticker_id": "titan_slayer",
-                "sticker_texture": "snc:sticker/titan_slayer",
-                "sticker_name": "Titan Slayer",
-                "unobtained_text": "Defeat the Female Titan!",
-                "obtained_text": "You have defeated the Female Titan!"
+                "sticker_id": "female",
+                "sticker_texture": "snc:custom/font/sticker/female",
+                "sticker_name": "The Female Titan",
+                "unobtained_text": "Get the Female Titan",
+                "obtained_text": "You have obtained the power of a Titan!"
             }
         ]
     }
