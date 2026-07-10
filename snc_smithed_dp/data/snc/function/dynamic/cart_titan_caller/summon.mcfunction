@@ -11,8 +11,8 @@ item replace entity e65a7129-0763-4be4-b26d-22f781dc0145 armor.chest with iron_c
 item replace entity e65a7129-0763-4be4-b26d-22f781dc0145 armor.legs with iron_leggings[minecraft:equippable={slot: "legs", asset_id: "snc:scout"}]
 item replace entity e65a7129-0763-4be4-b26d-22f781dc0145 armor.feet with iron_boots[minecraft:equippable={slot: "feet", asset_id: "snc:scout"}]
 
-execute as e65a7129-0763-4be4-b26d-22f781dc0145 run function snc:api/item_replace/military/scouts/odm/gas_trigger {"slot": "weapon.mainhand", "count": 1}
 execute as e65a7129-0763-4be4-b26d-22f781dc0145 run function snc:api/item_replace/military/scouts/odm/gear {"slot": "weapon.offhand", "count": 1}
+item modify entity e65a7129-0763-4be4-b26d-22f781dc0145 weapon.offhand snc:gear/store
 
 #Text Display
 #UUID: c293b800-3a7f-4418-a5ff-1f61567ac1bc

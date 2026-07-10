@@ -9,8 +9,9 @@ summon mannequin -18.5 65 107.5 {UUID: [-588190630,-1645393279,-1493892196,-1250
 item replace entity dcf0ec5a-9ded-4a81-a6f5-039cb5740129 armor.chest with iron_chestplate[minecraft:equippable={slot: "chest", asset_id: "snc:scout"}]
 item replace entity dcf0ec5a-9ded-4a81-a6f5-039cb5740129 armor.legs with iron_leggings[minecraft:equippable={slot: "legs", asset_id: "snc:scout"}]
 item replace entity dcf0ec5a-9ded-4a81-a6f5-039cb5740129 armor.feet with iron_boots[minecraft:equippable={slot: "feet", asset_id: "snc:scout"}]
-execute as dcf0ec5a-9ded-4a81-a6f5-039cb5740129 run function snc:api/item_replace/military/scouts/odm/gas_trigger {"slot": "weapon.mainhand", "count": 1}
+
 execute as dcf0ec5a-9ded-4a81-a6f5-039cb5740129 run function snc:api/item_replace/military/scouts/odm/gear {"slot": "weapon.offhand", "count": 1}
+item modify entity dcf0ec5a-9ded-4a81-a6f5-039cb5740129 weapon.offhand snc:gear/store
 
 #Text Display
 #UUID: ea7a91a5-9282-4816-8521-114710096640
