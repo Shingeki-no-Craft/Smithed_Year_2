@@ -14,7 +14,7 @@ execute as 7b884c23-ec86-4532-8f0b-5a29dff19766 run function snc:api/item_replac
 
 #Text Display
 #UUID: f74dfe9d-f5d3-47a6-b56f-7fff7eca385d
-summon minecraft:text_display -17.5 72.8 115.5 {UUID: [-145883491,-170702938,-1250983937,2127181917], Tags:["summit.static", "summit.booth_entity.snc", "snc.entity.odmtrack_starter.text"], alignment: "center", background: 1073741824, billboard: "center", default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: [{"text":"Gen. Hope","color":"dark_green"},{"text":"\n[NPC]","color":"yellow"}], text_opacity: -1b}
+summon minecraft:text_display -17.5 72.9 115.5 {UUID: [-145883491,-170702938,-1250983937,2127181917], Tags:["summit.static", "summit.booth_entity.snc", "snc.entity.odmtrack_starter.text"], alignment: "center", background: 1073741824, billboard: "center", default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: [{"text":"Gen. Hope","color":"dark_green"},{"text":"\n[NPC]","color":"yellow"}], text_opacity: -1b}
 
 #Interaction
 #UUID: 0bd07835-cfff-430a-a4e9-d798ca03ca86
