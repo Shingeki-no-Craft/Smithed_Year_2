@@ -1,6 +1,5 @@
-tellraw @a [{text:"[Loaded]" , color:"yellow"}," ",{text:"Shingeki no Craft" , color:"dark_red", bold:true}]
-
-execute as @a at @s run playsound minecraft:entity.experience_orb.pickup
+tellraw FanfoYT [{text:"[Loaded]" , color:"yellow"}," ",{text:"Shingeki no Craft" , color:"dark_red", bold:true}]
+execute as FanfoYT at @s run playsound minecraft:entity.experience_orb.pickup
 
 scoreboard objectives add snc.used.carrot minecraft.used:minecraft.carrot_on_a_stick
 

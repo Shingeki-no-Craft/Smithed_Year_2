@@ -1,4 +1,3 @@
 advancement revoke @s only snc:mannequin/fanfo
-execute at @s run playsound entity.villager.ambient master @s ~ ~ ~ 1
 
-tellraw @s ["",{"text":"[NPC]","color":"yellow"},{"text":" <FanfoYT>","color":"gold"},{"text":" Welcome to "},{"text":"Shingeki","bold":true,"color":"dark_red"},{"text":" no","bold":true,"color":"gold"},{"text":" Craft","bold":true,"color":"gold"},{"text":"!","color":"gold"},{"text":" Fanfo here. This is a passion project dedicated to merging "},{"text":"Attack on Titan","italic":true},{"text":" lore with Minecraft, featuring custom coded mechanics, unique "},{"text":"shifter","color":"red"},{"text":" powers, and a massive world to explore. Glad to have you here!"}]
+function snc:dynamic/dialog_box {name:{text:"Fanfo",color:gold}, line_1:["Welcome to ",{"text":"Shingeki","color":"dark_gray", bold:true},{"text":" no ","color":"dark_red", bold:true},{"text":"Craft","color":"dark_gray", bold:true},"! A passion project that"], line_2: ["I started just for fun. I hope you like what we've made"], line_3:["and what's left to come. ",{text:"Happy exploring", color:dark_green},"!"], sound:"entity.villager.ambient master @s ~ ~ ~ 1 1"}

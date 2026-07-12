@@ -1,4 +1,3 @@
 advancement revoke @s only snc:mannequin/zabat
-execute at @s run playsound entity.villager.ambient master @s ~ ~ ~ 1 2
 
-tellraw @s ["",{"text":"[NPC]","color":"yellow"},{"text":" <Zabat>","color":"light_purple"},{"text":" Hey there! I'm "},{"text":"Zabat","color":"light_purple"},{"text":", the one bringing this world to life through "},{"text":"texturing","color":"#A7FE19"},{"text":" and "},{"text":"modeling","color":"#19F0B6"},{"text":". If you want to check out our latest designs or share your own feedback, come join our "},{"text":"Discord Server","color":"blue"},{"text":". we'd "},{"text":"love","color":"red"},{"text":" to have "},{"text":"you","color":"gold"},{"text":"!"}]
+function snc:dynamic/dialog_box {name:{text:"Zabat",color:light_purple}, line_1:["Hey there! I'm the co-creator of ",{"text":"Shingeki","color":"dark_gray", bold:true},{"text":" no ","color":"dark_red", bold:true},{"text":"Craft","color":"dark_gray", bold:true},"."], line_2: ["We've poured our souls into this, and we hope you can"], line_3:["see that reflected in our work."], sound:"entity.villager.ambient master @s ~ ~ ~ 1 2"}

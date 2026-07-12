@@ -12,3 +12,6 @@ execute if entity @s[tag=animated_java.cart.root] run function snc:dynamic/cart_
 
 # Animatronic
 execute if entity @s[tag=snc.titan.animatronic] run function snc:dynamic/titan_animatronic
+
+# NPC
+execute if entity @s[tag=snc.npc] run function snc:dynamic/npc
