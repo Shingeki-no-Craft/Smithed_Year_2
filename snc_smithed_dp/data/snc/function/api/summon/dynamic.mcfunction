@@ -5,6 +5,7 @@ function snc:dynamic/odm_giver/summon
 
 function snc:dynamic/fanfo/summon
 function snc:dynamic/zabat/summon
+function snc:dynamic/ragnaar/summon
 
 function snc:dynamic/odmtrack_suggester/summon
 function snc:dynamic/odmtrack_starter/summon
