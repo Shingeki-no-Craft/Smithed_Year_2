@@ -1,5 +1,5 @@
-effect give @e[distance=..3,type=#snc:human,tag=!snc.titan] glowing 1 0 true
-effect clear @e[distance=3..5,type=#snc:human,tag=!snc.titan] glowing
+#effect give @e[distance=..3,type=#snc:human,tag=!snc.titan] glowing 1 0 true
+#effect clear @e[distance=3..5,type=#snc:human,tag=!snc.titan] glowing
 
 particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^0.000 ^1.000 ^3.000 0 0 0 0 1 force @s
 particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^1.582 ^1.000 ^2.549 0 0 0 0 1 force @s

@@ -21,7 +21,8 @@ execute if score @s snc.quest.odmtrack.progress matches 1.. run function snc:dyn
 ## Using right click
 execute unless score @s snc.used.carrot matches 1.. run return 1
 scoreboard players set @s snc.used.carrot 0
-
+execute unless entity @s[tag=summit.battlegrounds.player] positioned -70 60 122 unless entity @s[dz=38,dx=70,dy=36] if predicate snc:odm/has_gas_trigger if predicate snc:odm/has_odm run return run function snc:player/odm/disable
+execute if items entity @s weapon.offhand warped_fungus_on_a_stick[item_model="snc:gear/gear",custom_data={out:0b}] run function snc:player/odm/enable
 # Impulse
 execute if score @s[tag=!snc.grabbed] snc.odm_state matches 1.. if predicate snc:odm/has_gas_trigger if predicate snc:odm/has_odm if function snc:player/odm/impulse/main run return -1
 #Throw
