@@ -3,3 +3,4 @@ item replace entity @s armor.legs with iron_leggings[minecraft:equippable={slot:
 item replace entity @s armor.feet with iron_boots[minecraft:equippable={slot: "feet", asset_id: "snc:scout"}]
 execute as @s run function snc:api/item_replace/military/scouts/odm/gas_trigger {"slot": "container.0", "count": 1}
 execute as @s run function snc:api/item_replace/military/scouts/odm/gear {"slot": "weapon.offhand", "count": 1}
+team join snc.battlegrounds.scout @s

@@ -1,0 +1,2 @@
+function snc:battlegrounds/event/title {title:["",{text:"\uF805", font:"snc:gui"},{text:"VICTORY", bold:true, color:gold}, {text:"\uF804\uE103", font:"snc:gui", color:aqua}], subtitle:[{text:"You ", color:yellow}, {text:"live", color:aqua}, " to see another day"]}
+tp @s -73 72 110

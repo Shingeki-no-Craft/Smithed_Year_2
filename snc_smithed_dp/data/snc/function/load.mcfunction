@@ -66,6 +66,12 @@ scoreboard objectives add snc.battlegrounds dummy
 scoreboard objectives add snc.wait.battlegrounds dummy
 scoreboard objectives add snc.quest.battlegrounds dummy
 
+team add snc.battlegrounds.female
+team add snc.battlegrounds.scout
+team modify snc.battlegrounds.scout friendlyFire false
+team modify snc.battlegrounds.female seeFriendlyInvisibles false
+
+
 ##### HOW TO CREATE A SHIFTER #####
 scoreboard objectives add shifter_vars dummy
 scoreboard objectives add snc.titan.animatronic dummy

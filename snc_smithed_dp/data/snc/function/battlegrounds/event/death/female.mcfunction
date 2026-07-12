@@ -1,5 +1,4 @@
-scoreboard players reset @s female_vars
-function snc:api/lose/shifter/female
-scoreboard players reset $female snc.battlegrounds
-scoreboard players set $time_left summit.battlegrounds 0
-function summit.battlegrounds:api/end_session
+#function snc:battlegrounds/event/reset_female
+function summit.battlegrounds:api/end_session {booth_id:"snc"}
+#/execute as @a run function summit.battlegrounds:api/assign_kit {booth_id:"snc", kit_id: "snc:default", kit_function:"snc:battlegrounds/kit/main"}
+scoreboard players reset $active snc.battlegrounds

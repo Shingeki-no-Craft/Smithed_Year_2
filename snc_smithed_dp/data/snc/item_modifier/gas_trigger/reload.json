@@ -68,7 +68,8 @@
   },{
     "function": "minecraft:set_custom_data",
     "tag": {
-      "blade" : true
+      "blade" : true,
+      "out": true
     }
   }
 ]
