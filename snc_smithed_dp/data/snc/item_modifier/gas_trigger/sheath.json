@@ -1,7 +1,42 @@
-{
-  "function": "minecraft:set_components",
-  "components": {
-    "minecraft:item_model": "minecraft:air"
-  },
-  "conditions": []
-}
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "damage":0,
+      "minecraft:lore":[
+        {"text": "Device that provides great mobility in the air.","color":"gray","italic":false},
+        [{"text":"Must be attached to the","color":"gray","italic":false}," ",{"text": "Main Hand","color":"yellow","italic":false}],
+        " ",
+        {"text":"Usage Instructions","color":"aqua","italic":false},
+        [{"text":" ● ","color":"yellow","italic":false},{"text":"Grab the","color":"gray","italic":false}," ",{"text":"ODM","color":"yellow","italic":false}," ",{"text":"with your","color":"gray","italic":false}," ",{"text":"Off Hand","color":"yellow","italic":false}," ",{"text": "to launch","color":"gray","italic":false}],
+        [{"text":"   "},{"text": "the hooks into a target. Once they have landed,","color":"gray","italic":false}],
+        [{"text":"   "},{"text": "use it again to push yourself.","color":"gray","italic":false}],
+        [{"text":" ● ","color":"yellow","italic":false},{"text":"[Blades Equipped]","color":"green","italic":false}," ",{"text":"Sharp blades that can cut","color":"gray","italic":false}],
+        [{"text":"   "},{"text":"through the tough skin of Titans. They must be","color":"gray","italic":false}],
+        [{"text":"   "},{"text":"loaded using","color":"gray","italic":false}," ",{"text": "Ultra Hard Steel","color":"red","italic":false}," ",{"text":"when broken.","color":"gray","italic":false}],
+        " ",
+        {"text": "Can be modified with","color":"aqua","italic":false},
+        [{"text":" ● ","color":"yellow","italic":false},{"text": "Ultra Hard Steel","color":"gray","italic":false}],
+        [{"text":" ● ","color":"yellow","italic":false},{"text": "Thunder Spear","color":"gray","italic":false}],
+        [{"text":" ● ","color":"yellow","italic":false},{"text": "Cartridge","color":"gray","italic":false}],
+        " ",
+        {"text":"\uE001", "font":"snc:gui","italic":false, "color":"white"}
+      ],
+      "attribute_modifiers": [
+        {
+          "type": "attack_speed",
+          "id": "snc.gas_trigger.attack_speed",
+          "amount": -1.6,
+          "operation": "add_value","slot":"mainhand"
+        }
+      ]
+    }
+  },{
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "snc_odm_blades": 0,
+      "snc_gear_mode":"blades",
+      "out":false
+    }
+  }
+]

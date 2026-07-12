@@ -19,25 +19,6 @@
 				"type": "minecraft:run_function",
 				"function": "snc:player/control/hold/gas_trigger"
 			}
-		}],
-		"minecraft:attributes": [{
-			"attribute": "minecraft:movement_speed",
-			"id": "snc.swing.movement_speed",
-			"amount": {
-				"type": "linear",
-				"base": 0.05,
-				"per_level_above_first": 0.1
-			},
-			"operation": "add_value"
-		},{
-			"attribute": "minecraft:jump_strength",
-			"id": "snc.swing.jump_strength",
-			"amount": {
-				"type": "linear",
-				"base": 0.2,
-				"per_level_above_first": 0.1
-			},
-			"operation": "add_value"
 		}]
 	}
 }

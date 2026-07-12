@@ -2,15 +2,35 @@
   {
     "function": "minecraft:set_components",
     "components": {
-      "minecraft:item_model": "snc:gear/trigger"
-    },
-    
-    "conditions": []
-  },
-  {
+      "damage":0,
+      "minecraft:lore":[
+        {"translate":"aot.odm.desc2","color":"gray","italic":false},
+        [{"translate":"aot.odm.desc3","color":"gray","italic":false}," ",{"translate":"aot.mainhand","color":"yellow","italic":false}],
+        " ",
+        {"translate":"aot.odm.inst","color":"aqua","italic":false},
+        [{"text":" ● ","color":"yellow","italic":false},{"translate":"aot.odm.inst1","color":"gray","italic":false}," ",{"text":"ODM","color":"yellow","italic":false}," ",{"translate":"aot.odm.inst2","color":"gray","italic":false}," ",{"translate":"aot.offhand","color":"yellow","italic":false}," ",{"translate":"aot.odm.inst3","color":"gray","italic":false}],
+        [{"text":"   "},{"translate":"aot.odm.inst4","color":"gray","italic":false}],
+        [{"text":"   "},{"translate":"aot.odm.inst5","color":"gray","italic":false}],
+        " ",
+        {"translate":"aot.odm.mod","color":"aqua","italic":false},
+        [{"text":" ● ","color":"yellow","italic":false},{"translate":"aot.steel","color":"gray","italic":false}],
+        [{"text":" ● ","color":"yellow","italic":false},{"translate":"aot.thunder","color":"gray","italic":false}],
+        [{"text":" ● ","color":"yellow","italic":false},{"translate":"aot.cartridges","color":"gray","italic":false}]
+      ],
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "attack_speed", "id": "snc.gear.attack_speed",
+          "amount": -1.6, "operation": "add_value","slot":"mainhand"
+        }
+      ]
+    }
+  },{
     "function": "minecraft:set_custom_data",
     "tag": {
-      "out": false
+      "blade" : false,
+      "snc_odm_blades": 0,
+      "snc_gear_mode":"blades",
+      "out":false
     }
   }
 ]

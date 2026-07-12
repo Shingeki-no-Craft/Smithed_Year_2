@@ -3,8 +3,18 @@
         "type": "composite",
         "models": [
             {
-                "type": "minecraft:model",
-                "model": "snc:gear/trigger"
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": "{out:1b}",
+                "on_true": {
+                    "type": "minecraft:model",
+                    "model": "snc:gear/trigger"
+                },
+                "on_false": {
+                    "type": "minecraft:model",
+                    "model": "snc:gear/disabled/trigger"
+                }
             },
             {
                 "type": "minecraft:condition",
@@ -12,8 +22,18 @@
                 "predicate": "minecraft:custom_data",
                 "value": "{blade:1b}",
                 "on_true": {
-                    "type": "minecraft:model",
-                    "model": "snc:gear/trigger_blade"
+                    "type": "minecraft:condition",
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": "{out:1b}",
+                    "on_true": {
+                        "type": "minecraft:model",
+                        "model": "snc:gear/trigger_blade"
+                    },
+                    "on_false": {
+                        "type": "minecraft:model",
+                        "model": "snc:gear/disabled/trigger_blade"
+                    }
                 },
                 "on_false": {
                     "type": "minecraft:model",
