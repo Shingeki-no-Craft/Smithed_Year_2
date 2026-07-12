@@ -16,7 +16,7 @@ dialog show @s {\
           "color": "red"\
         },\
         "?\n\n",\
-        "Drop Attack on Titan straight into your world. ",\
+        "Drop Attack on Titan straight into your world. A ",\
         {text:"Datapack", color:gold},\
         ",",\
         {text:" Mod ", color:gold},\

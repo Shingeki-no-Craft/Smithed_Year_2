@@ -19,22 +19,5 @@ execute unless score $zwei.jumpscare snc.wait matches 1.. at 3ffc9084-50a9-4616-
 
 # --------------------------- [Dynamic - NPCs] --------------------------- #
 
-<<<<<<< Updated upstream
 execute as @a[scores={snc.quest.battlegrounds=1..}] run scoreboard players remove @s snc.wait.battlegrounds 1
 execute as @a[scores={snc.wait.battlegrounds=0}] run function snc:dynamic/allawie/explain
-=======
-execute as ebd5bffc-1df8-4465-a11b-b6955d24ad41 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
-execute as 1bb7c29a-5bb1-4ac7-8d9b-250b43ffeab7 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
-execute as dcf0ec5a-9ded-4a81-a6f5-039cb5740129 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
-execute as 7b884c23-ec86-4532-8f0b-5a29dff19766 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
-execute as bca20b81-f429-4fb2-a69f-46b5b9954176 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
-
-execute as a075e98e-8151-44af-ae49-0046616e666f at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
-execute as 7dbe6c10-a52a-480d-936c-005a61626174 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
-execute as 67676767-6767-6767-6767-676767676767 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
-scoreboard players remove @a[scores={snc.quest.battlegrounds=1..}] snc.quest.battlegrounds 1
-execute as @a[scores={snc.wait.battlegrounds=0}] run function snc:dynamic/allawie/explain
-
-execute as 092423d9-99d5-4645-a78c-3980e33c4e07 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
-execute as e65a7129-0763-4be4-b26d-22f781dc0145 at @s if entity @p[distance=..5] run teleport @s ~ ~ ~ facing entity @p
->>>>>>> Stashed changes
