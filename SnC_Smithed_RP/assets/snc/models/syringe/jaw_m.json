@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:item/generated",
 	"textures": {
-	  "layer0": "custom/item/sryinge/empty"
+	  "layer0": "snc:custom/sryinge/jaw"
 	}
 }

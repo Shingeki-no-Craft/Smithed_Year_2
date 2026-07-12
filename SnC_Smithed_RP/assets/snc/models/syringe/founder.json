@@ -1,6 +1,1 @@
-{
-	"parent": "minecraft:item/generated",
-	"textures": {
-	  "layer0": "snc:custom/sryinge/founder"
-	}
-}
+{"parent": "snc:syringe/founder_m", "display": {"ground": {"rotation": [0, 0, 0], "translation": [0, 0, 0], "scale": [0.6, 0.6, 0.6]}}}

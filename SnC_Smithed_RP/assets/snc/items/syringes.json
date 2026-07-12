@@ -1,0 +1,39 @@
+{
+    "model": {
+        "type": "minecraft:composite",
+        "models": [
+            {
+                "type": "model",
+                "model": "snc:syringe/armor"
+            },
+            {
+                "type": "model",
+                "model": "snc:syringe/attack"
+            },
+            {
+                "type": "model",
+                "model": "snc:syringe/cart"
+            },
+            {
+                "type": "model",
+                "model": "snc:syringe/beast"
+            },
+            {
+                "type": "model",
+                "model": "snc:syringe/colossal"
+            },
+            {
+                "type": "model",
+                "model": "snc:syringe/female"
+            },
+            {
+                "type": "model",
+                "model": "snc:syringe/jaw"
+            },
+            {
+                "type": "model",
+                "model": "snc:syringe/warhammer"
+            }
+        ]
+    }
+}

@@ -1,6 +1,1 @@
-{
-	"parent": "minecraft:item/generated",
-	"textures": {
-	  "layer0": "snc:custom/sryinge/female"
-	}
-}
+{"parent": "snc:syringe/female_m", "display": {"ground": {"rotation": [0, 0, 0], "translation": [-48, 0, 0], "scale": [1,1,1]}}}
