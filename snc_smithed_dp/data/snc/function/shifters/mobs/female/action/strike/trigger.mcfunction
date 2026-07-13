@@ -3,7 +3,7 @@ advancement revoke @s only snc:shifters/female/strike
 give @s quartz[minecraft:custom_data={atk_shifter:1b,7_titan:1b, summit: {droppable: {callback: true}}},item_model="item/blank"]
 
 # If config is enabled AND is in berserk mode then skip
-execute if score $shifter_berserk config matches 1 if score $berserk female_vars matches 0 if function snc:shifters/mobs/female/action/strike/berserk/trigger run return -1
+execute if score $berserk female_vars matches 0 if function snc:shifters/mobs/female/action/strike/berserk/trigger run return -1
 
 # Cancel if counter
 execute if score state female_vars matches 14..15 run return -1

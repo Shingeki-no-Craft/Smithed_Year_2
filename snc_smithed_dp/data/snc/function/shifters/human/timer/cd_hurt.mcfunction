@@ -1,8 +1,5 @@
 # Activate Berserk
-# Mastery enabled
-$execute if score $shifter_mastery config matches 1 if score $master $(shifter)_vars matches 4.. if score $berserk $(shifter)_vars matches 1 if function snc:shifters/mobs/$(shifter)/animate/berserk/start run return -1
-# Mastery disabled
-$execute if score $shifter_mastery config matches 0 if score $berserk $(shifter)_vars matches 1 if function snc:shifters/mobs/$(shifter)/animate/berserk/start run return -1
+$execute if score $berserk $(shifter)_vars matches 1 if function snc:shifters/mobs/$(shifter)/animate/berserk/start run return -1
 
 # Regular unshift
 function snc:logic/return_gamemode
@@ -22,11 +19,6 @@ effect give @s levitation 1 0 true
 
 # $scoreboard players reset $berserk $(shifter)_vars
 $scoreboard players set $energy $(shifter)_vars 0
-# Unshift energy
-$execute if score $shifter_mastery config matches 1 if score $master $(shifter)_vars matches ..3 run scoreboard players remove $energy $(shifter)_vars 800
-$execute if score $shifter_mastery config matches 1 if score $master $(shifter)_vars matches ..9 run scoreboard players remove $energy $(shifter)_vars 800
-$execute if score $shifter_mastery config matches 1 if score $master $(shifter)_vars matches ..18 run scoreboard players remove $energy $(shifter)_vars 800
-$execute if score $shifter_mastery config matches 1 if score $master $(shifter)_vars matches ..30 run scoreboard players remove $energy $(shifter)_vars 800
 
 $function snc:shifters/human/transform/human {"shifter":"$(shifter)", "id":"$(id)"}
 

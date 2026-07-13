@@ -8,11 +8,7 @@ $function snc:shifters/human/inventory/spawn/shifter with storage snc:$(shifter)
 $execute if entity @s[tag=snc.shifter.vanish] run scoreboard players set $vanish $(shifter)_vars 1
 
 $execute if entity @s[tag=snc.shifter.vanish] run scoreboard players remove $energy $(shifter)_vars 360
-# Unshift energy
-$execute if score $shifter_mastery config matches 1 if score $master $(shifter)_vars matches ..3 run scoreboard players remove $energy $(shifter)_vars 800
-$execute if score $shifter_mastery config matches 1 if score $master $(shifter)_vars matches ..9 run scoreboard players remove $energy $(shifter)_vars 800
-$execute if score $shifter_mastery config matches 1 if score $master $(shifter)_vars matches ..18 run scoreboard players remove $energy $(shifter)_vars 800
-$execute if score $shifter_mastery config matches 1 if score $master $(shifter)_vars matches ..30 run scoreboard players remove $energy $(shifter)_vars 800
+
 #$execute if score $energy $(shifter)_vars matches ..-1 run scoreboard players set $energy $(shifter)_vars 0
 execute if entity @s[tag=snc.shifter.vanish] run ride @s dismount
 

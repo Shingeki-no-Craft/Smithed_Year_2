@@ -16,7 +16,7 @@ scoreboard players set $energy female_vars 3600
 # $advancement grant @s[tag=!hidden.shifter] only snc:shifters/female/get
 
 # Init 
-tellraw @s[tag=!hidden.shifter] [{"translate": "snc.dialog.titan.get","color": "yellow"}," ",{"translate": "snc.dialog.titan.get.1","color": "white"},". ",{"translate": "snc.dialog.titan.get.2"},{"text": " [","color": "white"},{"keybind": "key.quickActions","color": "white"},{"text": "] ","color": "white"},{"translate": "snc.dialog.titan.get.3"}]
+#tellraw @s[tag=!hidden.shifter] [{"translate": "snc.dialog.titan.get","color": "yellow"}," ",{"translate": "snc.dialog.titan.get.1","color": "white"},". ",{"translate": "snc.dialog.titan.get.2"},{"text": " [","color": "white"},{"keybind": "key.quickActions","color": "white"},{"text": "] ","color": "white"},{"translate": "snc.dialog.titan.get.3"}]
 data modify storage snc:female og_regen_ticks set from storage snc:female regen_ticks
 scoreboard players set $regeneration female_vars 1
 scoreboard players set $explosion female_vars 0

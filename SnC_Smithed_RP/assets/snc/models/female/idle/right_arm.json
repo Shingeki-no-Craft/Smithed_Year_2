@@ -1,1 +1,1 @@
-{"parent": "snc:female/right_arm", "display": {"ground": {"rotation": [-180.0, 0.0, -180.0], "translation": [-1.77, 23.814, 0.2108], "scale": [0.25, 0.25, 0.25]}}}
+{"parent": "animated_java:blueprint/female/right_arm", "display": {"ground": {"rotation": [-180.0, 0.0, -180.0], "translation": [-1.77, 23.814, 0.2108], "scale": [0.25, 0.25, 0.25]}}}

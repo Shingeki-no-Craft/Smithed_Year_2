@@ -1,1 +1,1 @@
-{"parent": "snc:female/weist", "display": {"ground": {"rotation": [-180.0, -9.999387275834295, -180.0], "translation": [0.0, 15.0412, -0.09], "scale": [0.4055860096822867, 0.405575, 0.4055860096822867]}}}
+{"parent": "animated_java:blueprint/female/weist", "display": {"ground": {"rotation": [-180.0, -9.999387275834295, -180.0], "translation": [0.0, 15.0412, -0.09], "scale": [0.4055860096822867, 0.405575, 0.4055860096822867]}}}

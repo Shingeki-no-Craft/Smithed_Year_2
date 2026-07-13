@@ -1,0 +1,4 @@
+# PackSquash options file for the SnC resource pack.
+# Run with:  & "$env:USERPROFILE\Desktop\packsquash.exe" packsquash.toml
+pack_directory   = 'SnC_Smithed_RP'
+output_file_path = 'SnC_Smithed_RP.packsquash.zip'

@@ -1,1 +1,1 @@
-{"parent": "snc:female/neck", "display": {"ground": {"rotation": [-180.0, 0.0, -180.0], "translation": [0.0, 23.9392, 0.0344], "scale": [0.25, 0.25, 0.25]}}}
+{"parent": "animated_java:blueprint/female/neck", "display": {"ground": {"rotation": [-180.0, 0.0, -180.0], "translation": [0.0, 23.9392, 0.0344], "scale": [0.25, 0.25, 0.25]}}}
