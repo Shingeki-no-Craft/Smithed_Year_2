@@ -5,7 +5,7 @@
     "slots": {
       "weapon.mainhand": {
         "predicates": {
-          "minecraft:custom_data": "{trigger:1b}"
+          "minecraft:custom_data": "{snc_trigger:1b}"
         }
       }
     }
