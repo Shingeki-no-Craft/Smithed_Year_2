@@ -3,3 +3,4 @@ playsound minecraft:entity.wither.break_block master @a ~ ~ ~ 3 1
 particle minecraft:block{block_state:"minecraft:dirt"} ^ ^ ^ 2 .5 2 1 100 force
 particle white_smoke ^ ^ ^ 1 .5 1 .1 50 force
 particle minecraft:block{block_state:"minecraft:dirt"} ^ ^ ^ 1 .5 1 1 50 force
+scoreboard players set @a[distance=..16] snc.earthquake 16

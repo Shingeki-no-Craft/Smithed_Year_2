@@ -1,3 +1,6 @@
+# --------------------------- [Dynamic - Zwei Jumpscare] --------------------------- #
+execute if entity @s[tag=snc.entity.zwei] if function snc:dynamic/zwei/main run return -1
+
 scoreboard players add @s snc.titan.animatronic 1
 
 #return 1

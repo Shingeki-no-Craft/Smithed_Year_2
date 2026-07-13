@@ -1,2 +1,3 @@
-execute unless score $zwei.jumpscare snc.wait matches 1.. as 3ffc9084-50a9-4616-bf2e-0c267db28467 run function snc:dynamic/zwei/jump
-execute unless score $zwei.jumpscare snc.wait matches 1.. run scoreboard players set $zwei.jumpscare snc.wait 3000
+scoreboard players set @s snc.animation_jump.zwei 0
+data merge entity @s {teleport_duration:2}
+tp @s -63.5625 81.5 94.625

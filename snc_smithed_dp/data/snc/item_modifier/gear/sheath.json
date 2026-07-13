@@ -4,18 +4,18 @@
     "components": {
       "damage":0,
       "minecraft:lore":[
-        {"translate":"aot.odm.desc2","color":"gray","italic":false},
-        [{"translate":"aot.odm.desc3","color":"gray","italic":false}," ",{"translate":"aot.mainhand","color":"yellow","italic":false}],
+        {"text":"Device that provides great mobility in the air.","color":"gray","italic":false},
+        [{"text":"Must be attached to the","color":"gray","italic":false}," ",{"text":"Main Hand","color":"yellow","italic":false}],
         " ",
-        {"translate":"aot.odm.inst","color":"aqua","italic":false},
-        [{"text":" ● ","color":"yellow","italic":false},{"translate":"aot.odm.inst1","color":"gray","italic":false}," ",{"text":"ODM","color":"yellow","italic":false}," ",{"translate":"aot.odm.inst2","color":"gray","italic":false}," ",{"translate":"aot.offhand","color":"yellow","italic":false}," ",{"translate":"aot.odm.inst3","color":"gray","italic":false}],
-        [{"text":"   "},{"translate":"aot.odm.inst4","color":"gray","italic":false}],
-        [{"text":"   "},{"translate":"aot.odm.inst5","color":"gray","italic":false}],
+        {"text":"Usage Instructions","color":"aqua","italic":false},
+        [{"text":" ● ","color":"yellow","italic":false},{"text":"Grab the","color":"gray","italic":false}," ",{"text":"ODM","color":"yellow","italic":false}," ",{"text":"with your","color":"gray","italic":false}," ",{"text":"Off Hand","color":"yellow","italic":false}," ",{"text":"to launch","color":"gray","italic":false}],
+        [{"text":"   "},{"text":"the hooks into a target. Once they have landed,","color":"gray","italic":false}],
+        [{"text":"   "},{"text":"use it again to push yourself.","color":"gray","italic":false}],
         " ",
-        {"translate":"aot.odm.mod","color":"aqua","italic":false},
-        [{"text":" ● ","color":"yellow","italic":false},{"translate":"aot.steel","color":"gray","italic":false}],
-        [{"text":" ● ","color":"yellow","italic":false},{"translate":"aot.thunder","color":"gray","italic":false}],
-        [{"text":" ● ","color":"yellow","italic":false},{"translate":"aot.cartridges","color":"gray","italic":false}]
+        {"text":"Can be modified with","color":"aqua","italic":false},
+        [{"text":" ● ","color":"yellow","italic":false},{"text":"Ultra Hard Steel","color":"gray","italic":false}],
+        [{"text":" ● ","color":"yellow","italic":false},{"text":"Thunder Spear","color":"gray","italic":false}],
+        [{"text":" ● ","color":"yellow","italic":false},{"text":"Cartridge","color":"gray","italic":false}]
       ],
       "minecraft:attribute_modifiers": [
         {
