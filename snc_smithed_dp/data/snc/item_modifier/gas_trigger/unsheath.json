@@ -60,6 +60,7 @@
   },{
     "function": "minecraft:set_custom_data",
     "tag": {
+      "blade": true,
       "snc_odm_blades": 0,
       "snc_gear_mode":"blades",
       "out":true
