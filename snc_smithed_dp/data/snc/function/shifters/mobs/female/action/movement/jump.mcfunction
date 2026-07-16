@@ -1,1 +1,1 @@
-execute on vehicle at @s rotated ~ -40 run function snc:logic/motion/generic {"score":"female_vars","strength":0.02, "unstoppable":"false"}
+execute on vehicle at @s rotated ~ -40 run function snc:logic/motion/generic {"score":"female_vars","strength":0.03, "unstoppable":"false"}

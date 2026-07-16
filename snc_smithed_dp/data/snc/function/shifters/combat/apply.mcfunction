@@ -1,3 +1,4 @@
+say A
 ## Damage
 $execute if entity @s[tag=!$(shifter)] run damage @s $(amount) player_attack by @n[scores={$(shifter)_vars=1}]
 

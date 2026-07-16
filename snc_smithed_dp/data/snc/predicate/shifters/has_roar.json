@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "weapon.offhand": {
+        "predicates": {
+          "minecraft:custom_data": "{roar_shifter:1b}"
+        }
+      }
+    }
+  }
+}
