@@ -19,10 +19,6 @@ execute if score @s snc.wait.odmtrack matches 1.. run function snc:dynamic/odmtr
 # execute if score @s snc.quest.odmtrack.stage matches 1.. run function snc:dynamic/odmtrack_starter/get_value
 execute if score @s snc.quest.odmtrack.progress matches 1.. run function snc:dynamic/odmtrack_starter/particles/tick
 
-# Disabling ODM outside the booth
-execute if predicate snc:odm/has_gas_trigger unless entity @s[tag=summit.battlegrounds.player] positioned -70 60 122 unless entity @s[dz=-38,dx=70,dy=36] run function snc:player/odm/disable/trigger
-execute if predicate snc:odm/has_odm unless entity @s[tag=summit.battlegrounds.player] positioned -70 60 122 unless entity @s[dz=-38,dx=70,dy=36] run function snc:player/odm/disable/gear
-
 ## Using right click
 execute unless score @s snc.used.carrot matches 1.. run return 1
 scoreboard players set @s snc.used.carrot 0
