@@ -1,6 +1,3 @@
-execute store result score $variant female_vars run random value 1..2
-execute if score $variant female_vars matches 2 run scoreboard players set $hardening female_vars 0
-execute if score $variant female_vars matches 2 run scoreboard players set $op.hardening female_vars 12
 scoreboard players set $berserk female_vars 1
 
 # Set horse id to track more efficiently
