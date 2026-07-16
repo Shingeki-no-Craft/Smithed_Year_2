@@ -9,7 +9,7 @@ $scoreboard players set @s $(shifter)_vars 20
 $ride @n[tag=animated_java.$(shifter).root] mount @s
 $ride @p[scores={$(shifter)_vars=1},tag=snc.titan] mount @s
 
-# execute if score $variant female_vars matches 2 on passengers run function snc:shifters/mobs/armor/action/hardening/model/apply
+# execute if score $variant female_vars matches 2 on passengers run function snc:shifters/mobs/hardening
 
 execute on passengers run data modify entity @s item.components."minecraft:custom_data".berserk set value 1b
 execute on passengers unless entity @s[type=player] run rotate @s ~ 0

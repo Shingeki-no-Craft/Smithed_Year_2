@@ -1,2 +1,2 @@
 execute on vehicle on passengers if entity @s[tag=snc.titan] run function snc:shifters/mobs/female/head {"frame":4, "rotate":0}
-execute on vehicle on passengers if entity @s[tag=snc.titan] run item replace entity @s armor.head with white_dye[minecraft:item_model="shifters/female/bite/decay/9"]
+execute on vehicle on passengers if entity @s[tag=snc.titan] run item replace entity @s armor.head with white_dye[minecraft:item_model="snc:female/bite/decay/9"]

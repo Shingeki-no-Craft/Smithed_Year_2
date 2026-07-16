@@ -1,0 +1,2 @@
+execute if data entity @s item.id run data modify entity @s item.components."minecraft:custom_data".hardening set value 1b
+execute on passengers if data entity @s item.id run data modify entity @s item.components."minecraft:custom_data".hardening set value 1b
