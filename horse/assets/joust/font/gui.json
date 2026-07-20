@@ -1,0 +1,191 @@
+{
+    "providers": [
+        {"type": "bitmap","file": "joust:custom/font/actionbar/charge/0.png","ascent": 64,"height": 64,
+            "chars": ["\uE101"]},
+
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/0.png","ascent": 64,"height": 64,
+            "chars": ["\uE201"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/1.png","ascent": 64,"height": 64,
+            "chars": ["\uE202"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/2.png","ascent": 64,"height": 64,
+            "chars": ["\uE203"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/3.png","ascent": 64,"height": 64,
+            "chars": ["\uE204"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/4.png","ascent": 64,"height": 64,
+            "chars": ["\uE205"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/5.png","ascent": 64,"height": 64,
+            "chars": ["\uE206"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/6.png","ascent": 64,"height": 64,
+            "chars": ["\uE207"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/7.png","ascent": 64,"height": 64,
+            "chars": ["\uE208"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/8.png","ascent": 64,"height": 64,
+            "chars": ["\uE209"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/9.png","ascent": 64,"height": 64,
+            "chars": ["\uE210"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/10.png","ascent": 64,"height": 64,
+            "chars": ["\uE211"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/11.png","ascent": 64,"height": 64,
+            "chars": ["\uE212"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/12.png","ascent": 64,"height": 64,
+            "chars": ["\uE213"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/13.png","ascent": 64,"height": 64,
+            "chars": ["\uE214"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/14.png","ascent": 64,"height": 64,
+            "chars": ["\uE215"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/15.png","ascent": 64,"height": 64,
+            "chars": ["\uE216"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/16.png","ascent": 64,"height": 64,
+            "chars": ["\uE217"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/17.png","ascent": 64,"height": 64,
+            "chars": ["\uE218"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/18.png","ascent": 64,"height": 64,
+            "chars": ["\uE219"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/19.png","ascent": 64,"height": 64,
+            "chars": ["\uE220"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/20.png","ascent": 64,"height": 64,
+            "chars": ["\uE221"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/21.png","ascent": 64,"height": 64,
+            "chars": ["\uE222"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/22.png","ascent": 64,"height": 64,
+            "chars": ["\uE223"]},
+        {"type": "bitmap","file": "joust:custom/font/actionbar/pick/23.png","ascent": 64,"height": 64,
+            "chars": ["\uE224"]},
+
+        {
+            "type": "bitmap",
+            "file": "joust:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": -63,
+            "chars": [
+                "\uE001"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "joust:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": 31,
+            "chars": [
+                "\uF82A"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "joust:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": 63,
+            "chars": [
+                "\uF82B"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "joust:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": 0,
+            "chars": [
+                "\uF82C"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "joust:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": -4,
+            "chars": [
+                "\uF802"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "joust:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": -34,
+            "chars": [
+                "\uF80A"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "joust:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": -66,
+            "chars": [
+                "\uF80B"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "joust:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": -5,
+            "chars": [
+                "\uF803"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "joust:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": -33,
+            "chars": [
+                "\uF804"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "joust:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": -17,
+            "chars": [
+                "\uF805"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "joust:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": -31,
+            "chars": [
+                "\uF806"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "joust:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": -15,
+            "chars": [
+                "\uF807"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "joust:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": -40,
+            "chars": [
+                "\uF808"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "joust:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": -6,
+            "chars": [
+                "\uF809"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "joust:custom/font/space/split.png",
+            "ascent": -32768,
+            "height": -38,
+            "chars": [
+                "\uF810"
+            ]
+        }
+    ]
+}

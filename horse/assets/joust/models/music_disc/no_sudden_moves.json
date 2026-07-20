@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+	  "layer0": "snc:custom/music_disc/no_sudden_moves"
+	}
+}

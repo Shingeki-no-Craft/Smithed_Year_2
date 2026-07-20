@@ -1,0 +1,48 @@
+{
+	"textures": {
+		"10": "snc:custom/attack/hardening/body",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [4.07915, -14.10117, 3.18828],
+			"to": [13.54624, 9.89883, 12.81172],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [8.49602, -2.10117, 8]
+			},
+			"faces": {
+				"north": {
+					"uv": [6.3125, 7.75, 5.75, 9.5625],
+					"texture": "#10"
+				},
+				"east": {
+					"uv": [7.75, 7, 7, 8.8125],
+					"texture": "#10"
+				},
+				"south": {
+					"uv": [8.3125, 6.5, 7.75, 8.3125],
+					"texture": "#10"
+				},
+				"west": {
+					"uv": [7.75, 5, 7, 6.8125],
+					"texture": "#10"
+				},
+				"up": {
+					"uv": [10.75, 2.5, 11.3125, 1.75],
+					"texture": "#10"
+				},
+				"down": {
+					"uv": [2.25, 10.75, 2.8125, 11.5],
+					"texture": "#10"
+				}
+			}
+		}
+	]
+}

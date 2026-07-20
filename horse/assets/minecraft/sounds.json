@@ -1,0 +1,49 @@
+{
+	"snc.shifters.female.roar": {"sounds": ["snc:shifters/female/roar"]},
+	"snc.odm.pull":{
+		"sounds": ["snc:pull"]
+	},
+	"snc.odm.impulse": {
+		"sounds": ["snc:impulse"]
+	},
+    "snc.odm.shoot": {
+		"sounds": ["snc:shoot"]
+	},
+	"snc.shifters.trigger": {"sounds": ["snc:shifters/trigger"]},
+	"snc.shifters.hurt": {"sounds": ["snc:shifters/hurt"]},
+	"snc.titan.footsteps": {
+		"sounds": [
+			"snc:titan/footsteps/1",
+			"snc:titan/footsteps/2",
+			"snc:titan/footsteps/3",
+			"snc:titan/footsteps/4"
+		]
+	},
+	"snc.shifters.lightning": {"sounds": [
+		"snc:lightning/1",
+		"snc:lightning/2"
+		]
+	},
+	"snc.shifters.smash": {
+		"sounds": ["snc:shifters/smash"]
+	},
+	"snc.shifters.punch": {
+		"sounds": [
+			"snc:shifters/punch/1",
+			"snc:shifters/punch/2"
+		]
+	},
+	"snc.shifters.bite": {
+		"sounds": [
+			"snc:shifters/bite/1",
+			"snc:shifters/bite/2",
+			"snc:shifters/bite/3"
+		]
+	},
+	"snc.shifters.steam":{
+		"sounds": [
+			"snc:shifters/steam/2",
+			"snc:shifters/steam/1"
+		]
+	}
+}

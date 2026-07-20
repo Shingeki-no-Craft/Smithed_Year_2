@@ -1,0 +1,48 @@
+{
+	"textures": {
+		"0": "snc:custom/beast_body",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [11.2, -5.2, -0.1],
+			"to": [14.8, 9.2, 16.1],
+			"rotation": {
+				"angle": 45,
+				"axis": "z",
+				"origin": [13, 2, 8]
+			},
+			"faces": {
+				"north": {
+					"uv": [5.4375, 3.375, 5.375, 3.625],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [6.15625, 6.625, 5.875, 6.875],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [5.8125, 1.25, 5.75, 1.5],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [6.40625, 4.875, 6.125, 5.125],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [5.75, 7.65625, 5.8125, 7.375],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [8.125, 6.375, 8.1875, 6.65625],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}

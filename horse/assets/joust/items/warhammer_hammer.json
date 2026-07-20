@@ -1,0 +1,4 @@
+{"model": {"type": "minecraft:composite", "models": [
+    {"type":"model", "model": "snc:hammer_1"},
+    {"type":"model", "model": "snc:hammer_2"}
+    ]}}

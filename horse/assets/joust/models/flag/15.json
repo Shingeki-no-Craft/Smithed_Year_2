@@ -1,0 +1,257 @@
+{
+  "textures": {
+    "0": "snc:custom/flag"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        11.0,
+        -0.25
+      ],
+      "to": [
+        5.0,
+        21.0,
+        0.25
+      ],
+      "rotation": {
+        "origin": [
+          0,
+          11.0,
+          0.0
+        ],
+        "axis": "y",
+        "angle": 26.0
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            15,
+            0,
+            16,
+            1
+          ],
+          "texture": "#0",
+          "tintindex": 0
+        },
+        "south": {
+          "uv": [
+            15,
+            0,
+            16,
+            1
+          ],
+          "texture": "#0",
+          "tintindex": 0
+        },
+        "up": {
+          "uv": [
+            15,
+            0,
+            16,
+            1
+          ],
+          "texture": "#0",
+          "tintindex": 0
+        },
+        "down": {
+          "uv": [
+            15,
+            0,
+            16,
+            1
+          ],
+          "texture": "#0",
+          "tintindex": 0
+        },
+        "east": {
+          "uv": [
+            15,
+            0,
+            16,
+            1
+          ],
+          "texture": "#0",
+          "tintindex": 0
+        },
+        "west": {
+          "uv": [
+            15,
+            0,
+            16,
+            1
+          ],
+          "texture": "#0",
+          "tintindex": 0
+        }
+      }
+    },
+    {
+      "from": [
+        4.494,
+        11.0,
+        -2.4419
+      ],
+      "to": [
+        9.494,
+        21.0,
+        -1.9419
+      ],
+      "rotation": {
+        "origin": [
+          4.494,
+          11.0,
+          -2.1919
+        ],
+        "axis": "y",
+        "angle": 52.3817
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            15,
+            0,
+            16,
+            1
+          ],
+          "texture": "#0",
+          "tintindex": 0
+        },
+        "south": {
+          "uv": [
+            15,
+            0,
+            16,
+            1
+          ],
+          "texture": "#0",
+          "tintindex": 0
+        },
+        "up": {
+          "uv": [
+            15,
+            0,
+            16,
+            1
+          ],
+          "texture": "#0",
+          "tintindex": 0
+        },
+        "down": {
+          "uv": [
+            15,
+            0,
+            16,
+            1
+          ],
+          "texture": "#0",
+          "tintindex": 0
+        },
+        "east": {
+          "uv": [
+            15,
+            0,
+            16,
+            1
+          ],
+          "texture": "#0",
+          "tintindex": 0
+        },
+        "west": {
+          "uv": [
+            15,
+            0,
+            16,
+            1
+          ],
+          "texture": "#0",
+          "tintindex": 0
+        }
+      }
+    },
+    {
+      "from": [
+        7.546,
+        11.0,
+        -6.4023
+      ],
+      "to": [
+        12.546,
+        21.0,
+        -5.9023
+      ],
+      "rotation": {
+        "origin": [
+          7.546,
+          11.0,
+          -6.1523
+        ],
+        "axis": "y",
+        "angle": 109.7771
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            15,
+            0,
+            16,
+            1
+          ],
+          "texture": "#0",
+          "tintindex": 0
+        },
+        "south": {
+          "uv": [
+            15,
+            0,
+            16,
+            1
+          ],
+          "texture": "#0",
+          "tintindex": 0
+        },
+        "up": {
+          "uv": [
+            15,
+            0,
+            16,
+            1
+          ],
+          "texture": "#0",
+          "tintindex": 0
+        },
+        "down": {
+          "uv": [
+            15,
+            0,
+            16,
+            1
+          ],
+          "texture": "#0",
+          "tintindex": 0
+        },
+        "east": {
+          "uv": [
+            15,
+            0,
+            16,
+            1
+          ],
+          "texture": "#0",
+          "tintindex": 0
+        },
+        "west": {
+          "uv": [
+            15,
+            0,
+            16,
+            1
+          ],
+          "texture": "#0",
+          "tintindex": 0
+        }
+      }
+    }
+  ],
+  "gui_light": "front"
+}

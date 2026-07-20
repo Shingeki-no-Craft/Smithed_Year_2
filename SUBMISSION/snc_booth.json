@@ -22,18 +22,12 @@
                 "y": {"min": 72, "max": 77},
                 "z": {"min": 97, "max": 123}
             }
-        },
-        "battlegrounds": {
-            "position": {
-                "x": {"min": -124, "max": -80},
-                "y": {"min": 47, "max": 147},
-                "z": {"min": 93, "max": 141}
-            }
         }
     },
     "ticking_functions": {
         "snc:tick": "1t"
     },
+    "persistent_tick": "snc:persistent_tick",
     "sticker_book": {
         "background_color": "#4B9F05",
         "region": "textured_tropics",

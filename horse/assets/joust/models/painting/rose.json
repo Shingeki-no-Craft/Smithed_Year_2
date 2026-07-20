@@ -1,0 +1,23 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "snc:custom/painting/roses",
+		"particle": "snc:custom/painting/roses"
+	},
+	"elements": [
+		{
+			"from": [0.5, 2, 7.75],
+			"to": [15.5, 17, 8.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-11.5, 2, 7.75]},
+			"faces": {
+				"north": {"uv": [0, 0, 12, 12], "texture": "#0"},
+				"east": {"uv": [11.75, 0, 12, 12], "texture": "#0"},
+				"south": {"uv": [0, 0, 12, 12], "texture": "#0"},
+				"west": {"uv": [0, 0, 0.25, 12], "texture": "#0"},
+				"up": {"uv": [0, 0, 12, 0.25], "texture": "#0"},
+				"down": {"uv": [0, 11.75, 12, 12], "texture": "#0"}
+			}
+		}
+	]
+}

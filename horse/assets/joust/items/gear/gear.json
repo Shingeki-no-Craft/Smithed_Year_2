@@ -1,0 +1,44 @@
+{
+    "model": {
+        "type": "composite",
+        "models": [
+            {
+                "type": "minecraft:model",
+                "model": "snc:gear/gear"
+            },
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": "{out:1b}",
+                "on_true": {
+                    "type": "minecraft:composite",
+                    "models": [
+                        {
+                            "type": "minecraft:model",
+                            "model": "snc:gear/gear_out"
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component",
+                            "predicate": "minecraft:custom_data",
+                            "value": "{blade:1b}",
+                            "on_true": {
+                                "type": "minecraft:model",
+                                "model": "snc:gear/gear_blade"
+                            },
+                            "on_false": {
+                                "type": "minecraft:model",
+                                "model": "minecraft:item/air"
+                            }
+                        }
+                    ]
+                },
+                "on_false": {
+                    "type": "minecraft:model",
+                    "model": "snc:gear/gear_in"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,111 @@
+{
+    "model": {
+        "type": "composite",
+        "models": [
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/head"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/right_thumb"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/right_fingers_2"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/right_fingers"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/right_hand"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/right_forearm"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/right_bicep"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/right_arm"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/left_thumb"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/left_fingers_2"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/left_fingers"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/left_hand"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/left_forearm"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/left_bicep"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/left_arm"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/chest"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/waist"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/right_foot"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/right_knee"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/right_thigh"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/right_leg"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/left_foot"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/left_knee"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/left_thigh"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/left_leg"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "snc:beast/hip"
+                }
+            ]        
+    }
+}

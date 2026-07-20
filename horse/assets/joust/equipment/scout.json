@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "snc:scout"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "snc:scout"
+      }
+    ]
+  }
+}

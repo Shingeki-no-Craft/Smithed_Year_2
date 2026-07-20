@@ -1,0 +1,12 @@
+{
+	"pack": {
+		"description": "OHRSE",
+		"min_format": 88,
+		"max_format": 88,
+		"pack_format": 63,
+		"supported_formats": {
+			"min_inclusive": 63,
+			"max_inclusive": 68
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"2": "snc:custom/female/hardening"
+	},
+	"elements": [
+		{
+			"from": [5.56264, 2.34844, 7.62856],
+			"to": [8.59834, 9.29491, 10.47144],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [6.98049, 6.02168, 9.05]},
+			"faces": {
+				"north": {"uv": [4.25, 2.75, 5, 4.5], "texture": "#2"},
+				"east": {"uv": [5.75, 2.75, 6.5, 4.5], "texture": "#2"},
+				"south": {"uv": [15.75, 15.75, 16, 16], "texture": "#2"},
+				"west": {"uv": [5, 2.75, 5.75, 4.5], "texture": "#2"},
+				"up": {"uv": [5, 4.5, 4.25, 5.25], "texture": "#2"},
+				"down": {"uv": [5.75, 4.5, 5, 5.25], "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [0, -180, 0]
+		}
+	}
+}

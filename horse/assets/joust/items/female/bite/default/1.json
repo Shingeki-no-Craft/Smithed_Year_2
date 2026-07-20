@@ -1,0 +1,55 @@
+{
+    "model": {
+        "type": "composite",
+        "models": [
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{shift_rot:0}",
+                "on_true": {"type": "model", "model": "snc:female/bite/default/1/0"},
+                "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+            },
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{shift_rot:45}",
+                "on_true": {"type": "model", "model": "snc:female/bite/default/1/45"},
+                "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+            },
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{shift_rot:90}",
+                "on_true": {"type": "model", "model": "snc:female/bite/default/1/90"},
+                "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+            },
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{shift_rot:135}",
+                "on_true": {"type": "model", "model": "snc:female/bite/default/1/135"},
+                "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+            },
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{shift_rot:180}",
+                "on_true": {"type": "model", "model": "snc:female/bite/default/1/180"},
+                "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+            },
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{shift_rot:225}",
+                "on_true": {"type": "model", "model": "snc:female/bite/default/1/225"},
+                "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+            },
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{shift_rot:270}",
+                "on_true": {"type": "model", "model": "snc:female/bite/default/1/270"},
+                "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+            },
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component", "predicate": "minecraft:custom_data", "value": "{shift_rot:315}",
+                "on_true": {"type": "model", "model": "snc:female/bite/default/1/315"},
+                "on_false": {"type": "minecraft:model", "model": "minecraft:item/air"}
+            }
+        ]
+    }
+}

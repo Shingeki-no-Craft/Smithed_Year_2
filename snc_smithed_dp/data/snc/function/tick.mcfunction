@@ -1,6 +1,6 @@
 # execute as @e at @s run function snc:dynamic/main
 # Player
-execute as @a at @s run function snc:player/main
+#execute as @a at @s run function snc:player/main
 ## Projectiles
 execute as @e[tag=snc.projectile] at @s run function snc:player/war/main
 ## Shifter

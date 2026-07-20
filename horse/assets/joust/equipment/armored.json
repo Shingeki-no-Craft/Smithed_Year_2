@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "snc:armored"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "snc:armored"
+      }
+    ]
+  }
+}
