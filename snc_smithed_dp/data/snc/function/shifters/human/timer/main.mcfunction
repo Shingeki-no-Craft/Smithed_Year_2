@@ -1,10 +1,10 @@
 execute if score @s female_vars matches 1 run tag @s add snc.female
 ## Is not transformed
-#$execute as @s[tag=!snc.titan] run scoreboard players set state $(shifter)_vars 0
+#$execute if entity @s[tag=!snc.titan] run scoreboard players set state $(shifter)_vars 0
 # Increase energy when not transformed
-execute as @s[tag=!snc.titan] if score snc.ticks snc.clock matches 19 unless score $energy female_vars matches 3600.. run scoreboard players add $energy female_vars 8
+execute if entity @s[tag=!snc.titan] if score snc.ticks snc.clock matches 19 unless score $energy female_vars matches 3600.. run scoreboard players add $energy female_vars 8
 # Decrease energy when transformed
-$execute as @s[tag=snc.titan] if score snc.ticks snc.clock matches 19 run function snc:shifters/human/timer/time_down {"shifter":$(shifter),"energy_decrease":$(energy_decrease)}
+$execute if entity @s[tag=snc.titan] if score snc.ticks snc.clock matches 19 run function snc:shifters/human/timer/time_down {"shifter":$(shifter),"energy_decrease":$(energy_decrease)}
 # Show
 $execute if score snc.ticks snc.clock matches 19 if entity @s[tag=snc.titan] run function snc:shifters/human/timer/display {"shifter":"$(shifter)", "interface":"205"}
 $execute if score snc.ticks snc.clock matches 19 if entity @s[tag=!snc.titan] run function snc:shifters/human/timer/display {"shifter":"$(shifter)", "interface":"204"}

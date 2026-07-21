@@ -6,8 +6,8 @@ $execute if entity @s[tag=animated_java.$(shifter).locator.consume] unless score
 
 # Deals with the physics mechanics
 
-$execute as @s[tag=snc.body] run function snc:shifters/mobs/vehicle with storage snc:$(shifter)
-$execute as @s[tag=snc.collision] run function snc:shifters/mobs/collision {"shifter":"$(shifter)", "id":"$(id)"}
+$execute if entity @s[tag=snc.body] run function snc:shifters/mobs/vehicle with storage snc:$(shifter)
+$execute if entity @s[tag=snc.collision] run function snc:shifters/mobs/collision {"shifter":"$(shifter)", "id":"$(id)"}
 
 # If it transforms
 $execute if entity @s[tag=animated_java.$(shifter).locator.consume] on passengers run ride @s[tag=snc.titan] dismount

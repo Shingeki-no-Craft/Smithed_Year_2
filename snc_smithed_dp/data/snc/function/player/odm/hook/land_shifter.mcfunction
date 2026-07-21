@@ -6,6 +6,6 @@ playsound minecraft:block.iron_door.close player @a ~ ~ ~ 3.5 1.45
 playsound minecraft:block.amethyst_cluster.break player @a ~ ~ ~ 3.5 2
 
 tag @s add snc.wire.shifter
-ride @s mount @n[tag=snc.hook.titan]
+ride @s mount @n[type=#snc:titan, tag=snc.hook.titan]
 tag @s add snc.wire.buried
 scoreboard players set @s snc.projectile 4

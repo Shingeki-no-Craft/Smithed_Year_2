@@ -1,1 +1,1 @@
-kill @e[tag=snc.entity.allawie]
+kill @e[type=#snc:npc, tag=snc.entity.allawie]

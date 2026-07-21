@@ -44,7 +44,7 @@ $execute if score $(name) snc.odm_state matches 0 run tag @s add snc.wire.kill
 execute if entity @s[tag=snc.wire.kill] run function snc:logic/kill_mob
 
 ## Land
-$execute unless score $(name) snc.odm_state matches 0 if entity @s[tag=!snc.wire.shifter] positioned ~-2.5 ~-2.5 ~-2.5 if entity @n[dx=4,dy=4,dz=4,tag=snc.hook.titan] run function snc:player/odm/hook/land_shifter {"name":"$(name)"}
+$execute unless score $(name) snc.odm_state matches 0 if entity @s[tag=!snc.wire.shifter] positioned ~-2.5 ~-2.5 ~-2.5 if entity @n[type=#snc:titan, dx=4,dy=4,dz=4,tag=snc.hook.titan] run function snc:player/odm/hook/land_shifter {"name":"$(name)"}
 $execute unless score $(name) snc.odm_state matches 0 if entity @s[tag=!snc.wire.buried,tag=!snc.wire.retract,tag=!snc.wire.air] run function snc:player/odm/hook/land {"name":"$(name)"}
 execute if score @s snc.projectile matches 4.. run tag @s remove snc.wire.air
 return 0

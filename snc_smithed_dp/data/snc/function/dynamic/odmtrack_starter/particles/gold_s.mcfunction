@@ -1,20 +1,20 @@
-execute if score snc.ticks snc.clock matches 0 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1 0 0 0 0 1 force @s
-execute if score snc.ticks snc.clock matches 1 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.0343 0 0 0 0 1 force @s
-execute if score snc.ticks snc.clock matches 2 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.0652 0 0 0 0 1 force @s
-execute if score snc.ticks snc.clock matches 3 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.0898 0 0 0 0 1 force @s
-execute if score snc.ticks snc.clock matches 4 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.1056 0 0 0 0 1 force @s
-execute if score snc.ticks snc.clock matches 5 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.1111 0 0 0 0 1 force @s
-execute if score snc.ticks snc.clock matches 6 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.1058 0 0 0 0 1 force @s
-execute if score snc.ticks snc.clock matches 7 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.0902 0 0 0 0 1 force @s
-execute if score snc.ticks snc.clock matches 8 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.0658 0 0 0 0 1 force @s
-execute if score snc.ticks snc.clock matches 9 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.0350 0 0 0 0 1 force @s
-execute if score snc.ticks snc.clock matches 10 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.0008 0 0 0 0 1 force @s
-execute if score snc.ticks snc.clock matches 11 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^0.9665 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 0 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 1 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.0343 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 2 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.0652 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 3 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.0898 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 4 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.1056 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 5 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.1111 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 6 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.1058 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 7 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.0902 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 8 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.0658 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 9 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.0350 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 10 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^1.0008 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 11 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^0.9665 0 0 0 0 1 force @s
 execute if score snc.ticks snc.clock matches 12 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^0.9354 0 0 0 0 1 force @s
-execute if score snc.ticks snc.clock matches 13 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^0.9107 0 0 0 0 1 force @s
-execute if score snc.ticks snc.clock matches 14 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^0.8947 0 0 0 0 1 force @s
-execute if score snc.ticks snc.clock matches 15 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^0.8889 0 0 0 0 1 force @s
-execute if score snc.ticks snc.clock matches 16 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^0.8940 0 0 0 0 1 force @s
-execute if score snc.ticks snc.clock matches 17 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^0.9094 0 0 0 0 1 force @s
-execute if score snc.ticks snc.clock matches 18 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^0.9335 0 0 0 0 1 force @s
-execute if score snc.ticks snc.clock matches 19 run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^0.9643 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 13 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^0.9107 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 14 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^0.8947 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 15 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^0.8889 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 16 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^0.8940 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 17 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^0.9094 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 18 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^0.9335 0 0 0 0 1 force @s
+execute if score snc.ticks snc.clock matches 19 run return run particle trail{color:[1.000,0.667,0.000],target:[0,0,0],duration:1} ^ ^ ^0.9643 0 0 0 0 1 force @s

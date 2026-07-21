@@ -1,4 +1,4 @@
-$execute as @s[tag=snc.titan] run function snc:shifters/human/timer/cd {"shifter":$(shifter), "id":"$(id)"}
+$execute if entity @s[tag=snc.titan] run function snc:shifters/human/timer/cd {"shifter":$(shifter), "id":"$(id)"}
 
 $bossbar remove snc:$(shifter)_health
 tag @s remove consume

@@ -1,8 +1,8 @@
 #tellraw @a {score:{name:"@s", objective:"snc.animation_jump.zwei"}}
 #execute as @a[distance=..7] run tp @s ~ ~ ~ facing entity @n[tag=snc.entity.zwei]
 execute if score @s snc.animation_jump.zwei matches 0 run playsound minecraft:entity.breeze.jump hostile @a ~ ~ ~ 1 .85
-execute if score @s snc.animation_jump.zwei matches 0 run particle minecraft:cloud -64 81 97 1 0 1 0.4 64 force
-execute if score @s snc.animation_jump.zwei matches 0 run particle minecraft:tinted_leaves{color:[0.024,0.369,0.000,1.0]} -64 81 99 1 1 1 0.4 128 force
+execute if score @s snc.animation_jump.zwei matches 0 run particle minecraft:cloud -64 81 97 1 0 1 0.4 64
+execute if score @s snc.animation_jump.zwei matches 0 run particle minecraft:tinted_leaves{color:[0.024,0.369,0.000,1.0]} -64 81 99 1 1 1 0.4 128
 execute if score @s snc.animation_jump.zwei matches 0 run playsound minecraft:entity.enderman.scream master @a ~ ~ ~ 1 0.9
 execute if score @s snc.animation_jump.zwei matches 0 run scoreboard players set @a[distance=..16] snc.earthquake 16
 

@@ -4,16 +4,16 @@
 ## Projectiles
 execute as @e[tag=snc.projectile] at @s run function snc:player/war/main
 ## Shifter
-execute as @e[tag=snc.shifter,type=!villager] at @s run function snc:shifters/mobs/check_dead
+execute as @e[type=!villager, tag=snc.shifter] at @s run function snc:shifters/mobs/check_dead
 
 # Attack Head
 execute as @e[tag=snc.entity.attack_head] at @s positioned -79 79 103 run function snc:dynamic/attack_titan/head
 
 # Cart Titan
-execute as @e[tag=animated_java.cart.root] at @s run function snc:dynamic/cart_titan/main
+execute as @e[type=item_display,tag=animated_java.cart.root] at @s run function snc:dynamic/cart_titan/main
 
 # Animatronic
-execute as @e[tag=snc.titan.animatronic] at @s run function snc:dynamic/titan_animatronic/main
+execute as @e[type=item_display, tag=snc.titan.animatronic] at @s run function snc:dynamic/titan_animatronic/main
 
 # NPC
 execute as @e[tag=snc.npc] at @s run function snc:dynamic/npc
