@@ -1,3 +1,3 @@
 execute on vehicle rotated as @s run summon snowball ^ ^2 ^4 {Tags:["snc.scout.nomo","snc.shifter.female"],Passengers:[{id:"minecraft:item_display",view_range:5f,Tags:["snc.projectile","snc.sticky","snc.scout"],transformation:{left_rotation:[-0.707,0,0,0.707],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[3f,3f,3f]},item:{id:"minecraft:white_dye",count:1b,components:{"minecraft:item_model":"animated_java:blueprint/female/scout"}}}],Item:{id:"minecraft:arrow",count:1b,components:{"minecraft:item_model":"item/blank"}}}
 
-execute on vehicle rotated as @s as @e[tag=snc.scout.nomo] positioned as @s rotated ~ ~-8 run function snc:shifters/mobs/female/action/swing/motion
+execute on vehicle rotated as @s as @e[type=snowball, tag=snc.scout.nomo] positioned as @s rotated ~ ~-8 run function snc:shifters/mobs/female/action/swing/motion

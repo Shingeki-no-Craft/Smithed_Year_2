@@ -1,1 +1,1 @@
-execute if entity @s[tag=animated_java.female.locator.consume] run ride @n[tag=snc.female.swing] mount @s
+execute if entity @s[tag=animated_java.female.locator.consume] run ride @n[type=#snc:eldian, tag=snc.female.swing] mount @s

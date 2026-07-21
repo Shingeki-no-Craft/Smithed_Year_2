@@ -4,7 +4,7 @@
 $execute rotated ~ 0 positioned ^ ^ ^$(half_distance) if function snc:shifters/combat/collision on passengers if entity @s[tag=snc.titan] run damage @s $(half_distance)0 player_attack by @s
 $execute rotated ~ 0 positioned ^ ^ ^$(half_distance) if function snc:shifters/combat/collision run particle explosion ^ ^ ^ $(half_distance) $(half_distance) $(half_distance) 1 16 force
 # Playsound
-$execute positioned ~-$(half_distance).5 ~-$(half_distance).5 ~-$(half_distance).5 if entity @n[dx=$(distance),dy=$(distance),dz=$(distance),tag=!$(shifter),type=!#snc:pivot,predicate=!snc:shifters/$(shifter)/score] run playsound $(sound) player @a ~ ~ ~ 3
+$execute positioned ~-$(half_distance).5 ~-$(half_distance).5 ~-$(half_distance).5 if entity @n[type=!#snc:pivot, dx=$(distance),dy=$(distance),dz=$(distance),tag=!$(shifter),predicate=!snc:shifters/$(shifter)/score] run playsound $(sound) player @a ~ ~ ~ 3
 ## Remove Energy
 $scoreboard players remove $energy $(shifter)_vars $(energy)
 ## Apply Damage

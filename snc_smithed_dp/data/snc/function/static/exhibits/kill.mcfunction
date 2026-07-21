@@ -1,1 +1,1 @@
-kill @e[tag=snc.entity.exhibit]
+kill @e[type=#snc:pivot, tag=snc.entity.exhibit]

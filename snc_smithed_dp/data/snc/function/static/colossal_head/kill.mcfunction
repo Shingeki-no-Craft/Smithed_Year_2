@@ -1,1 +1,1 @@
-kill @e[tag=snc.colossal_head]
+kill @e[type=item_display, tag=snc.entity.colossal_head]
