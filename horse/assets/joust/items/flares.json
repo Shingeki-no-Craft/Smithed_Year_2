@@ -1,9 +1,0 @@
-{"model": {"type": "minecraft:composite", "models": [
-    {"type":"model", "model": "snc:flare/blank"},
-    {"type":"model", "model": "snc:flare/red"},
-    {"type":"model", "model": "snc:flare/green"},
-    {"type":"model", "model": "snc:flare/purple"},
-    {"type":"model", "model": "snc:flare/blue"},
-    {"type":"model", "model": "snc:flare/black"},
-    {"type":"model", "model": "snc:flare/yellow"}
-    ]}}

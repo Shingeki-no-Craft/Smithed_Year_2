@@ -1,5 +1,0 @@
-{"model": {"type": "minecraft:composite", "models": [
-    {"type":"model", "model": "snc:pure_titan/michelle"},
-    {"type":"model", "model": "snc:pure_titan/valentina"},
-    {"type":"model", "model": "snc:pure_titan/vladlen"}
-    ]}}
