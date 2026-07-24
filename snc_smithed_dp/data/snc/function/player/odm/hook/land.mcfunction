@@ -1,6 +1,6 @@
 # Hook landed
 $scoreboard players add $(name) snc.odm_state 1
-$execute positioned ~-1.5 ~-1.5 ~-1.5 as @n[dx=2,dy=2,dz=2,tag=snc.titan] run damage @s 1 arrow by $(name)
+$execute positioned ~-1.5 ~-1.5 ~-1.5 as @n[type=player,tag=snc.titan,dx=2,dy=2,dz=2] run damage @s 1 arrow by $(name)
 
 #particle minecraft:wax_off ~ ~ ~ 0 0 0 20 10 force
 particle block{block_state:"dirt"} ~ ~ ~ 0 0 0 1 10 force

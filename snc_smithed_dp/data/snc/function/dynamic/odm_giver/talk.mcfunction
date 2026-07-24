@@ -14,7 +14,7 @@ execute if entity @s[type=player, advancements={snc:odm_get=false}] run function
 execute if entity @s[advancements={snc:odm_get=false}] run playsound entity.player.levelup master @s ~ ~ ~ 1 1
 
 execute if entity @s[type=player, tag=!snc.has.odm, advancements={snc:odm_get=true}] run function snc:dynamic/dialog_box {name:{text:"Gen. Energy",color:green}, line_1:["What?! Did you lose it!? Are you...?!"], line_2:["..."], line_3:["I have",{"text":" one more","color":"dark_red"},", but this is the last one."], sound:"entity.villager.no master @s ~ ~ ~ 1 1"}
-execute if entity @s[advancements={snc:odm_get=true}, tag=snc.has.odm] run function snc:dynamic/dialog_box {name:{text:"Gen. Energy",color:green}, line_1:["You have already received your",{"text":" ODM Gear","color":"dark_red"},"."], line_2:["Only one per recruit."], line_3:[""], sound:"entity.villager.no master @s ~ ~ ~ 1 1"}
+execute if entity @s[tag=snc.has.odm, advancements={snc:odm_get=true}] run function snc:dynamic/dialog_box {name:{text:"Gen. Energy",color:green}, line_1:["You have already received your",{"text":" ODM Gear","color":"dark_red"},"."], line_2:["Only one per recruit."], line_3:[""], sound:"entity.villager.no master @s ~ ~ ~ 1 1"}
 
 execute if entity @s[tag=!snc.has.odm] run function snc:dynamic/odm_giver/give
 tag @s remove snc.has.odm

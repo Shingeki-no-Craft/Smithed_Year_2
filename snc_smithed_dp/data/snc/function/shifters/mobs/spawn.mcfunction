@@ -6,7 +6,7 @@ $data merge entity @s {UUID:[I;127,127,127,1],Team:"nocol",Silent:1b,Invulnerabl
 $function snc:shifters/mobs/$(shifter)/spawn
 $scoreboard players set @s $(shifter)_vars 20
 
-$ride @n[tag=animated_java.$(shifter).root] mount @s
+$ride @n[type=item_display,tag=animated_java.$(shifter).root] mount @s
 $ride @p[scores={$(shifter)_vars=1},tag=snc.titan] mount @s
 
 # execute if score $variant female_vars matches 2 on passengers run function snc:shifters/mobs/hardening
