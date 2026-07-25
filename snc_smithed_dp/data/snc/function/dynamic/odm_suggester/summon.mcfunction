@@ -1,6 +1,5 @@
-kill @e[type=mannequin, tag=snc.entity.odm_suggester]
-kill @e[type=text_display, tag=snc.entity.odm_suggestor.text]
-kill @e[type=interaction, tag=snc.interaction.odm_suggester]
+function snc:dynamic/odm_suggester/kill
+
 #Mannequin
 #UUID: ebd5bffc-1df8-4465-a11b-b6955d24ad41
 summon mannequin -60.5 80 111.5 {UUID: [-338313220,502809701,-1592019307,1562684737], Tags:["summit.dynamic", "summit.booth_entity.snc", "snc.npc", "snc.entity.odm_suggester"],immovable:1b, hide_description:1b, profile:{name:"TakezoS", model:slim}, Invulnerable:1b, attributes:[{id:"scale", base:.8}]}

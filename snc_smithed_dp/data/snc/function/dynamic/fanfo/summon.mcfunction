@@ -1,6 +1,4 @@
-kill @e[type=mannequin, tag=snc.entity.fanfo]
-kill @e[type=text_display, tag=snc.entity.fanfo.text]
-kill @e[type=interaction, tag=snc.interaction.fanfo]
+function snc:dynamic/fanfo/kill
 
 #Mannequin
 #UUID: a075e98e-8151-44af-ae49-0046616e666f

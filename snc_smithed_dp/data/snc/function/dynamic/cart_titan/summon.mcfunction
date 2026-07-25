@@ -1,6 +1,4 @@
-execute as @e[type=item_display, tag=animated_java.cart.root] run function animated_java:cart/remove/this
-kill @e[type=happy_ghast, tag=snc.entity.cart_ghast]
-kill @n[type=interaction, tag=snc.interaction.cart_titan]
+function snc:dynamic/cart_titan/kill
 
 #UUID: 1751e58c-0f26-4ef5-bf2f-0556b7f66581
 execute positioned -52.5 64.9 108.5 facing -33 64.5 108 run function animated_java:cart/summon {args: {animation:idle, start_animation: true}}

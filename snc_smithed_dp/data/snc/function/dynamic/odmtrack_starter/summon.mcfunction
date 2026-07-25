@@ -1,6 +1,4 @@
-kill @e[type=mannequin, tag=snc.entity.odmtrack_starter]
-kill @e[type=text_display, tag=snc.entity.odmtrack_starter.text]
-kill @e[type=interaction, tag=snc.interaction.odmtrack_starter]
+function snc:dynamic/odmtrack_starter/kill
 
 #Mannequin
 #UUID: 7b884c23-ec86-4532-8f0b-5a29dff19766

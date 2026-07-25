@@ -1,6 +1,4 @@
-kill @e[type=mannequin, tag=snc.entity.ragnaar]
-kill @e[type=text_display, tag=snc.entity.ragnaar.text]
-kill @e[type=interaction, tag=snc.interaction.ragnaar]
+function snc:dynamic/ragnaar/kill
 
 #Mannequin
 #UUID: 3a9c4e11-825d-710f-936c-007261676e61

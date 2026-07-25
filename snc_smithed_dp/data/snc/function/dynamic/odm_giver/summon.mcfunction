@@ -1,6 +1,4 @@
-kill @e[type=mannequin, tag=snc.entity.odm_giver]
-kill @e[type=text_display, tag=snc.entity.odm_giver.text]
-kill @e[type=interaction, tag=snc.interaction.odm_giver]
+function snc:dynamic/odm_giver/kill
 
 #Mannequin
 #UUID: 1bb7c29a-5bb1-4ac7-8d9b-250b43ffeab7

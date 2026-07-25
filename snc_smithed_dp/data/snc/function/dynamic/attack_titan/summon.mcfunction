@@ -1,5 +1,4 @@
-kill @e[type=item_display, tag=snc.entity.attack_head]
-kill @e[type=item_display, tag=snc.entity.attack_body]
+function snc:dynamic/attack_titan/kill
 ## Head
 ## UUID: 6c239941-3e1e-4e55-994c-91fccb41a01e
 summon minecraft:item_display -61.56912954333465 87.38095703124999 116.39812212660482 {UUID: [1814272321,1042173525,-1723035140,-884891618], Tags:["summit.dynamic", "summit.booth_entity.snc", "snc.entity.attack_head"], Rotation: [137.8125f, 36.5625f], item: {components: {"minecraft:item_model": "snc:attack_head"}, count: 1, id: "minecraft:apple"}, item_display: "ground", transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.750f, 1.750f, 1.750f], translation: [0.0f, 0.0f, 0.0f]}, teleport_duration: 20, interpolation_duration: 1}
