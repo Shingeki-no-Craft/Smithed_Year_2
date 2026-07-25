@@ -1,18 +1,17 @@
-#kill e65a7129-0763-4be4-b26d-22f781dc0145
-kill c293b800-3a7f-4418-a5ff-1f61567ac1bc
-kill 87ed7bb5-3247-420a-b39e-137d9942abb2
+kill @e[type=mannequin, tag=snc.entity.cart_titan_caller]
+kill @e[type=text_display, tag=snc.entity.cart_titan_caller.text]
+kill @e[type=interaction, tag=snc.interaction.cart_titan_caller]
 
 #Mannequin
 #UUID: e65a7129-0763-4be4-b26d-22f781dc0145
 summon mannequin -27.5 64 95.5 {UUID: [-430280407,123948004,-1301470473,-2116288187], Tags:["summit.dynamic", "summit.booth_entity.snc", "snc.npc", "snc.entity.cart_titan_caller"],immovable:1b, hide_description:1b, profile:{name:"Bombface68", model:slim}, Invulnerable:1b, attributes:[{id:"scale", base:0.9}]}
 
+item replace entity @n[tag=snc.entity.cart_titan_caller] armor.chest with iron_chestplate[minecraft:equippable={slot: "chest", asset_id: "snc:scout"}]
+item replace entity @n[tag=snc.entity.cart_titan_caller] armor.legs with iron_leggings[minecraft:equippable={slot: "legs", asset_id: "snc:scout"}]
+item replace entity @n[tag=snc.entity.cart_titan_caller] armor.feet with iron_boots[minecraft:equippable={slot: "feet", asset_id: "snc:scout"}]
 
-item replace entity e65a7129-0763-4be4-b26d-22f781dc0145 armor.chest with iron_chestplate[minecraft:equippable={slot: "chest", asset_id: "snc:scout"}]
-item replace entity e65a7129-0763-4be4-b26d-22f781dc0145 armor.legs with iron_leggings[minecraft:equippable={slot: "legs", asset_id: "snc:scout"}]
-item replace entity e65a7129-0763-4be4-b26d-22f781dc0145 armor.feet with iron_boots[minecraft:equippable={slot: "feet", asset_id: "snc:scout"}]
-
-execute as e65a7129-0763-4be4-b26d-22f781dc0145 run function snc:api/item_replace/military/scouts/odm/gear {"slot": "weapon.offhand", "count": 1}
-item modify entity e65a7129-0763-4be4-b26d-22f781dc0145 weapon.offhand snc:gear/store
+execute as @n[tag=snc.entity.cart_titan_caller] run function snc:api/item_replace/military/scouts/odm/gear {"slot": "weapon.offhand", "count": 1}
+item modify entity @n[tag=snc.entity.cart_titan_caller] weapon.offhand snc:gear/store
 
 #Text Display
 #UUID: c293b800-3a7f-4418-a5ff-1f61567ac1bc

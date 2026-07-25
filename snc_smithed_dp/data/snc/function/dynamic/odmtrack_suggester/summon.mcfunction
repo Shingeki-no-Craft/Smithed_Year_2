@@ -1,17 +1,17 @@
-#kill dcf0ec5a-9ded-4a81-a6f5-039cb5740129
-kill ea7a91a5-9282-4816-8521-114710096640
-kill 0cf50cfd-6baf-4c47-81f9-0e3f1718d23e
+kill @e[type=mannequin, tag=snc.entity.odmtrack_suggester]
+kill @e[type=text_display, tag=snc.entity.odmtrack_suggester.text]
+kill @e[type=interaction, tag=snc.interaction.odmtrack_suggester]
 
 #Mannequin
 #UUID: dcf0ec5a-9ded-4a81-a6f5-039cb5740129
 summon mannequin -18.5 65 107.5 {UUID: [-588190630,-1645393279,-1493892196,-1250688727], Tags:["summit.dynamic", "summit.booth_entity.snc", "snc.npc", "snc.entity.odmtrack_suggester"],immovable:1b, hide_description:1b, profile:{name: "RiflemanShaw", model:wide}, Invulnerable:1b, attributes:[{id:"scale", base:1.2}]}
 
-item replace entity dcf0ec5a-9ded-4a81-a6f5-039cb5740129 armor.chest with iron_chestplate[minecraft:equippable={slot: "chest", asset_id: "snc:scout"}]
-item replace entity dcf0ec5a-9ded-4a81-a6f5-039cb5740129 armor.legs with iron_leggings[minecraft:equippable={slot: "legs", asset_id: "snc:scout"}]
-item replace entity dcf0ec5a-9ded-4a81-a6f5-039cb5740129 armor.feet with iron_boots[minecraft:equippable={slot: "feet", asset_id: "snc:scout"}]
+item replace entity @n[type=mannequin, tag=snc.entity.odmtrack_suggester] armor.chest with iron_chestplate[minecraft:equippable={slot: "chest", asset_id: "snc:scout"}]
+item replace entity @n[type=mannequin, tag=snc.entity.odmtrack_suggester] armor.legs with iron_leggings[minecraft:equippable={slot: "legs", asset_id: "snc:scout"}]
+item replace entity @n[type=mannequin, tag=snc.entity.odmtrack_suggester] armor.feet with iron_boots[minecraft:equippable={slot: "feet", asset_id: "snc:scout"}]
 
-execute as dcf0ec5a-9ded-4a81-a6f5-039cb5740129 run function snc:api/item_replace/military/scouts/odm/gear {"slot": "weapon.offhand", "count": 1}
-item modify entity dcf0ec5a-9ded-4a81-a6f5-039cb5740129 weapon.offhand snc:gear/store
+execute as @n[type=mannequin, tag=snc.entity.odmtrack_suggester] run function snc:api/item_replace/military/scouts/odm/gear {"slot": "weapon.offhand", "count": 1}
+item modify entity @n[type=mannequin, tag=snc.entity.odmtrack_suggester] weapon.offhand snc:gear/store
 
 #Text Display
 #UUID: ea7a91a5-9282-4816-8521-114710096640

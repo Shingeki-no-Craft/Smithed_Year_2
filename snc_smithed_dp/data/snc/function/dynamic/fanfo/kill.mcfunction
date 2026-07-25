@@ -1,3 +1,3 @@
-kill a075e98e-8151-44af-ae49-0046616e666f
-kill 01964247-3b78-4c28-a7c1-0046616e666f
-kill ffd41588-0bd7-4555-8436-0046616e666f
+kill @e[type=mannequin, tag=snc.entity.fanfo]
+kill @e[type=text_display, tag=snc.entity.fanfo.text]
+kill @e[type=interaction, tag=snc.interaction.fanfo]

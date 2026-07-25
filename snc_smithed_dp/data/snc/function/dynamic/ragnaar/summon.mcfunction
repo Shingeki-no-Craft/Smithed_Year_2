@@ -1,17 +1,17 @@
-#kill 3a9c4e11-825d-710f-936c-007261676e61
-kill 1d8b442e-3b78-4c28-a7c1-007261676e61
-kill be3a22e9-34af-4bbe-9d44-007261676e61
+kill @e[type=mannequin, tag=snc.entity.ragnaar]
+kill @e[type=text_display, tag=snc.entity.ragnaar.text]
+kill @e[type=interaction, tag=snc.interaction.ragnaar]
 
 #Mannequin
 #UUID: 3a9c4e11-825d-710f-936c-007261676e61
 summon mannequin -57.5 85.5 107.5 {UUID: [983322129,-2107805425,-1821638542,1634168417], Tags:["summit.dynamic", "summit.booth_entity.snc", "snc.npc", "snc.entity.ragnaar"],immovable:1b, hide_description:1b, profile:{name:"B6_C", model:wide}, Invulnerable:1b, attributes:[{id:"scale", base:1.1}]}
 
-item replace entity 3a9c4e11-825d-710f-936c-007261676e61 armor.chest with iron_chestplate[minecraft:equippable={slot: "chest", asset_id: "snc:scout"}]
-item replace entity 3a9c4e11-825d-710f-936c-007261676e61 armor.legs with iron_leggings[minecraft:equippable={slot: "legs", asset_id: "snc:scout"}]
-item replace entity 3a9c4e11-825d-710f-936c-007261676e61 armor.feet with iron_boots[minecraft:equippable={slot: "feet", asset_id: "snc:scout"}]
+item replace entity @n[type=mannequin, tag=snc.entity.ragnaar] armor.chest with iron_chestplate[minecraft:equippable={slot: "chest", asset_id: "snc:scout"}]
+item replace entity @n[type=mannequin, tag=snc.entity.ragnaar] armor.legs with iron_leggings[minecraft:equippable={slot: "legs", asset_id: "snc:scout"}]
+item replace entity @n[type=mannequin, tag=snc.entity.ragnaar] armor.feet with iron_boots[minecraft:equippable={slot: "feet", asset_id: "snc:scout"}]
 
-execute as 3a9c4e11-825d-710f-936c-007261676e61 run function snc:api/item_replace/military/scouts/odm/gear {"slot": "weapon.offhand", "count": 1}
-item modify entity 3a9c4e11-825d-710f-936c-007261676e61 weapon.offhand snc:gear/store
+execute as @n[type=mannequin, tag=snc.entity.ragnaar] run function snc:api/item_replace/military/scouts/odm/gear {"slot": "weapon.offhand", "count": 1}
+item modify entity @n[type=mannequin, tag=snc.entity.ragnaar] weapon.offhand snc:gear/store
 
 #Text Display
 #UUID: 1d8b442e-3b78-4c28-a7c1-007261676e61

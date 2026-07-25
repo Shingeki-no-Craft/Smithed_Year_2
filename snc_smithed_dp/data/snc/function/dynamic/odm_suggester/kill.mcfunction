@@ -1,3 +1,3 @@
-kill ebd5bffc-1df8-4465-a11b-b6955d24ad41
-kill d310065c-2a81-4351-828f-c7fb5c48bcb6
-kill 599fc608-8788-4078-9566-f6e8a352a640
+kill @e[type=mannequin, tag=snc.entity.odm_suggester]
+kill @e[type=text_display, tag=snc.entity.odm_suggestor.text]
+kill @e[type=interaction, tag=snc.interaction.odm_suggester]

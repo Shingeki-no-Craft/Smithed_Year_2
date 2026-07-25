@@ -1,3 +1,3 @@
-kill 7dbe6c10-a52a-480d-936c-005a61626174
-kill 1c9ab409-a824-4354-a40e-005a61626174
-kill ae3322e9-34af-4bbe-9d44-005a61626174
+kill @e[type=mannequin, tag=snc.entity.zabat]
+kill @e[type=text_display, tag=snc.entity.zabat.text]
+kill @e[type=interaction, tag=snc.interaction.zabat]

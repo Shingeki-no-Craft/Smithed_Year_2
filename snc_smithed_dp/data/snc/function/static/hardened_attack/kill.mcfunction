@@ -1,1 +1,1 @@
-kill 28caea19-e9d9-4fd0-abd7-eb5e3192d582
+kill @e[type=item_display, tag=snc.entity.hardened_attack]

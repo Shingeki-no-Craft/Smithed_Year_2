@@ -1,5 +1,5 @@
 scoreboard players reset $cart_travel snc.wait
-execute as 6a75984c-ec7a-48ae-a6a1-f28d27033215 on passengers run scoreboard players add $riders.check snc.cart 1
+execute as @n[type=happy_ghast, tag=snc.entity.cart_ghast] on passengers run scoreboard players add $riders.check snc.cart 1
 
 playsound minecraft:block.note_block.trumpet master @a ~ ~ ~ 1 1
 

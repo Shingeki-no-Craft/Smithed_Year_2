@@ -1,3 +1,3 @@
-kill dcf0ec5a-9ded-4a81-a6f5-039cb5740129
-kill ea7a91a5-9282-4816-8521-114710096640
-kill 0cf50cfd-6baf-4c47-81f9-0e3f1718d23e
+kill @e[type=mannequin, tag=snc.entity.odmtrack_suggester]
+kill @e[type=text_display, tag=snc.entity.odmtrack_suggester.text]
+kill @e[type=interaction, tag=snc.interaction.odmtrack_suggester]

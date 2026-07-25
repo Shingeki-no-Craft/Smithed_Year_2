@@ -37,7 +37,7 @@ execute if score $stage snc.cart matches 5 run scoreboard players set $cart snc.
 execute if score $stage snc.cart matches 5 run function animated_java:cart/animations/walk/play_exclusive
 
 #Sixth run
-execute if score $stage snc.cart matches 6 at 1751e58c-0f26-4ef5-bf2f-0556b7f66581 run playsound minecraft:entity.wind_charge.wind_burst master @a ~ ~ ~ 3 1
+execute if score $stage snc.cart matches 6 at @n[type=minecraft:item_display,tag=animated_java.cart.root] run playsound minecraft:entity.wind_charge.wind_burst master @a ~ ~ ~ 3 1
 execute if score $stage snc.cart matches 6 run function snc:dynamic/cart_titan/teleport_return
 
 execute if score $stage snc.cart matches 7 if score $hange snc.cart matches 1 run scoreboard players reset $hange snc.cart
