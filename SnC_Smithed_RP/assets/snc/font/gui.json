@@ -7,7 +7,7 @@
             "chars": ["\uE100"]},
         {"type": "bitmap","file": "snc:custom/font/actionbar/cart.png","ascent": 16,"height": 16,
             "chars": ["\uE101"]},
-        {"type": "bitmap","file": "snc:custom/font/actionbar/dialog_box.png","ascent": 1,"height": 320,
+        {"type": "bitmap","file": "snc:custom/font/actionbar/dialog_box.png","ascent": 9,"height": 320,
             "chars": ["\uE102"]},
         {"type": "bitmap","file": "snc:custom/font/actionbar/scout.png","ascent": 32,"height": 32,
             "chars": ["\uE103"]},

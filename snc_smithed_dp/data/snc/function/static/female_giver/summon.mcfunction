@@ -1,0 +1,5 @@
+function snc:static/female_giver/kill
+
+summon minecraft:interaction -74 72 115 {Tags: ["smithed.static", "summit.booth_entity.snc", "summit.interactable", "snc.entity.female_giver"], width: 5.0f, height: 4.0f, response: 1b, data: {summit_interactable: {on_right_click: 'execute on target run function summit.battlegrounds:api/assign_kit {booth_id:"snc", kit_id:"snc:default", kit_function:"snc:battlegrounds/kit/main"}'}}}
+
+summon minecraft:interaction -74 72 105 {Tags: ["smithed.static", "summit.booth_entity.snc", "summit.interactable", "snc.entity.female_giver"], width: 5.0f, height: 4.0f, response: 1b, data: {summit_interactable: {on_right_click: 'execute on target run function summit.battlegrounds:api/assign_kit {booth_id:"snc", kit_id:"snc:default", kit_function:"snc:battlegrounds/kit/main"}'}}}
