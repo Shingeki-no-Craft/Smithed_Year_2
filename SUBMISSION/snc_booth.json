@@ -35,7 +35,7 @@
             {
                 "sticker_id": "scout",
                 "sticker_texture": "snc:custom/font/sticker/scout",
-                "sticker_name": "scout",
+                "sticker_name": "Scout Regiment",
                 "unobtained_text": "Obtain the ODM Gear.",
                 "obtained_text": "You have obtained the ODM Gear!"
             },

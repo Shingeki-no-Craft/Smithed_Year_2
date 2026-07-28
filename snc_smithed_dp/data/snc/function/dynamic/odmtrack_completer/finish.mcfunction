@@ -1,4 +1,4 @@
-advancement grant @s only summit.sticker_book:snc/veteran
+advancement grant @s only summit.sticker_book:snc/iceburst_stone
 
 scoreboard players reset @s snc.quest.odmtrack.stage
 scoreboard players reset @s snc.quest.odmtrack.progress

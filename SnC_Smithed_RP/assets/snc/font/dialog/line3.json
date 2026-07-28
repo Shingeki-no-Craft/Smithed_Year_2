@@ -5,7 +5,7 @@
             "file": "snc:dialog/mono.ttf",
             "size": 8.0,
             "oversample": 4.0,
-            "shift": [0, 36]
+            "shift": [0, 14]
         }
     ]
 }
