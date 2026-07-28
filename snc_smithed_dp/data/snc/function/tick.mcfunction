@@ -1,10 +1,6 @@
-# execute as @e at @s run function snc:dynamic/main
-# Player
 #execute as @a at @s run function snc:player/main
 ## Projectiles
 execute as @e[type=#snc:projectile,tag=snc.projectile] at @s run function snc:player/war/main
-## Shifter
-execute as @e[type=!villager, tag=snc.shifter] at @s run function snc:shifters/mobs/check_dead
 
 # Attack Head
 execute as @e[type=item_display,tag=snc.entity.attack_head] at @s positioned -79 79 103 run function snc:dynamic/attack_titan/head

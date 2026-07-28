@@ -1,5 +1,4 @@
 scoreboard players set $berserk female_vars 1
-
 # Set horse id to track more efficiently
 $kill 0000007f-0000-007f-0000-007f0000000$(id)
 $summon $(type) ~ ~ ~ {UUID:[I;127,127,127,$(id)]}
@@ -41,3 +40,5 @@ $attribute @s entity_interaction_range base set $(entity_range)
 
 execute store result score @s snc.gamemode run data get entity @s playerGameType
 gamemode adventure
+
+schedule function snc:shifters/mobs/live 1t

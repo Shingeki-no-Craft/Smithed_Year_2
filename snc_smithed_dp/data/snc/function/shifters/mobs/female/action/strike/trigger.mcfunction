@@ -1,6 +1,6 @@
 advancement revoke @s only snc:shifters/female/strike
 # Restart moves
-give @s quartz[minecraft:custom_data={atk_shifter:1b,7_titan:1b, summit: {droppable: {callback: true}}},item_model="item/blank"]
+give @s quartz[minecraft:custom_data={atk_shifter:1b,7_titan:1b, summit: {droppable: {callback: true}}},item_model="minecraft:air"]
 
 # If config is enabled AND is in berserk mode then skip
 execute if score $berserk female_vars matches 0 if function snc:shifters/mobs/female/action/strike/berserk/trigger run return -1

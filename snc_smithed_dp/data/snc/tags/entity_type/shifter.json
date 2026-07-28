@@ -1,7 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"villager",
-		"wandering_trader"
+		"armor_stand",
+		"skeleton_horse"
 	]
 }

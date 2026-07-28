@@ -1,6 +1,6 @@
 advancement revoke @s only snc:shifters/female/bite
 # Restart moves
-give @s quartz[minecraft:custom_data={atk_shifter:1b,7_titan:1b, summit: {droppable: {callback: true}}},minecraft:item_model="item/blank"]
+give @s quartz[minecraft:custom_data={atk_shifter:1b,7_titan:1b, summit: {droppable: {callback: true}}},minecraft:item_model="minecraft:air"]
 # Cancel if counter
 execute if score state female_vars matches 14..15 run return -1
 # Bite while Sneak
