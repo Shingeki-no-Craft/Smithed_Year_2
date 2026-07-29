@@ -28,4 +28,4 @@ scoreboard players reset @s snc.quest.odmtrack
 playsound minecraft:entity.blaze.death master @s ~ ~ ~ 2 1
 playsound minecraft:entity.villager.ambient master @s ~ ~ ~ 3 2
 
-function snc:dynamic/dialog_box {name:["",{text:"Gen. Hope",color:green},"      "], line_1:["",["Oh, you failed. You have to ",{text:"finish the track",color:"dark_red"},"..."],"           "], line_2:["",{text:"Come back when you feel ready."},"                            "], line_3:["",{text:""},"                                                          "], sound:"entity.villager.ambient master @s ~ ~ ~ 3 2"}
+function snc:dynamic/dialog_box {name:["",{text:"Gen. Hope",color:green},"      "], line_1:["",["Oh, you failed. You have to ",{text:"finish the track",color:"dark_red"},"..."],"              "], line_2:["",{text:"Come back when you feel ready."},"                            "], line_3:["",{text:""},"                                                          "], sound:"entity.villager.ambient master @s ~ ~ ~ 3 2"}
