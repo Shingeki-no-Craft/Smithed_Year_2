@@ -11,6 +11,9 @@ execute as @e[type=item_display, tag=snc.titan.animatronic] at @s run function s
 # NPC
 execute as @e[type=mannequin, tag=snc.npc] at @s run function snc:dynamic/npc
 
+# Player
+execute as @a[tag=!summit.battlegrounds.player] at @s run function snc:player/main
+
 # Cave
 particle minecraft:snowflake -19 70 104 24 5 24 0 1 force
 particle minecraft:electric_spark -19 70 104 24 16 24 0 1 force
