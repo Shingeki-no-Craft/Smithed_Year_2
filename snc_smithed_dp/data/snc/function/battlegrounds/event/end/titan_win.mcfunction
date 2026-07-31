@@ -3,3 +3,4 @@ function snc:shifters/function/unique {"pre":"function snc:shifters/human/timer/
 function snc:battlegrounds/event/reset_female
 effect clear @s
 tp @s -68 72 110
+tag @s remove snc.battlegrounds.temp_female
