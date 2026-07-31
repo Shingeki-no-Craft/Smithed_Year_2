@@ -23,7 +23,9 @@
         {"text":"Can be modified with","color":"aqua","italic":false},
         [{"text":" ● ","color":"yellow","italic":false},{"text":"Ultra Hard Steel","color":"gray","italic":false}],
         [{"text":" ● ","color":"yellow","italic":false},{"text":"Thunder Spear","color":"gray","italic":false}],
-        [{"text":" ● ","color":"yellow","italic":false},{"text":"Cartridge","color":"gray","italic":false}]
+        [{"text":" ● ","color":"yellow","italic":false},{"text":"Cartridge","color":"gray","italic":false}],
+        " ",
+        {"text":"\uE001", "font":"snc:gui","italic":false, "color":"white"}
       ],
       "minecraft:attribute_modifiers": [
         {
@@ -31,7 +33,7 @@
           "amount": -1.6, "operation": "add_value","slot":"offhand"
         },
         {
-            "type": "attack_speed", "id": "snc.gear.attack_damage",
+            "type": "attack_damage", "id": "snc.gear.attack_damage",
           "amount": 5, "operation": "add_value","slot":"offhand"
         }
 
