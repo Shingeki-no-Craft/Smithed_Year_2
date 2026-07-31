@@ -2,4 +2,5 @@ function snc:battlegrounds/event/title {title:["",{text:"\uF809", font:"snc:gui"
 function snc:shifters/function/unique {"pre":"function snc:shifters/human/timer/cd with storage minecraft:","post":""}
 effect clear @s
 tp @s -68 72 110
+function snc:battlegrounds/event/reset_female
 tag @s remove snc.battlegrounds.temp_female
