@@ -1,6 +1,6 @@
 scoreboard players set $female snc.battlegrounds 1
 effect give @s slow_falling 5 0 true
-teleport @s -96.5 80 117.5
+teleport @s -96.5 74 117.5
 function snc:api/get/shifter/female
 team leave @s
 team join snc.battlegrounds.female @s

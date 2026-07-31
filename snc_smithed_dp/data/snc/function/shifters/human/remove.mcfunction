@@ -9,5 +9,8 @@ tag @s remove snc.injured
 tag @s remove snc.infct
 tag @s remove hidden.shifter
 effect clear @s absorption
+effect clear @s invisibility
+effect clear @s resistance
+effect clear @s saturation
 
 function snc:shifters/human/inventory/remove_marks
