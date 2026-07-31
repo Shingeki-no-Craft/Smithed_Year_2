@@ -1,7 +1,4 @@
 #execute as @a at @s run function snc:player/main
-## Projectiles
-execute as @e[type=#snc:projectile,tag=snc.projectile] at @s run function snc:player/war/main
-
 # Attack Head
 execute as @e[type=item_display,tag=snc.entity.attack_head] at @s positioned -79 79 103 run function snc:dynamic/attack_titan/head
 

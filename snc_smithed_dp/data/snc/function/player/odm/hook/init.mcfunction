@@ -5,3 +5,4 @@ tag @s remove snc.wire.init
 
 $execute if entity @s[tag=snc.wire.L] positioned ^ ^ ^1 summon spectral_arrow positioned ^0.002 ^ ^0.1 run function snc:logic/motion/self/odm {"Owner":$(UUID)}
 $execute if entity @s[tag=snc.wire.R] positioned ^ ^ ^1 summon spectral_arrow positioned ^-0.002 ^ ^0.1 run function snc:logic/motion/self/odm {"Owner":$(UUID)}
+schedule function snc:logic/motion/projectile_tick 1t replace
