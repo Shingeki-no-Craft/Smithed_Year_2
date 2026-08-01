@@ -9,6 +9,8 @@ item replace entity @n[type=mannequin, tag=snc.entity.odmtrack_completer] armor.
 item replace entity @n[type=mannequin, tag=snc.entity.odmtrack_completer] armor.feet with iron_boots[minecraft:equippable={slot: "feet", asset_id: "snc:scout"}]
 execute as @n[type=mannequin, tag=snc.entity.odmtrack_completer] run function snc:api/item_replace/military/scouts/odm/gas_trigger {"slot": "weapon.mainhand", "count": 1}
 execute as @n[type=mannequin, tag=snc.entity.odmtrack_completer] run function snc:api/item_replace/military/scouts/odm/gear {"slot": "weapon.offhand", "count": 1}
+item modify entity @n[type=mannequin, tag=snc.entity.odmtrack_completer] weapon.mainhand snc:enchantments/null
+item modify entity @n[type=mannequin, tag=snc.entity.odmtrack_completer] weapon.offhand snc:enchantments/null
 
 #Text Display
 #UUID: fde5936c-fe78-4f87-bcfe-b61ffc5b565c
