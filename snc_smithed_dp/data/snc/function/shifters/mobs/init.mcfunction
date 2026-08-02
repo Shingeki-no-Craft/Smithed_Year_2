@@ -1,14 +1,14 @@
 scoreboard players set $berserk female_vars 1
 # Set horse id to track more efficiently
-$kill 0000007f-0000-007f-0000-007f0000000$(id)
-$summon $(type) ~ ~ ~ {UUID:[I;127,127,127,$(id)]}
-$execute as 0000007f-0000-007f-0000-007f0000000$(id) run function snc:shifters/mobs/spawn {\
+kill @e[type=skeleton_horse, tag=snc.body]
+summon skeleton_horse ~ ~ ~ {Tags:["snc.body"]}
+$execute as @n[type=skeleton_horse, tag=snc.body] run function snc:shifters/mobs/spawn {\
     "shifter":"$(shifter)", \
     "walk_speed":$(walk_speed), \
     "step_height":$(step_height), \
     "scale_vehicle":$(scale_vehicle) \    
     }
-$bossbar add snc:$(shifter)_health {"font":"snc:gui", "text":"\$(bossbar_display)"}
+bossbar add snc:female_health {"font":"snc:gui", "text":"\uFFF6"}
 $bossbar set snc:$(shifter)_health color $(bossbar_color)
 $bossbar set snc:$(shifter)_health max $(hp)
 $bossbar set snc:$(shifter)_health style $(bossbar_style)

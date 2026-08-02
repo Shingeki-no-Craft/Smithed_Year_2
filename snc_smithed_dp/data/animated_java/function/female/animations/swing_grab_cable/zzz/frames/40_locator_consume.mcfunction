@@ -2,5 +2,5 @@
 tp @s ~ ~ ~ ~ ~
 particle block{block_state:"crimson_nylium"} ~ ~1 ~ .5 .5 .5 0 40 force
 execute on passengers run tag @s remove snc.female.swing
-execute on passengers run damage @s 1024 minecraft:player_attack by 0000007f-0000-007f-0000-007f00000007
+execute on passengers run damage @s 1024 minecraft:player_attack by @n[type=skeleton_horse, tag=snc.body]
 execute on passengers run kill

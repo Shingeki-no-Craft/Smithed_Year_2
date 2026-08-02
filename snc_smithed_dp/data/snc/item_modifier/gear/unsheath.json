@@ -34,7 +34,7 @@
         },
         {
             "type": "attack_damage", "id": "snc.gear.attack_damage",
-          "amount": 5, "operation": "add_value","slot":"offhand"
+          "amount": 10, "operation": "add_value","slot":"offhand"
         }
 
       ]
