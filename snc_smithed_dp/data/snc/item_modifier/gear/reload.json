@@ -36,7 +36,7 @@
       "attribute_modifiers": [
         {
           "type": "attack_damage", "id": "snc.gear.attack_damage",
-          "amount": 10, "operation": "add_value","slot":"offhand"
+          "amount": 7, "operation": "add_value","slot":"offhand"
         },
         {
           "type": "attack_speed", "id": "snc.gear.attack_speed",

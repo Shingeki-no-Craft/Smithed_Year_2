@@ -35,7 +35,7 @@
         {
           "type": "attack_damage",
           "id": "snc.gas_trigger.attack_damage",
-          "amount": 10,
+          "amount": 7,
           "operation": "add_value","slot":"mainhand"
         },
         {

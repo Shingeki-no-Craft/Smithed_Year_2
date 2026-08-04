@@ -3,3 +3,6 @@ function snc:shifters/function/unique {"pre":"function snc:shifters/human/timer/
 effect clear @s
 tp @s -68 72 110
 tag @s remove snc.battlegrounds.temp_female
+playsound minecraft:ambient.cave master @s ~ ~ ~ 1 1.1
+playsound minecraft:ambient.cave master @s ~ ~ ~ 1 1.1
+playsound minecraft:ambient.cave master @s ~ ~ ~ 1 1.1

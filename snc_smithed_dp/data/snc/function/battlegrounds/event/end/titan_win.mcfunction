@@ -4,3 +4,4 @@ effect clear @s
 tp @s -68 72 110
 function snc:battlegrounds/event/reset_female
 tag @s remove snc.battlegrounds.temp_female
+playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1 1.1

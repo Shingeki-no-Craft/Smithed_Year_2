@@ -8,7 +8,7 @@ $execute as @n[type=skeleton_horse, tag=snc.body] run function snc:shifters/mobs
     "step_height":$(step_height), \
     "scale_vehicle":$(scale_vehicle) \    
     }
-bossbar add snc:female_health {"font":"snc:gui", "text":"\uFFF6"}
+$bossbar add snc:$(shifter)_health {"font":"snc:gui", "text":"\uFFF6"}
 $bossbar set snc:$(shifter)_health color $(bossbar_color)
 $bossbar set snc:$(shifter)_health max $(hp)
 $bossbar set snc:$(shifter)_health style $(bossbar_style)

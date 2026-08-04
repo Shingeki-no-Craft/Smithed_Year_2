@@ -1,4 +1,8 @@
 # PackSquash options file for the SnC resource pack.
 # Run with:  & "$env:USERPROFILE\Desktop\packsquash.exe" packsquash.toml
 pack_directory   = 'SnC_Smithed_RP'
-output_file_path = 'SnC_Smithed_RP.packsquash.zip'
+output_file_path = 'SUBMISSION/SnC_Smithed_RP.packsquash.zip'
+
+# Full reprocess every run (deterministic submission builds; also makes the
+# transcode_ogg=false setting below actually apply instead of reusing cached audio).
+never_store_squash_times = true
